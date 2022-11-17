@@ -1,0 +1,276 @@
+#include <windows.h>
+#include <iostream>
+#include <random>
+
+#include "game_manager.h"
+#include "game_offsets.h"
+
+/* Purpose: iterates players, calculates screen positions
+ * Return local position to calculate gadget distance
+ */
+
+unsigned int update_player_structs( core::game_manager* manager, uintptr_t camera, float screen_width, float screen_height, Vector3& local_position_out )
+{
+	// clear previous 
+
+	manager->m_players.clear( );
+	manager->m_players.swap( manager->m_players );
+
+	// check if your local player is valid and the health is above 0
+
+	uintptr_t lpLocalPlayer = manager->get_local_player( );
+
+	if ( !_VALID( lpLocalPlayer ) )
+		return 0;
+
+	UINT health = manager->get_player_health( lpLocalPlayer );
+
+	if ( health == 0 )
+		return 0;
+
+	// iterate players on the enemy team
+
+	unsigned short team = manager->get_player_team( lpLocalPlayer );
+	unsigned long  player_count = manager->get_player_count( );
+
+	if ( player_count > 255 || team == 0xFF )
+	{
+		printf( "> sanity failure\n" );
+		return 0;
+	}
+
+	Vector3 local_position = { };
+	manager->get_player_position( lpLocalPlayer, &local_position );
+	local_position_out = local_position;
+
+	// main player loop
+
+	UINT count = 0;
+
+	for ( UINT i = 0; i < player_count; i++ )
+	{
+		uintptr_t lpTargetPlayer = manager->get_player_by_id( i );
+
+		// if ( !manager->m_kelib->validate_class( lpTargetPlayer, manager->m_image_base, ENTITY_VT_OFFSET ) )
+		//	 continue;
+
+		if ( !_VALID( lpTargetPlayer ) )
+			continue;
+
+		if ( lpTargetPlayer == lpLocalPlayer )
+			continue;
+
+		unsigned short target_team = manager->get_player_team( lpTargetPlayer );
+
+		if ( team == target_team )
+			continue;
+
+		UINT target_health = manager->get_player_health( lpTargetPlayer );
+
+		if ( target_health == 0 )
+			continue;
+
+		Vector3 position = { };
+		manager->get_player_position( lpTargetPlayer, &position );
+
+		Vector3 screen_position = manager->WorldToScreen( camera, screen_width, screen_height, position );
+
+		if ( screen_position.z < 1.0f )
+			continue;
+
+		core::player* player = new core::player( );
+
+		SecureZeroMemory( player->m_name, sizeof( player->m_name ) );
+		manager->get_player_name( lpTargetPlayer, player->m_name );
+
+		player->m_world_position	= position;
+		player->m_screen_position	= screen_position;
+		player->m_health			= manager->get_player_health( lpTargetPlayer );
+		player->m_distance			= position.Distance( local_position );
+
+		manager->m_players.push_back( player );
+		count++;
+	}
+
+	//printf( "[+] player count: %d\n", count );
+	return count;
+}
+
+void project_gadget_structs( core::game_manager* manager, uintptr_t camera, float screen_width, float screen_height, Vector3& local_position )
+{
+	for ( core::gadget* pGadget : manager->m_gadgets )
+	{
+		pGadget->m_distance = pGadget->m_world_position.Distance( local_position );
+
+		Vector3 screen_position = manager->WorldToScreen( camera, screen_width, screen_height, pGadget->m_world_position );
+		pGadget->m_screen_position = screen_position;
+		pGadget->m_visible = true;
+
+		if ( screen_position.z < 1.0f )
+			pGadget->m_visible = false;
+	}
+}
+
+/* Purpose: iterates gadgets, calculates screen positions
+ *
+ */
+
+unsigned int update_gadget_structs( core::game_manager* manager, uintptr_t camera, float screen_width, float screen_height, unsigned int start_index, unsigned int amount )
+{
+	// clear previous 
+
+	manager->m_gadgets.clear( );
+	manager->m_gadgets.swap( manager->m_gadgets );
+
+	unsigned int count = 0;
+	unsigned int total_count = 0;
+	std::uint64_t lpGlobalEntities = manager->get_generic_entity_object_list( total_count );
+
+	if ( amount > total_count )
+	{
+		//printf( "[!] gadget overflow\n" );
+		return 0;
+	}
+
+	for ( unsigned int i = total_count - 1; i > total_count - amount; i-- )
+	{
+		std::uint64_t lpEntity = manager->m_kelib->read<std::uint64_t>( lpGlobalEntities + ( i * sizeof( PVOID ) ) );
+
+		if ( !_VALID( lpEntity ) )
+			continue;
+
+		std::uint64_t lpEntityDetails = manager->m_kelib->read<std::uint64_t>( lpEntity + 0x60 ); // in reclass this is pawn_info
+
+		if ( !_VALID( lpEntityDetails ) )
+			continue;
+
+		// Everything less than 10 seems to be regular map pieces
+
+		std::uint32_t type2 = manager->m_kelib->read<std::uint64_t>( lpEntityDetails + 0xE0 );
+
+		if ( type2 < 13 )
+			continue;
+
+		// Filter out players + hostage
+
+		if ( type2 == 31 || type2 == 33 )
+			continue;
+		
+		std::uint64_t lpNetComponent = manager->m_kelib->read<std::uint64_t>( lpEntityDetails + 0xA0 ); 
+
+		if ( !_VALID( lpNetComponent ) )
+			continue;
+
+		std::uint32_t state = manager->m_kelib->read<std::uint64_t>( lpEntity + 0xB0 );
+		std::uint32_t type  = manager->m_kelib->read<std::uint64_t>( lpEntity + 0xB4 );
+
+		//if ( state != 0x744000 && state != 0x42744000 )
+		//{
+		//	continue;
+		//}
+
+		////if (	type != 0x8749344 &&	// drone
+		////		type != 0x854300 )		// mat
+		////{
+		////	continue;
+		//////}
+
+/*
+		if ( type2 != 17 )
+			continue;*/
+
+		//if ( /*type2 == 10 || type2 == 17 || type2 == 19 || type2 == 23 ||*/ type2 == 30 || type2 == 31 )
+		//	continue;
+
+		Vector3 position;
+		position.x = manager->m_kelib->read<FLOAT>( lpNetComponent + 0x30 );
+		position.y = manager->m_kelib->read<FLOAT>( lpNetComponent + 0x34 );
+		position.z = manager->m_kelib->read<FLOAT>( lpNetComponent + 0x38 );
+
+		//Vector3 screen_position = manager->WorldToScreen( camera, screen_width, screen_height, position );
+		//
+		//if ( screen_position.z < 1.0f )
+		//	continue;
+
+		core::gadget* gadget = new core::gadget( );
+
+		gadget->m_state				= state;
+		gadget->m_type				= type;
+		gadget->m_type2				= type2;
+		gadget->m_world_position	= position;
+		gadget->m_pawninfo			= lpEntityDetails;
+
+		manager->m_gadgets.push_back( gadget );
+		count++;
+	}
+
+	return count;
+}
+
+
+/* Purpose: render objects
+ *
+ */
+
+bool render_objects( core::game_manager* manager )
+{
+	manager->m_kelib->m_pRenderer->BeginDraw( );
+
+	//if ( !manager->m_kelib->m_pRenderer->DrawText( 100.f, 100.f, D2D1::ColorF( D2D1::ColorF::Red, 1.0f ), "test" ) )
+	//	printf( "bad drawtext\n" );
+
+	UINT uCount = 0;
+
+	for ( core::player* pPlayer : manager->m_players )
+	{
+		if ( !pPlayer )
+			continue;
+
+		// Draw Tag
+
+		UINT health_per_100 = pPlayer->m_health = max( 0, min( pPlayer->m_health, 100 ) );
+
+		manager->m_kelib->m_pRenderer->DrawText(
+			pPlayer->m_screen_position.x,
+			pPlayer->m_screen_position.y,
+			D2D1::ColorF( D2D1::ColorF::Red, 1.0f ),
+			"%s [%2.0f m]\nH:%d",
+			pPlayer->m_name,
+			pPlayer->m_distance,
+			pPlayer->m_health );
+
+		// Draw Health
+
+		UINT r = min( ( 510 * ( 100 - pPlayer->m_health ) ) / 100, 255 );
+		UINT g = min( ( 510 * pPlayer->m_health ) / 100, 255 );
+		UINT b = 0;
+		UINT a = 255;
+
+		D2D1::ColorF health_color = D2D1::ColorF( round( r * 255.0 ), round( g * 255.0 ), round( b * 255.0 ) );
+		D2D1::ColorF black_color  = D2D1::ColorF( 0.f, 0.f, 0.f );
+
+		manager->m_kelib->m_pRenderer->FillRectangle( pPlayer->m_screen_position.x + 1, pPlayer->m_screen_position.y + 38.f, health_per_100 / 2, 6.f, health_color );
+		manager->m_kelib->m_pRenderer->DrawRectangle( pPlayer->m_screen_position.x + 1, pPlayer->m_screen_position.y + 38.f, 50.f, 6.f, black_color );
+
+		uCount++;
+	}
+	
+	for ( core::gadget* pGadget : manager->m_gadgets )
+	{
+		if ( !pGadget->m_visible )
+			continue;
+
+		manager->m_kelib->m_pRenderer->DrawText(
+			pGadget->m_screen_position.x,
+			pGadget->m_screen_position.y,
+			D2D1::ColorF( D2D1::ColorF::Azure, 1.0f ),
+			"( t:%X | t2:%d ) [%2.0f m]",
+			pGadget->m_type,
+			pGadget->m_type2,
+			pGadget->m_distance );
+	}
+
+	manager->m_kelib->m_pRenderer->EndDraw( );
+	
+	return true;
+}

@@ -1,0 +1,16 @@
+    constexpr std::uint8_t blackhole[] = { 0xC3, 0x90, 0x90, 0x90 };
+
+    const auto local_kernel_base = reinterpret_cast<std::uintptr_t>(LoadLibraryA("kernelbase.dll"));
+    const auto game_kernel_base = reinterpret_cast<std::uintptr_t>(walk_peb("RainbowSix.exe", "kernelbase.dll"));
+    const auto terminate_proc = GetProcAddress(local_kernel_base, "TerminateProcess") -  local_kernel_base + game_kernel_base;
+    
+    if (const auto status = memory::protect(terminate_proc, PAGE_READWRITE, sizeof(blackhole));  status.second != 0) {
+        memory::write_ctad(terminate_proc, blackhole, sizeof(blackhole));
+        memory::protect(terminate_proc, status.first, sizeof(blackhole));
+    }
+
+    const auto angle_patch = memory::process_base() + 0xe1b018 + 0x3;
+    
+    const auto status = memory::protect(angle_patch, PAGE_READWRITE, sizeof(std::uint32_t));
+    memory::write<std::uint32_t>(angle_patch, 0x134);
+    memory::protect(angle_patch, PAGE_READWRITE, sizeof(std::uint32_t));

@@ -1,0 +1,51 @@
+NTSTATUS set_window_thread_info( UINT_PTR hwnd, UINT_PTR lpThreadInfo )
+{
+	NTSTATUS status = STATUS_UNSUCCESSFUL;
+
+	typedef UINT_PTR( NTAPI* _ValidateHwnd )( UINT_PTR hwnd );
+	_ValidateHwnd ValidateHwnd = reinterpret_cast<_ValidateHwnd>( get_system_module_export( L"win32kbase.sys", "ValidateHwnd" ) );
+
+	if ( !hwnd || !ValidateHwnd )
+	{
+		return status;
+	}
+
+	UINT_PTR pWnd = ValidateHwnd( hwnd );
+
+	if ( !pWnd )
+	{
+		return status;
+	}
+
+	__try {
+
+		SIZE_T size_copied;
+
+		if ( NT_SUCCESS( MmCopyVirtualMemory( PsGetCurrentProcess( ), &lpThreadInfo, PsGetCurrentProcess( ), reinterpret_cast<PVOID>( pWnd + 0x10 ), sizeof( PVOID ), KernelMode, &size_copied ) ) )
+		{
+			status = STATUS_SUCCESS;
+		}
+
+	} __except ( EXCEPTION_EXECUTE_HANDLER ) {
+
+		status = STATUS_SEVERITY_ERROR;
+	}
+
+	return status;
+}
+
+UINT_PTR get_window_thread_info( UINT_PTR hwnd )
+{
+	typedef UINT_PTR ( NTAPI* _ValidateHwnd )( UINT_PTR hwnd );
+	_ValidateHwnd ValidateHwnd = reinterpret_cast<_ValidateHwnd>( get_system_module_export( L"win32kbase.sys", "ValidateHwnd" ) );
+
+	if ( !hwnd || !ValidateHwnd )
+		return NULL;
+
+	UINT_PTR pWnd = ValidateHwnd( hwnd );
+
+	if ( !pWnd )
+		return NULL;
+
+	return *(UINT_PTR*)( pWnd + 0x10 );
+}

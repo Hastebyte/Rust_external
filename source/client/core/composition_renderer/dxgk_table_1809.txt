@@ -1,0 +1,4095 @@
+1: kd> dqs win32kbase!gDxgkInterface L1000
+ffffe25a`69d83570  00000000`00280888
+ffffe25a`69d83578  ffffe25a`69ba0000 win32kbase!DirectComposition::CApplicationChannel::RedirectMouseToHwnd  (win32kbase+0x0)
+ffffe25a`69d83580  00000000`00000000
+ffffe25a`69d83588  fffff802`2f979a30 dxgkrnl!DXG_GUEST_COMPOSITIONOBJECTCHANNEL::ChannelStarted
+ffffe25a`69d83590  fffff802`2f979a30 dxgkrnl!DXG_GUEST_COMPOSITIONOBJECTCHANNEL::ChannelStarted
+ffffe25a`69d83598  fffff802`2f912440 dxgkrnl!DxgkProcessCallout
+ffffe25a`69d835a0  fffff802`2f941c20 dxgkrnl!DxgkNotifyProcessFreezeCallout
+ffffe25a`69d835a8  fffff802`2f970710 dxgkrnl!DxgkNotifyProcessThawCallout
+ffffe25a`69d835b0  fffff802`2f9121c0 dxgkrnl!DxgkOpenAdapter
+ffffe25a`69d835b8  fffff802`2f901a90 dxgkrnl!DxgkEnumAdapters
+ffffe25a`69d835c0  fffff802`2f937ce0 dxgkrnl!DxgkEnumAdapters2
+ffffe25a`69d835c8  fffff802`2f979100 dxgkrnl!DxgkGetMaximumAdapterCount
+ffffe25a`69d835d0  fffff802`2f9538c0 dxgkrnl!DxgkOpenAdapterFromLuid
+ffffe25a`69d835d8  fffff802`2f9192b0 dxgkrnl!DxgkCloseAdapter
+ffffe25a`69d835e0  fffff802`2f927af0 dxgkrnl!DxgkCreateAllocation
+ffffe25a`69d835e8  fffff802`2f93eb60 dxgkrnl!DxgkQueryResourceInfo
+ffffe25a`69d835f0  fffff802`2f93d7b0 dxgkrnl!DxgkQueryResourceInfoFromNtHandle
+ffffe25a`69d835f8  fffff802`2f940bd0 dxgkrnl!DxgkShareObjects
+ffffe25a`69d83600  fffff802`2fa73030 dxgkrnl!DxgkOpenNtHandleFromName
+ffffe25a`69d83608  fffff802`2fa736c0 dxgkrnl!DxgkOpenSyncObjectNtHandleFromName
+ffffe25a`69d83610  fffff802`2f93fa50 dxgkrnl!DxgkOpenResource
+ffffe25a`69d83618  fffff802`2f93dc10 dxgkrnl!DxgkOpenResourceFromNtHandle
+ffffe25a`69d83620  fffff802`2f919b00 dxgkrnl!DxgkDestroyAllocation
+ffffe25a`69d83628  fffff802`2fa301a0 dxgkrnl!DxgkSetAllocationPriority
+ffffe25a`69d83630  fffff802`2fa2fe00 dxgkrnl!DxgkQueryAllocationResidency
+ffffe25a`69d83638  fffff802`2f934330 dxgkrnl!DxgkCreateDevice
+ffffe25a`69d83640  fffff802`2f93c0f0 dxgkrnl!DxgkDestroyDevice
+ffffe25a`69d83648  fffff802`2f941d20 dxgkrnl!DxgkCreateContext
+ffffe25a`69d83650  fffff802`2f93b000 dxgkrnl!DxgkDestroyContext
+ffffe25a`69d83658  fffff802`2f918590 dxgkrnl!DxgkCreateSynchronizationObject
+ffffe25a`69d83660  fffff802`2fa8c160 dxgkrnl!DxgkOpenSynchronizationObject
+ffffe25a`69d83668  fffff802`2f919ae0 dxgkrnl!DxgkDestroySynchronizationObject
+ffffe25a`69d83670  fffff802`2f901230 dxgkrnl!DxgkWaitForSynchronizationObject
+ffffe25a`69d83678  fffff802`2f901250 dxgkrnl!DxgkSignalSynchronizationObject
+ffffe25a`69d83680  fffff802`2f954e80 dxgkrnl!DxgkLock
+ffffe25a`69d83688  fffff802`2f953dc0 dxgkrnl!DxgkUnlock
+ffffe25a`69d83690  fffff802`2f930210 dxgkrnl!DxgkRender
+ffffe25a`69d83698  fffff802`2f97a6e0 dxgkrnl!DxgkGetDisplayModeList
+ffffe25a`69d836a0  fffff802`2f94bc40 dxgkrnl!DxgkSetDisplayMode
+ffffe25a`69d836a8  fffff802`2fa5ad30 dxgkrnl!DxgkGetMultisampleMethodList
+ffffe25a`69d836b0  fffff802`2fa2f940 dxgkrnl!DxgkGetRuntimeData
+ffffe25a`69d836b8  fffff802`2f92a570 dxgkrnl!DxgkQueryAdapterInfo
+ffffe25a`69d836c0  fffff802`2f9287e0 dxgkrnl!DxgkEscape
+ffffe25a`69d836c8  fffff802`2fa2b660 dxgkrnl!DxgkQueryStatistics
+ffffe25a`69d836d0  fffff802`2f967130 dxgkrnl!DxgkPresent
+ffffe25a`69d836d8  fffff802`2fa275a0 dxgkrnl!DxgkGetSharedPrimaryHandle
+ffffe25a`69d836e0  fffff802`2fa74590 dxgkrnl!DxgkCreateOverlay
+ffffe25a`69d836e8  fffff802`2fa75c20 dxgkrnl!DxgkUpdateOverlay
+ffffe25a`69d836f0  fffff802`2fa751b0 dxgkrnl!DxgkFlipOverlay
+ffffe25a`69d836f8  fffff802`2fa74c10 dxgkrnl!DxgkDestroyOverlay
+ffffe25a`69d83700  fffff802`2f94cf20 dxgkrnl!DxgkSetVidPnSourceOwner
+ffffe25a`69d83708  fffff802`2f913d20 dxgkrnl!DxgkGetPresentHistory
+ffffe25a`69d83710  fffff802`2f968150 dxgkrnl!DxgkWaitForVerticalBlankEvent
+ffffe25a`69d83718  fffff802`2fa57540 dxgkrnl!DxgkSetGammaRamp
+ffffe25a`69d83720  fffff802`2f952610 dxgkrnl!DxgkGetDeviceState
+ffffe25a`69d83728  fffff802`2f94c830 dxgkrnl!DxgkSetContextSchedulingPriority
+ffffe25a`69d83730  fffff802`2fa571a0 dxgkrnl!DxgkGetContextSchedulingPriority
+ffffe25a`69d83738  fffff802`2f96e090 dxgkrnl!DxgkSetProcessSchedulingPriorityClass
+ffffe25a`69d83740  fffff802`2fa7fdd0 dxgkrnl!DxgkGetProcessSchedulingPriorityClass
+ffffe25a`69d83748  fffff802`2fa7ff40 dxgkrnl!DxgkReleaseProcessVidPnSourceOwners
+ffffe25a`69d83750  fffff802`2fa299b0 dxgkrnl!DxgkGetScanLine
+ffffe25a`69d83758  fffff802`2f962450 dxgkrnl!DxgkSetQueuedLimit
+ffffe25a`69d83760  fffff802`2fa2aeb0 dxgkrnl!DxgkPollDisplayChildren
+ffffe25a`69d83768  fffff802`2fa5b2f0 dxgkrnl!DxgkInvalidateActiveVidPn
+ffffe25a`69d83770  fffff802`2f9725c0 dxgkrnl!DxgkCheckOcclusion
+ffffe25a`69d83778  fffff802`2fa57b30 dxgkrnl!DxgkWaitForIdle
+ffffe25a`69d83780  fffff802`2f968e70 dxgkrnl!DxgkCheckMonitorPowerState
+ffffe25a`69d83788  fffff802`2fa674e0 dxgkrnl!DxgkCheckExclusiveOwnership
+ffffe25a`69d83790  00000000`00000000
+ffffe25a`69d83798  fffff802`2fa8b360 dxgkrnl!DxgkCreateKeyedMutex
+ffffe25a`69d837a0  fffff802`2fa8bb60 dxgkrnl!DxgkOpenKeyedMutex
+ffffe25a`69d837a8  fffff802`2fa8ba50 dxgkrnl!DxgkDestroyKeyedMutex
+ffffe25a`69d837b0  fffff802`2fa8ae10 dxgkrnl!DxgkAcquireKeyedMutex
+ffffe25a`69d837b8  fffff802`2fa8c180 dxgkrnl!DxgkReleaseKeyedMutex
+ffffe25a`69d837c0  fffff802`2f9764e0 dxgkrnl!DxgkFlushPresentHistory
+ffffe25a`69d837c8  fffff802`2f945490 dxgkrnl!DxgkGetPathsModality
+ffffe25a`69d837d0  fffff802`2f975880 dxgkrnl!DxgkFunctionalizePathsModality
+ffffe25a`69d837d8  fffff802`2f94e760 dxgkrnl!DxgkApplyPathsModality
+ffffe25a`69d837e0  fffff802`2f94e690 dxgkrnl!DxgkFinalizePathsModality
+ffffe25a`69d837e8  fffff802`2f94b060 dxgkrnl!DxgkPersistPathsModality
+ffffe25a`69d837f0  fffff802`2f949020 dxgkrnl!DxgkFreePathsModality
+ffffe25a`69d837f8  fffff802`2f94fd60 dxgkrnl!DxgkAugmentCdsj
+ffffe25a`69d83800  fffff802`2f9408a0 dxgkrnl!DxgkConfigureSharedResource
+ffffe25a`69d83808  fffff802`2f9533a0 dxgkrnl!DxgkGetPresentHistoryReadyEvent
+ffffe25a`69d83810  fffff802`2f943030 dxgkrnl!DxgkGetDisplayConfigBufferSizes
+ffffe25a`69d83818  fffff802`2f942dd0 dxgkrnl!DxgkQueryDisplayConfig
+ffffe25a`69d83820  fffff802`2f9667a0 dxgkrnl!DxgkHandleForceProjectionMonitor
+ffffe25a`69d83828  fffff802`2fa75650 dxgkrnl!DxgkGetOverlayState
+ffffe25a`69d83830  fffff802`2f9691a0 dxgkrnl!DxgkCheckVidPnExclusiveOwnership
+ffffe25a`69d83838  fffff802`2f978580 dxgkrnl!DxgkUpdateCddDevmodeExtraData
+ffffe25a`69d83840  fffff802`2fa90350 dxgkrnl!DxgkProcessDisplayCalloutBatch
+ffffe25a`69d83848  fffff802`2f908f60 dxgkrnl!DxgkDisplayConfigDeviceInfo
+ffffe25a`69d83850  fffff802`2f9148d0 dxgkrnl!DxgkGetAdapterDeviceDesc
+ffffe25a`69d83858  fffff802`2f90ce10 dxgkrnl!DxgkGetMonitorInternalInfo
+ffffe25a`69d83860  fffff802`2f966740 dxgkrnl!DxgkBeginTopologyTransition
+ffffe25a`69d83868  fffff802`2f966340 dxgkrnl!DxgkCompleteTopologyTransition
+ffffe25a`69d83870  fffff802`2fa2a2c0 dxgkrnl!DxgkNeedToEnableCddPrimary
+ffffe25a`69d83878  fffff802`2fa2ef40 dxgkrnl!DxgkCheckSharedResourceAccess
+ffffe25a`69d83880  fffff802`2f966480 dxgkrnl!DxgkInvalidateMonitorConnections
+ffffe25a`69d83888  fffff802`2f943260 dxgkrnl!DxgkWriteDiagEntry
+ffffe25a`69d83890  fffff802`2f96df30 dxgkrnl!DxgkValidateDeviceName
+ffffe25a`69d83898  fffff802`2f94a9c0 dxgkrnl!DxgkGetAdapterDefaultScaling
+ffffe25a`69d838a0  fffff802`2f956320 dxgkrnl!DxgkConvertDisplayConfigCScalingToDdiScaling
+ffffe25a`69d838a8  fffff802`2f978280 dxgkrnl!DxgkGetGlobalRawmodeFlag
+ffffe25a`69d838b0  fffff802`2fa90540 dxgkrnl!DxgkSetGlobalRawmodeFlag
+ffffe25a`69d838b8  fffff802`2f9780b0 dxgkrnl!DxgkQueryModeListCacheLuid
+ffffe25a`69d838c0  fffff802`2f9214b0 dxgkrnl!DxgkOfferAllocations
+ffffe25a`69d838c8  fffff802`2f9687c0 dxgkrnl!DxgkReclaimAllocations
+ffffe25a`69d838d0  fffff802`2fa947a0 dxgkrnl!DxgkCreateOutputDupl
+ffffe25a`69d838d8  fffff802`2fa94ce0 dxgkrnl!DxgkDestroyOutputDupl
+ffffe25a`69d838e0  fffff802`2fa94e80 dxgkrnl!DxgkOutputDuplGetFrameInfo
+ffffe25a`69d838e8  fffff802`2fa95060 dxgkrnl!DxgkOutputDuplGetMetaData
+ffffe25a`69d838f0  fffff802`2fa95260 dxgkrnl!DxgkOutputDuplGetPointerShapeData
+ffffe25a`69d838f8  fffff802`2f96b6c0 dxgkrnl!DxgkThreadCallout
+ffffe25a`69d83900  fffff802`2fa8b6a0 dxgkrnl!DxgkCreateKeyedMutex2
+ffffe25a`69d83908  fffff802`2fa8be50 dxgkrnl!DxgkOpenKeyedMutex2
+ffffe25a`69d83910  fffff802`2fa8b0b0 dxgkrnl!DxgkAcquireKeyedMutex2
+ffffe25a`69d83918  fffff802`2fa8c3c0 dxgkrnl!DxgkReleaseKeyedMutex2
+ffffe25a`69d83920  fffff802`2fa7bec0 dxgkrnl!DxgkOutputDuplPresent
+ffffe25a`69d83928  fffff802`2fa95540 dxgkrnl!DxgkOutputDuplReleaseFrame
+ffffe25a`69d83930  fffff802`2f976970 dxgkrnl!DxgkSessionConnected
+ffffe25a`69d83938  fffff802`2f976820 dxgkrnl!DxgkPreSessionDisconnected
+ffffe25a`69d83940  fffff802`2f9768e0 dxgkrnl!DxgkSessionDisconnected
+ffffe25a`69d83948  fffff802`2f980e40 dxgkrnl!DxgkSessionReconnected
+ffffe25a`69d83950  fffff802`2f980b70 dxgkrnl!DxgkGetAdapter
+ffffe25a`69d83958  fffff802`2f980d50 dxgkrnl!DxgkReleaseAdapter
+ffffe25a`69d83960  fffff802`2f9752c0 dxgkrnl!DxgkDesktopSwitch
+ffffe25a`69d83968  fffff802`2f97c230 dxgkrnl!DxgkPinDirectFlipResources
+ffffe25a`69d83970  fffff802`2f97c670 dxgkrnl!DxgkUnpinDirectFlipResources
+ffffe25a`69d83978  fffff802`2f94da70 dxgkrnl!DxgkStatusChangeNotify
+ffffe25a`69d83980  fffff802`2f8ff9f0 dxgkrnl!DxgkEnableUnorderedWaitsForDevice
+ffffe25a`69d83988  fffff802`2f956190 dxgkrnl!DxgkCddVerifyCddDevMode
+ffffe25a`69d83990  fffff802`2fa676a0 dxgkrnl!DxgkIsVidPnSourceOwnerDwm
+ffffe25a`69d83998  fffff802`2f976720 dxgkrnl!DxgkIsVidPnSourceOwnerExclusive
+ffffe25a`69d839a0  fffff802`2f96eec0 dxgkrnl!DxgkGetMonitorDeviceObject
+ffffe25a`69d839a8  fffff802`2fa2c7a0 dxgkrnl!DxgkWaitForVerticalBlankEvent2
+ffffe25a`69d839b0  fffff802`2f976170 dxgkrnl!DxgkGetDWMVerticalBlankEvent
+ffffe25a`69d839b8  fffff802`2f9629a0 dxgkrnl!DxgkSetSyncRefreshCountWaitTarget
+ffffe25a`69d839c0  fffff802`2f94ca50 dxgkrnl!DxgkSetContextInProcessSchedulingPriority
+ffffe25a`69d839c8  fffff802`2fa56e00 dxgkrnl!DxgkGetContextInProcessSchedulingPriority
+ffffe25a`69d839d0  fffff802`2fa73210 dxgkrnl!DxgkOpenSyncObjectFromNtHandle
+ffffe25a`69d839d8  fffff802`2fa736a0 dxgkrnl!DxgkOpenSyncObjectFromNtHandle2
+ffffe25a`69d839e0  fffff802`2f9771c0 dxgkrnl!DxgkRegisterDwmProcess
+ffffe25a`69d839e8  fffff802`2fa2f9d0 dxgkrnl!DxgkGetSharedResourceAdapterLuid
+ffffe25a`69d839f0  fffff802`2fa67900 dxgkrnl!DxgkSetStereoEnabled
+ffffe25a`69d839f8  fffff802`2f937b20 dxgkrnl!DxgkGetCachedHybridQueryValue
+ffffe25a`69d83a00  fffff802`2f96f1e0 dxgkrnl!DxgkCacheHybridQueryValue
+ffffe25a`69d83a08  fffff802`2faa2550 dxgkrnl!DxgkPresentMultiPlaneOverlay
+ffffe25a`69d83a10  fffff802`2fa1cf40 dxgkrnl!DxgkNotifyMonitorDimming
+ffffe25a`69d83a18  fffff802`2f952420 dxgkrnl!DxgkGetSharedAllocationObjectType
+ffffe25a`69d83a20  fffff802`2f952600 dxgkrnl!DxgkGetSharedSyncObjectType
+ffffe25a`69d83a28  fffff802`2fa2a440 dxgkrnl!DxgkNetDispGetNextChunkInfo
+ffffe25a`69d83a30  fffff802`2f97e240 dxgkrnl!DxgkNetDispQueryMiracastDisplayDeviceSupport
+ffffe25a`69d83a38  fffff802`2fa2aa10 dxgkrnl!DxgkNetDispStartMiracastDisplayDevice
+ffffe25a`69d83a40  fffff802`2fa2ac60 dxgkrnl!DxgkNetDispStopMiracastDisplayDevice
+ffffe25a`69d83a48  fffff802`2fa2a7f0 dxgkrnl!DxgkNetDispQueryMiracastDisplayDeviceStatus
+ffffe25a`69d83a50  fffff802`2f97aee0 dxgkrnl!DxgkGetPresentStats
+ffffe25a`69d83a58  fffff802`2fa55310 dxgkrnl!DxgkCheckMultiPlaneOverlaySupport
+ffffe25a`69d83a60  fffff802`2fa67580 dxgkrnl!DxgkGetProcessInterferenceCount
+ffffe25a`69d83a68  fffff802`2f975f50 dxgkrnl!DxgkGetGpuUsageStatistics
+ffffe25a`69d83a70  fffff802`2f903f70 dxgkrnl!DxgkUpdateGdiInfo
+ffffe25a`69d83a78  fffff802`2f9781d0 dxgkrnl!DxgkSetPresenterViewMode
+ffffe25a`69d83a80  fffff802`2f977350 dxgkrnl!DxgkGetPresenterViewMode
+ffffe25a`69d83a88  fffff802`2f951a70 dxgkrnl!DxgkMakeResident
+ffffe25a`69d83a90  fffff802`2f941c00 dxgkrnl!DxgkEvict
+ffffe25a`69d83a98  fffff802`2fa76160 dxgkrnl!DxgkUpdateAllocationProperty
+ffffe25a`69d83aa0  fffff802`2f92b4e0 dxgkrnl!DxgkWaitForSynchronizationObjectFromCpu
+ffffe25a`69d83aa8  fffff802`2fa8c620 dxgkrnl!DxgkSignalSynchronizationObjectFromCpu
+ffffe25a`69d83ab0  fffff802`2f92df30 dxgkrnl!DxgkWaitForSynchronizationObjectFromGpu
+ffffe25a`69d83ab8  fffff802`2f8ffc60 dxgkrnl!DxgkSignalSynchronizationObjectFromGpu
+ffffe25a`69d83ac0  fffff802`2f937230 dxgkrnl!DxgkCreatePagingQueue
+ffffe25a`69d83ac8  fffff802`2f93ccf0 dxgkrnl!DxgkDestroyPagingQueue
+ffffe25a`69d83ad0  fffff802`2f91e860 dxgkrnl!DxgkLock2
+ffffe25a`69d83ad8  fffff802`2f91e3f0 dxgkrnl!DxgkUnlock2
+ffffe25a`69d83ae0  fffff802`2fa31480 dxgkrnl!DxgkInvalidateCache
+ffffe25a`69d83ae8  fffff802`2f922eb0 dxgkrnl!DxgkMapGpuVirtualAddress
+ffffe25a`69d83af0  fffff802`2f96eca0 dxgkrnl!DxgkFreeGpuVirtualAddress
+ffffe25a`69d83af8  fffff802`2f97d5a0 dxgkrnl!DxgkReserveGpuVirtualAddress
+ffffe25a`69d83b00  fffff802`2fa30500 dxgkrnl!DxgkUpdateGpuVirtualAddress
+ffffe25a`69d83b08  fffff802`2f933d80 dxgkrnl!DxgkCreateContextVirtual
+ffffe25a`69d83b10  fffff802`2f928760 dxgkrnl!DxgkSubmitCommand
+ffffe25a`69d83b18  fffff802`2f91b420 dxgkrnl!DxgkDestroyAllocation2
+ffffe25a`69d83b20  fffff802`2f91c6c0 dxgkrnl!DxgkSignalSynchronizationObjectFromGpu2
+ffffe25a`69d83b28  fffff802`2f901560 dxgkrnl!DxgkQueryVideoMemoryInfo
+ffffe25a`69d83b30  fffff802`2fa2ea20 dxgkrnl!DxgkChangeVideoMemoryReservation
+ffffe25a`69d83b38  fffff802`2f96c760 dxgkrnl!DxgkSetProcessStatus
+ffffe25a`69d83b40  fffff802`2faa7de0 dxgkrnl!DxgkCreateSwapChain
+ffffe25a`69d83b48  fffff802`2faa8830 dxgkrnl!DxgkOpenSwapChain
+ffffe25a`69d83b50  fffff802`2faa7a40 dxgkrnl!DxgkAddSurfaceToSwapChain
+ffffe25a`69d83b58  fffff802`2faa92a0 dxgkrnl!DxgkRemoveSurfaceFromSwapChain
+ffffe25a`69d83b60  fffff802`2faa9540 dxgkrnl!DxgkUnOrderedPresentSwapChain
+ffffe25a`69d83b68  fffff802`2faa7560 dxgkrnl!DxgkAcquireSwapChain
+ffffe25a`69d83b70  fffff802`2faa8f10 dxgkrnl!DxgkReleaseSwapChain
+ffffe25a`69d83b78  fffff802`2faa8610 dxgkrnl!DxgkGetSetSwapChainMetadata
+ffffe25a`69d83b80  fffff802`2faa73d0 dxgkrnl!DxgkAbandonSwapChain
+ffffe25a`69d83b88  fffff802`2fa2bed0 dxgkrnl!DxgkSetDodIndirectSwapchain
+ffffe25a`69d83b90  fffff802`2fa55910 dxgkrnl!DxgkCheckMultiPlaneOverlaySupport2
+ffffe25a`69d83b98  fffff802`2faa2d50 dxgkrnl!DxgkPresentMultiPlaneOverlay2
+ffffe25a`69d83ba0  fffff802`2f8ff180 dxgkrnl!DxgkReclaimAllocations2
+ffffe25a`69d83ba8  fffff802`2fa2f4d0 dxgkrnl!DxgkGetResourcePresentPrivateDriverData
+ffffe25a`69d83bb0  fffff802`2fa806f0 dxgkrnl!DxgkSetStablePowerState
+ffffe25a`69d83bb8  fffff802`2fa2b140 dxgkrnl!DxgkQueryClockCalibration
+ffffe25a`69d83bc0  fffff802`2f9157a0 dxgkrnl!DxgkConvertLegacyQDCAdapterAndIdToActual
+ffffe25a`69d83bc8  fffff802`2f951020 dxgkrnl!DxgkDisplayOnOff
+ffffe25a`69d83bd0  fffff802`2f90a590 dxgkrnl!DxgkIsVirtualizationDisabledForTarget
+ffffe25a`69d83bd8  fffff802`2f976e50 dxgkrnl!DxgkIsSourceInHardwareClone
+ffffe25a`69d83be0  fffff802`2f97b1a0 dxgkrnl!DxgkQueryVidPnExclusiveOwnership
+ffffe25a`69d83be8  fffff802`2fa95710 dxgkrnl!DxgkProcessLockScreen
+ffffe25a`69d83bf0  fffff802`2fa8d5f0 dxgkrnl!DxgkCopyPathsModality
+ffffe25a`69d83bf8  fffff802`2fa8d550 dxgkrnl!DxgkApplyCdsjToPathsModality
+ffffe25a`69d83c00  fffff802`2faa41e0 dxgkrnl!DxgkUpdateDpiInfoForNewOverride
+ffffe25a`69d83c08  fffff802`2f96eb10 dxgkrnl!DxgkInitializeDpi
+ffffe25a`69d83c10  fffff802`2f978e10 dxgkrnl!DxgkGetDpiOverrideForSource
+ffffe25a`69d83c18  fffff802`2fa29450 dxgkrnl!DxgkAdjustFullscreenGamma
+ffffe25a`69d83c20  fffff802`2faaab80 dxgkrnl!DxgkGetLegacyDpiInfo
+ffffe25a`69d83c28  fffff802`2fa77b60 dxgkrnl!DxgkWin32kSetPointerPosition
+ffffe25a`69d83c30  fffff802`2fa77cc0 dxgkrnl!DxgkWin32kSetPointerShape
+ffffe25a`69d83c38  fffff802`2fa2c380 dxgkrnl!DxgkSetVidPnSourceHwProtection
+ffffe25a`69d83c40  fffff802`2f901270 dxgkrnl!DxgkMarkDeviceAsError
+ffffe25a`69d83c48  fffff802`2f96e6a0 dxgkrnl!DxgkFlushHeapTransitions
+ffffe25a`69d83c50  fffff802`2f96e180 dxgkrnl!DxgkQueryProcessOfferInfo
+ffffe25a`69d83c58  fffff802`2fa80f40 dxgkrnl!DxgkTrimProcessCommitment
+ffffe25a`69d83c60  fffff802`2fa55f40 dxgkrnl!DxgkCheckMultiPlaneOverlaySupport3
+ffffe25a`69d83c68  fffff802`2faa3550 dxgkrnl!DxgkPresentMultiPlaneOverlay3
+ffffe25a`69d83c70  fffff802`2f9810a0 dxgkrnl!DxgkGetUseHWGPUInRemoteSession
+ffffe25a`69d83c78  fffff802`2fa6f8f0 dxgkrnl!DxgkLPMDisplayControl
+ffffe25a`69d83c80  fffff802`2fa6f840 dxgkrnl!DxgkEnableHighPrecisionBrightness
+ffffe25a`69d83c88  fffff802`2fa6fa10 dxgkrnl!DxgkSetHighPrecisionBrightness
+ffffe25a`69d83c90  fffff802`2f979a00 dxgkrnl!DXGADAPTER::DefaultDdiControlModeBehavior
+ffffe25a`69d83c98  fffff802`2f979a00 dxgkrnl!DXGADAPTER::DefaultDdiControlModeBehavior
+ffffe25a`69d83ca0  fffff802`2f980fd0 dxgkrnl!DxgkChangeD3RequestsState
+ffffe25a`69d83ca8  fffff802`2fa90320 dxgkrnl!DxgkGetMonitorEdid
+ffffe25a`69d83cb0  fffff802`2f979a60 dxgkrnl!DxgkCreateHwContext
+ffffe25a`69d83cb8  fffff802`2f979a60 dxgkrnl!DxgkCreateHwContext
+ffffe25a`69d83cc0  fffff802`2fa6be70 dxgkrnl!DxgkCreateHwQueue
+ffffe25a`69d83cc8  fffff802`2fa6c530 dxgkrnl!DxgkDestroyHwQueue
+ffffe25a`69d83cd0  fffff802`2fa6c810 dxgkrnl!DxgkSubmitCommandToHwQueue
+ffffe25a`69d83cd8  fffff802`2fa6edb0 dxgkrnl!DxgkSubmitWaitForSyncObjectsToHwQueue
+ffffe25a`69d83ce0  fffff802`2fa6ed90 dxgkrnl!DxgkSubmitSignalSyncObjectsToHwQueue
+ffffe25a`69d83ce8  fffff802`2fa2f160 dxgkrnl!DxgkGetAllocationPriority
+ffffe25a`69d83cf0  fffff802`2f906de0 dxgkrnl!DxgkGetMultiPlaneOverlayCaps
+ffffe25a`69d83cf8  fffff802`2f905c70 dxgkrnl!DxgkGetPostCompositionCaps
+ffffe25a`69d83d00  fffff802`2fa80c80 dxgkrnl!DxgkSetYieldPercentage
+ffffe25a`69d83d08  fffff802`2fa80360 dxgkrnl!DxgkSetProcessSchedulingPriorityBand
+ffffe25a`69d83d10  fffff802`2fa800b0 dxgkrnl!DxgkSetMemoryBudgetTarget
+ffffe25a`69d83d18  fffff802`2f997420 dxgkrnl!DxgkGetYieldPercentage
+ffffe25a`69d83d20  fffff802`2fa7f9c0 dxgkrnl!DxgkGetProcessSchedulingPriorityBand
+ffffe25a`69d83d28  fffff802`2f9976c0 dxgkrnl!DxgkGetMemoryBudgetTarget
+ffffe25a`69d83d30  fffff802`2fa90160 dxgkrnl!DxgkConvertPathsModalityToDisplayConfig
+ffffe25a`69d83d38  fffff802`2f9563b0 dxgkrnl!DxgkConvertDisplayConfigToDevMode
+ffffe25a`69d83d40  fffff802`2f974540 dxgkrnl!DxgkDDisplayEnum
+ffffe25a`69d83d48  fffff802`2f97d9c0 dxgkrnl!DxgkDispMgrCreate
+ffffe25a`69d83d50  fffff802`2faac190 dxgkrnl!DxgkDispMgrTargetOperation
+ffffe25a`69d83d58  fffff802`2faabf40 dxgkrnl!DxgkDispMgrSourceOperation
+ffffe25a`69d83d60  fffff802`2fa81a40 dxgkrnl!DxgkCreateProtectedSession
+ffffe25a`69d83d68  fffff802`2fa82480 dxgkrnl!DxgkDestroyProtectedSession
+ffffe25a`69d83d70  fffff802`2fa82fb0 dxgkrnl!DxgkQueryProtectedSessionStatus
+ffffe25a`69d83d78  fffff802`2fa82b40 dxgkrnl!DxgkQueryProtectedSessionInfoFromNtHandle
+ffffe25a`69d83d80  fffff802`2fa82740 dxgkrnl!DxgkOpenProtectedSessionFromNtHandle
+ffffe25a`69d83d88  fffff802`2fa1a8c0 dxgkrnl!DxgkSetMonitorColorSpaceTransform
+ffffe25a`69d83d90  fffff802`2fa7c290 dxgkrnl!DxgkPresentRedirected
+ffffe25a`69d83d98  fffff802`2fa715a0 dxgkrnl!DxgkCreateBundleObject
+ffffe25a`69d83da0  fffff802`2fa721d0 dxgkrnl!DxgkExtractBundleObject
+ffffe25a`69d83da8  fffff802`2fa902f0 dxgkrnl!DxgkGetMonitorDisplayId
+ffffe25a`69d83db0  fffff802`2f976cb0 dxgkrnl!DxgkSetProcessDeviceRemovalSupport
+ffffe25a`69d83db8  fffff802`2fa7f740 dxgkrnl!DxgkGetProcessDeviceRemovalSupport
+ffffe25a`69d83dc0  fffff802`2fa8d680 dxgkrnl!DxgkEnumerateModesForPathsModality
+ffffe25a`69d83dc8  fffff802`2fa72d20 dxgkrnl!DxgkOpenKeyedMutexFromNtHandle
+ffffe25a`69d83dd0  fffff802`2fa271c0 dxgkrnl!DxgCreateLiveDumpWithWdLogs
+ffffe25a`69d83dd8  fffff802`2faabe70 dxgkrnl!DxgkDispMgrReferenceObjectByHandle
+ffffe25a`69d83de0  fffff802`2faabe50 dxgkrnl!DxgkDispMgrIsTargetOwned
+ffffe25a`69d83de8  fffff802`2fab4af0 dxgkrnl!DxgkCheckDisplayState
+ffffe25a`69d83df0  fffff802`2f978a80 dxgkrnl!DxgkSetKernelDisplayPolicy
+ffffe25a`69d83df8  00000000`00000004
+ffffe25a`69d83e00  ffffbb08`3a582930
+ffffe25a`69d83e08  ffffbb08`3aabbe80
+ffffe25a`69d83e10  00000000`00000000
+ffffe25a`69d83e18  ffffe215`4061b2a0
+ffffe25a`69d83e20  ffffe215`4060c8f0
+ffffe25a`69d83e28  00000000`00000000
+ffffe25a`69d83e30  00000000`00000020
+ffffe25a`69d83e38  00000000`00000000
+ffffe25a`69d83e40  ffffe215`40602a50
+ffffe25a`69d83e48  ffffe25a`69d83eb0 win32kbase!gHidParseImageInfo
+ffffe25a`69d83e50  fffff802`2ff31c60
+ffffe25a`69d83e58  fffff802`2ff31490
+ffffe25a`69d83e60  fffff802`2ff31a20
+ffffe25a`69d83e68  fffff802`2ff330a0
+ffffe25a`69d83e70  fffff802`2ff316f0
+ffffe25a`69d83e78  fffff802`2ff312c0
+ffffe25a`69d83e80  fffff802`2ff31010
+ffffe25a`69d83e88  fffff802`2ff33de0
+ffffe25a`69d83e90  fffff802`2ff33a60
+ffffe25a`69d83e98  fffff802`2ff337e0
+ffffe25a`69d83ea0  fffff802`2ff32270
+ffffe25a`69d83ea8  fffff802`2ff317e0
+ffffe25a`69d83eb0  00000000`00540052
+ffffe25a`69d83eb8  ffffe25a`69d49410 win32kbase!`string'
+ffffe25a`69d83ec0  fffff802`2ff30000
+ffffe25a`69d83ec8  00000000`00000000
+ffffe25a`69d83ed0  fffff802`2ff3f010
+ffffe25a`69d83ed8  fffff802`2ff3e000
+ffffe25a`69d83ee0  00000000`00000000
+ffffe25a`69d83ee8  ffffe215`40607570
+ffffe25a`69d83ef0  ffffe215`406074e0
+ffffe25a`69d83ef8  00000000`00000001
+ffffe25a`69d83f00  00000000`00000000
+ffffe25a`69d83f08  00000000`00000000
+ffffe25a`69d83f10  00000000`00000000
+ffffe25a`69d83f18  00000000`00000000
+ffffe25a`69d83f20  ffffe25a`69d49258 win32kbase!`string'
+ffffe25a`69d83f28  00000001`00000001
+ffffe25a`69d83f30  ffffe25a`69d49210 win32kbase!`string'
+ffffe25a`69d83f38  000000af`000000af
+ffffe25a`69d83f40  ffffe25a`69d491c0 win32kbase!`string'
+ffffe25a`69d83f48  000000fa`000000fa
+ffffe25a`69d83f50  ffffe25a`69d49188 win32kbase!`string'
+ffffe25a`69d83f58  0000ea60`0000ea60
+ffffe25a`69d83f60  ffffe215`40610690
+ffffe25a`69d83f68  00000000`00000000
+ffffe25a`69d83f70  00000000`00000000
+ffffe25a`69d83f78  ffffe215`40606f80
+ffffe25a`69d83f80  00000000`00000001
+ffffe25a`69d83f88  ffffe215`406076d0
+ffffe25a`69d83f90  00000000`00000000
+ffffe25a`69d83f98  00000000`00000000
+ffffe25a`69d83fa0  00000000`00000000
+ffffe25a`69d83fa8  ffffe215`40607d00
+ffffe25a`69d83fb0  ffffbb08`3a821b90
+ffffe25a`69d83fb8  00000000`00000000
+ffffe25a`69d83fc0  ffffbb08`3a821990
+ffffe25a`69d83fc8  00000000`00000000
+ffffe25a`69d83fd0  00000000`00000000
+ffffe25a`69d83fd8  ffffbb08`3a821290
+ffffe25a`69d83fe0  ffffe215`40607c90
+ffffe25a`69d83fe8  ffffe215`40617190
+ffffe25a`69d83ff0  00000000`00000001
+ffffe25a`69d83ff8  ffffbb08`3d2978e0
+ffffe25a`69d84000  00000000`00000000
+ffffe25a`69d84008  00000000`00000874
+ffffe25a`69d84010  00000000`00000000
+ffffe25a`69d84018  00000000`00002050
+ffffe25a`69d84020  00000000`00000000
+ffffe25a`69d84028  00000000`00000000
+ffffe25a`69d84030  00000000`00000000
+ffffe25a`69d84038  00000000`00000000
+ffffe25a`69d84040  00000000`00000001
+ffffe25a`69d84048  00000000`00000000
+ffffe25a`69d84050  00000000`00000000
+ffffe25a`69d84058  00000000`00000000
+ffffe25a`69d84060  00000000`00000000
+ffffe25a`69d84068  00000000`00000000
+ffffe25a`69d84070  00000000`00000000
+ffffe25a`69d84078  00000000`00000000
+ffffe25a`69d84080  00000000`00000000
+ffffe25a`69d84088  00000000`00000000
+ffffe25a`69d84090  00000000`00000000
+ffffe25a`69d84098  00000000`00000000
+ffffe25a`69d840a0  00000000`00000000
+ffffe25a`69d840a8  00000000`00000000
+ffffe25a`69d840b0  00000000`00000000
+ffffe25a`69d840b8  00000000`00000000
+ffffe25a`69d840c0  00000000`00000000
+ffffe25a`69d840c8  00000000`00000000
+ffffe25a`69d840d0  00000000`00000000
+ffffe25a`69d840d8  00000000`00000000
+ffffe25a`69d840e0  00000000`000034bc
+ffffe25a`69d840e8  00000000`000034bc
+ffffe25a`69d840f0  00000000`00000000
+ffffe25a`69d840f8  00000000`00000000
+ffffe25a`69d84100  00000000`00000000
+ffffe25a`69d84108  00000000`00000000
+ffffe25a`69d84110  00000000`00000001
+ffffe25a`69d84118  00000000`00000064
+ffffe25a`69d84120  00000000`00000032
+ffffe25a`69d84128  00000064`00000064
+ffffe25a`69d84130  00000064`ffffffff
+ffffe25a`69d84138  ffffffff`ffffffff
+ffffe25a`69d84140  00000000`ffffffff
+ffffe25a`69d84148  ffffffff`ffffffff
+ffffe25a`69d84150  00000000`ffffffff
+ffffe25a`69d84158  00000000`00000001
+ffffe25a`69d84160  00000001`00000000
+ffffe25a`69d84168  00000000`00000001
+ffffe25a`69d84170  00000000`00000000
+ffffe25a`69d84178  000034bc`00000000
+ffffe25a`69d84180  00000000`00000000
+ffffe25a`69d84188  00000001`00000000
+ffffe25a`69d84190  00000001`00000000
+ffffe25a`69d84198  00000000`00000000
+ffffe25a`69d841a0  00000000`00000000
+ffffe25a`69d841a8  00000000`00000003
+ffffe25a`69d841b0  00000000`00000000
+ffffe25a`69d841b8  00000000`00000000
+ffffe25a`69d841c0  00000000`00000000
+ffffe25a`69d841c8  00000000`00000000
+ffffe25a`69d841d0  00000000`00000000
+ffffe25a`69d841d8  00000000`00000000
+ffffe25a`69d841e0  00000000`00000000
+ffffe25a`69d841e8  00000000`00000000
+ffffe25a`69d841f0  00000000`00000000
+ffffe25a`69d841f8  00000000`00000000
+ffffe25a`69d84200  00000000`00000000
+ffffe25a`69d84208  00000000`00000000
+ffffe25a`69d84210  00000000`00000000
+ffffe25a`69d84218  00000000`00000000
+ffffe25a`69d84220  00000000`00000000
+ffffe25a`69d84228  00000000`00000000
+ffffe25a`69d84230  00000000`00000000
+ffffe25a`69d84238  00000000`00000000
+ffffe25a`69d84240  00000000`00000000
+ffffe25a`69d84248  00000000`00000000
+ffffe25a`69d84250  00000000`00000000
+ffffe25a`69d84258  00000000`00000000
+ffffe25a`69d84260  00010008`00010008
+ffffe25a`69d84268  00000000`00000000
+ffffe25a`69d84270  00000000`00000000
+ffffe25a`69d84278  00000000`00000000
+ffffe25a`69d84280  00000000`00000000
+ffffe25a`69d84288  00000000`00000000
+ffffe25a`69d84290  00000000`00000000
+ffffe25a`69d84298  00000000`00000000
+ffffe25a`69d842a0  00000000`00000000
+ffffe25a`69d842a8  00000000`00000000
+ffffe25a`69d842b0  00000000`00000000
+ffffe25a`69d842b8  00000000`00000000
+ffffe25a`69d842c0  00000000`00000000
+ffffe25a`69d842c8  00000000`00000000
+ffffe25a`69d842d0  00000000`00000000
+ffffe25a`69d842d8  00000000`00000000
+ffffe25a`69d842e0  00000000`00000000
+ffffe25a`69d842e8  00000000`00000000
+ffffe25a`69d842f0  00000000`00000000
+ffffe25a`69d842f8  00000000`00000000
+ffffe25a`69d84300  00000000`00000000
+ffffe25a`69d84308  00000000`00000000
+ffffe25a`69d84310  00000000`00000000
+ffffe25a`69d84318  00000000`00000000
+ffffe25a`69d84320  00000000`00000000
+ffffe25a`69d84328  00000000`00000000
+ffffe25a`69d84330  00000000`00000000
+ffffe25a`69d84338  00000000`00000000
+ffffe25a`69d84340  00000000`00000000
+ffffe25a`69d84348  00000000`00000000
+ffffe25a`69d84350  00000000`00000000
+ffffe25a`69d84358  00000000`00000000
+ffffe25a`69d84360  00000000`00000000
+ffffe25a`69d84368  00000000`00000000
+ffffe25a`69d84370  00000000`00000000
+ffffe25a`69d84378  00000000`00000001
+ffffe25a`69d84380  00000000`00000000
+ffffe25a`69d84388  00000000`00000000
+ffffe25a`69d84390  00000000`00000000
+ffffe25a`69d84398  00000000`00000000
+ffffe25a`69d843a0  00000001`00000001
+ffffe25a`69d843a8  00000000`00001000
+ffffe25a`69d843b0  00000000`00989680
+ffffe25a`69d843b8  00000000`00000000
+ffffe25a`69d843c0  00000000`00000000
+ffffe25a`69d843c8  00000000`00000000
+ffffe25a`69d843d0  00000000`00000000
+ffffe25a`69d843d8  00000000`00000000
+ffffe25a`69d843e0  00000000`00000000
+ffffe25a`69d843e8  00000000`00000000
+ffffe25a`69d843f0  00000000`00000000
+ffffe25a`69d843f8  00000000`00000000
+ffffe25a`69d84400  00000000`00000000
+ffffe25a`69d84408  00000000`00000000
+ffffe25a`69d84410  00001388`00000000
+ffffe25a`69d84418  00000000`00000000
+ffffe25a`69d84420  00000000`0000000a
+ffffe25a`69d84428  00000000`00010407
+ffffe25a`69d84430  00000000`00000001
+ffffe25a`69d84438  ffffd201`098fcc00
+ffffe25a`69d84440  ffffd201`098fd2e0
+ffffe25a`69d84448  00000000`00000000
+ffffe25a`69d84450  00000000`00000000
+ffffe25a`69d84458  00000000`00000000
+ffffe25a`69d84460  00000000`00000000
+ffffe25a`69d84468  00000000`00000000
+ffffe25a`69d84470  00000000`00000000
+ffffe25a`69d84478  00000000`00000000
+ffffe25a`69d84480  00000000`00000000
+ffffe25a`69d84488  00000000`00000000
+ffffe25a`69d84490  00000000`00000000
+ffffe25a`69d84498  00000000`00900011
+ffffe25a`69d844a0  00000000`00900010
+ffffe25a`69d844a8  00000000`00000000
+ffffe25a`69d844b0  006e0069`0057005c
+ffffe25a`69d844b8  00730077`006f0064
+ffffe25a`69d844c0  006e0069`0057005c
+ffffe25a`69d844c8  00530077`006f0064
+ffffe25a`69d844d0  00690074`00610074
+ffffe25a`69d844d8  00000073`006e006f
+ffffe25a`69d844e0  00000000`00000000
+ffffe25a`69d844e8  00000000`00000000
+ffffe25a`69d844f0  00000000`00000000
+ffffe25a`69d844f8  00000000`00000000
+ffffe25a`69d84500  00000000`00000000
+ffffe25a`69d84508  00000000`00000000
+ffffe25a`69d84510  00000000`00000000
+ffffe25a`69d84518  00000000`00000000
+ffffe25a`69d84520  00000000`00000000
+ffffe25a`69d84528  00000000`00000000
+ffffe25a`69d84530  00000000`00000000
+ffffe25a`69d84538  00000000`00000000
+ffffe25a`69d84540  00000000`00000000
+ffffe25a`69d84548  00000000`00000000
+ffffe25a`69d84550  00000000`00000000
+ffffe25a`69d84558  00000000`00000000
+ffffe25a`69d84560  00000000`00000000
+ffffe25a`69d84568  00000000`00000000
+ffffe25a`69d84570  00000000`00000000
+ffffe25a`69d84578  00000000`00000000
+ffffe25a`69d84580  00000000`00000000
+ffffe25a`69d84588  00000000`00000000
+ffffe25a`69d84590  00000000`00000000
+ffffe25a`69d84598  00000000`00000000
+ffffe25a`69d845a0  00000000`00000000
+ffffe25a`69d845a8  00000000`00000000
+ffffe25a`69d845b0  00000000`00000000
+ffffe25a`69d845b8  00000000`00000000
+ffffe25a`69d845c0  00000000`00000000
+ffffe25a`69d845c8  00000000`00000000
+ffffe25a`69d845d0  00000000`00000000
+ffffe25a`69d845d8  00000000`00000000
+ffffe25a`69d845e0  00000000`00000000
+ffffe25a`69d845e8  00000000`00000000
+ffffe25a`69d845f0  00000000`00000000
+ffffe25a`69d845f8  00000000`00000000
+ffffe25a`69d84600  00000000`00000000
+ffffe25a`69d84608  00000000`00000000
+ffffe25a`69d84610  00000000`00000000
+ffffe25a`69d84618  00000000`00000000
+ffffe25a`69d84620  00000000`00000000
+ffffe25a`69d84628  00000000`00000000
+ffffe25a`69d84630  00000000`00000000
+ffffe25a`69d84638  00000000`00000000
+ffffe25a`69d84640  00000000`00000000
+ffffe25a`69d84648  00000000`00000000
+ffffe25a`69d84650  00000000`00000000
+ffffe25a`69d84658  00000000`00000000
+ffffe25a`69d84660  00000000`00000000
+ffffe25a`69d84668  00000000`00000000
+ffffe25a`69d84670  00000000`00000000
+ffffe25a`69d84678  00000000`00000000
+ffffe25a`69d84680  00000000`00000000
+ffffe25a`69d84688  00000000`00000000
+ffffe25a`69d84690  00000000`00000000
+ffffe25a`69d84698  00000000`00000000
+ffffe25a`69d846a0  00000000`00000000
+ffffe25a`69d846a8  00000000`00000000
+ffffe25a`69d846b0  ffffe25a`69d846b0 win32kbase!gPendingNotifiesList
+ffffe25a`69d846b8  ffffe25a`69d846b0 win32kbase!gPendingNotifiesList
+ffffe25a`69d846c0  ffffe25a`69d846c0 win32kbase!gTimerHashTable
+ffffe25a`69d846c8  ffffe25a`69d846c0 win32kbase!gTimerHashTable
+ffffe25a`69d846d0  ffffe25a`69d846d0 win32kbase!gTimerHashTable+0x10
+ffffe25a`69d846d8  ffffe25a`69d846d0 win32kbase!gTimerHashTable+0x10
+ffffe25a`69d846e0  ffffe25a`69d846e0 win32kbase!gTimerHashTable+0x20
+ffffe25a`69d846e8  ffffe25a`69d846e0 win32kbase!gTimerHashTable+0x20
+ffffe25a`69d846f0  ffffe25a`69d846f0 win32kbase!gTimerHashTable+0x30
+ffffe25a`69d846f8  ffffe25a`69d846f0 win32kbase!gTimerHashTable+0x30
+ffffe25a`69d84700  ffffe25a`69d84700 win32kbase!gTimerHashTable+0x40
+ffffe25a`69d84708  ffffe25a`69d84700 win32kbase!gTimerHashTable+0x40
+ffffe25a`69d84710  ffffe25a`69d84710 win32kbase!gTimerHashTable+0x50
+ffffe25a`69d84718  ffffe25a`69d84710 win32kbase!gTimerHashTable+0x50
+ffffe25a`69d84720  ffffe25a`69d84720 win32kbase!gTimerHashTable+0x60
+ffffe25a`69d84728  ffffe25a`69d84720 win32kbase!gTimerHashTable+0x60
+ffffe25a`69d84730  ffffe25a`69d84730 win32kbase!gTimerHashTable+0x70
+ffffe25a`69d84738  ffffe25a`69d84730 win32kbase!gTimerHashTable+0x70
+ffffe25a`69d84740  ffffe25a`69d84740 win32kbase!gTimerHashTable+0x80
+ffffe25a`69d84748  ffffe25a`69d84740 win32kbase!gTimerHashTable+0x80
+ffffe25a`69d84750  ffffe25a`69d84750 win32kbase!gTimerHashTable+0x90
+ffffe25a`69d84758  ffffe25a`69d84750 win32kbase!gTimerHashTable+0x90
+ffffe25a`69d84760  ffffe25a`69d84760 win32kbase!gTimerHashTable+0xa0
+ffffe25a`69d84768  ffffe25a`69d84760 win32kbase!gTimerHashTable+0xa0
+ffffe25a`69d84770  ffffe25a`69d84770 win32kbase!gTimerHashTable+0xb0
+ffffe25a`69d84778  ffffe25a`69d84770 win32kbase!gTimerHashTable+0xb0
+ffffe25a`69d84780  ffffe25a`69d84780 win32kbase!gTimerHashTable+0xc0
+ffffe25a`69d84788  ffffe25a`69d84780 win32kbase!gTimerHashTable+0xc0
+ffffe25a`69d84790  ffffe25a`69d84790 win32kbase!gTimerHashTable+0xd0
+ffffe25a`69d84798  ffffe25a`69d84790 win32kbase!gTimerHashTable+0xd0
+ffffe25a`69d847a0  ffffe25a`69d847a0 win32kbase!gTimerHashTable+0xe0
+ffffe25a`69d847a8  ffffe25a`69d847a0 win32kbase!gTimerHashTable+0xe0
+ffffe25a`69d847b0  ffffe25a`69d847b0 win32kbase!gTimerHashTable+0xf0
+ffffe25a`69d847b8  ffffe25a`69d847b0 win32kbase!gTimerHashTable+0xf0
+ffffe25a`69d847c0  ffffe25a`69d847c0 win32kbase!gTimerHashTable+0x100
+ffffe25a`69d847c8  ffffe25a`69d847c0 win32kbase!gTimerHashTable+0x100
+ffffe25a`69d847d0  ffffe25a`69d847d0 win32kbase!gTimerHashTable+0x110
+ffffe25a`69d847d8  ffffe25a`69d847d0 win32kbase!gTimerHashTable+0x110
+ffffe25a`69d847e0  ffffe25a`69d847e0 win32kbase!gTimerHashTable+0x120
+ffffe25a`69d847e8  ffffe25a`69d847e0 win32kbase!gTimerHashTable+0x120
+ffffe25a`69d847f0  ffffe25a`69d847f0 win32kbase!gTimerHashTable+0x130
+ffffe25a`69d847f8  ffffe25a`69d847f0 win32kbase!gTimerHashTable+0x130
+ffffe25a`69d84800  ffffe25a`69d84800 win32kbase!gTimerHashTable+0x140
+ffffe25a`69d84808  ffffe25a`69d84800 win32kbase!gTimerHashTable+0x140
+ffffe25a`69d84810  ffffe25a`69d84810 win32kbase!gTimerHashTable+0x150
+ffffe25a`69d84818  ffffe25a`69d84810 win32kbase!gTimerHashTable+0x150
+ffffe25a`69d84820  ffffe215`406170c0
+ffffe25a`69d84828  ffffe215`406170c0
+ffffe25a`69d84830  ffffe25a`69d84830 win32kbase!gTimerHashTable+0x170
+ffffe25a`69d84838  ffffe25a`69d84830 win32kbase!gTimerHashTable+0x170
+ffffe25a`69d84840  ffffe25a`69d84840 win32kbase!gTimerHashTable+0x180
+ffffe25a`69d84848  ffffe25a`69d84840 win32kbase!gTimerHashTable+0x180
+ffffe25a`69d84850  ffffe25a`69d84850 win32kbase!gTimerHashTable+0x190
+ffffe25a`69d84858  ffffe25a`69d84850 win32kbase!gTimerHashTable+0x190
+ffffe25a`69d84860  ffffe25a`69d84860 win32kbase!gTimerHashTable+0x1a0
+ffffe25a`69d84868  ffffe25a`69d84860 win32kbase!gTimerHashTable+0x1a0
+ffffe25a`69d84870  ffffe25a`69d84870 win32kbase!gTimerHashTable+0x1b0
+ffffe25a`69d84878  ffffe25a`69d84870 win32kbase!gTimerHashTable+0x1b0
+ffffe25a`69d84880  ffffe25a`69d84880 win32kbase!gTimerHashTable+0x1c0
+ffffe25a`69d84888  ffffe25a`69d84880 win32kbase!gTimerHashTable+0x1c0
+ffffe25a`69d84890  ffffe25a`69d84890 win32kbase!gTimerHashTable+0x1d0
+ffffe25a`69d84898  ffffe25a`69d84890 win32kbase!gTimerHashTable+0x1d0
+ffffe25a`69d848a0  ffffe25a`69d848a0 win32kbase!gTimerHashTable+0x1e0
+ffffe25a`69d848a8  ffffe25a`69d848a0 win32kbase!gTimerHashTable+0x1e0
+ffffe25a`69d848b0  ffffe25a`69d848b0 win32kbase!gTimerHashTable+0x1f0
+ffffe25a`69d848b8  ffffe25a`69d848b0 win32kbase!gTimerHashTable+0x1f0
+ffffe25a`69d848c0  ffffe25a`69d848c0 win32kbase!gTimerHashTable+0x200
+ffffe25a`69d848c8  ffffe25a`69d848c0 win32kbase!gTimerHashTable+0x200
+ffffe25a`69d848d0  ffffe25a`69d848d0 win32kbase!gTimerHashTable+0x210
+ffffe25a`69d848d8  ffffe25a`69d848d0 win32kbase!gTimerHashTable+0x210
+ffffe25a`69d848e0  ffffe25a`69d848e0 win32kbase!gTimerHashTable+0x220
+ffffe25a`69d848e8  ffffe25a`69d848e0 win32kbase!gTimerHashTable+0x220
+ffffe25a`69d848f0  ffffe25a`69d848f0 win32kbase!gTimerHashTable+0x230
+ffffe25a`69d848f8  ffffe25a`69d848f0 win32kbase!gTimerHashTable+0x230
+ffffe25a`69d84900  ffffe25a`69d84900 win32kbase!gTimerHashTable+0x240
+ffffe25a`69d84908  ffffe25a`69d84900 win32kbase!gTimerHashTable+0x240
+ffffe25a`69d84910  ffffe215`40617700
+ffffe25a`69d84918  ffffe215`40617700
+ffffe25a`69d84920  ffffe215`40617e80
+ffffe25a`69d84928  ffffe215`40617e80
+ffffe25a`69d84930  ffffe25a`69d84930 win32kbase!gTimerHashTable+0x270
+ffffe25a`69d84938  ffffe25a`69d84930 win32kbase!gTimerHashTable+0x270
+ffffe25a`69d84940  ffffe215`40617840
+ffffe25a`69d84948  ffffe215`40617840
+ffffe25a`69d84950  ffffe25a`69d84950 win32kbase!gTimerHashTable+0x290
+ffffe25a`69d84958  ffffe25a`69d84950 win32kbase!gTimerHashTable+0x290
+ffffe25a`69d84960  ffffe25a`69d84960 win32kbase!gTimerHashTable+0x2a0
+ffffe25a`69d84968  ffffe25a`69d84960 win32kbase!gTimerHashTable+0x2a0
+ffffe25a`69d84970  ffffe25a`69d84970 win32kbase!gTimerHashTable+0x2b0
+ffffe25a`69d84978  ffffe25a`69d84970 win32kbase!gTimerHashTable+0x2b0
+ffffe25a`69d84980  ffffe25a`69d84980 win32kbase!gTimerHashTable+0x2c0
+ffffe25a`69d84988  ffffe25a`69d84980 win32kbase!gTimerHashTable+0x2c0
+ffffe25a`69d84990  ffffe25a`69d84990 win32kbase!gTimerHashTable+0x2d0
+ffffe25a`69d84998  ffffe25a`69d84990 win32kbase!gTimerHashTable+0x2d0
+ffffe25a`69d849a0  ffffe25a`69d849a0 win32kbase!gTimerHashTable+0x2e0
+ffffe25a`69d849a8  ffffe25a`69d849a0 win32kbase!gTimerHashTable+0x2e0
+ffffe25a`69d849b0  ffffe25a`69d849b0 win32kbase!gTimerHashTable+0x2f0
+ffffe25a`69d849b8  ffffe25a`69d849b0 win32kbase!gTimerHashTable+0x2f0
+ffffe25a`69d849c0  ffffe25a`69d849c0 win32kbase!gTimerHashTable+0x300
+ffffe25a`69d849c8  ffffe25a`69d849c0 win32kbase!gTimerHashTable+0x300
+ffffe25a`69d849d0  ffffe215`40617480
+ffffe25a`69d849d8  ffffe215`40617480
+ffffe25a`69d849e0  ffffe25a`69d849e0 win32kbase!gTimerHashTable+0x320
+ffffe25a`69d849e8  ffffe25a`69d849e0 win32kbase!gTimerHashTable+0x320
+ffffe25a`69d849f0  ffffe25a`69d849f0 win32kbase!gTimerHashTable+0x330
+ffffe25a`69d849f8  ffffe25a`69d849f0 win32kbase!gTimerHashTable+0x330
+ffffe25a`69d84a00  ffffe25a`69d84a00 win32kbase!gTimerHashTable+0x340
+ffffe25a`69d84a08  ffffe25a`69d84a00 win32kbase!gTimerHashTable+0x340
+ffffe25a`69d84a10  ffffe25a`69d84a10 win32kbase!gTimerHashTable+0x350
+ffffe25a`69d84a18  ffffe25a`69d84a10 win32kbase!gTimerHashTable+0x350
+ffffe25a`69d84a20  ffffe25a`69d84a20 win32kbase!gTimerHashTable+0x360
+ffffe25a`69d84a28  ffffe25a`69d84a20 win32kbase!gTimerHashTable+0x360
+ffffe25a`69d84a30  ffffe25a`69d84a30 win32kbase!gTimerHashTable+0x370
+ffffe25a`69d84a38  ffffe25a`69d84a30 win32kbase!gTimerHashTable+0x370
+ffffe25a`69d84a40  ffffe25a`69d84a40 win32kbase!gTimerHashTable+0x380
+ffffe25a`69d84a48  ffffe25a`69d84a40 win32kbase!gTimerHashTable+0x380
+ffffe25a`69d84a50  ffffe25a`69d84a50 win32kbase!gTimerHashTable+0x390
+ffffe25a`69d84a58  ffffe25a`69d84a50 win32kbase!gTimerHashTable+0x390
+ffffe25a`69d84a60  ffffe25a`69d84a60 win32kbase!gTimerHashTable+0x3a0
+ffffe25a`69d84a68  ffffe25a`69d84a60 win32kbase!gTimerHashTable+0x3a0
+ffffe25a`69d84a70  ffffe25a`69d84a70 win32kbase!gTimerHashTable+0x3b0
+ffffe25a`69d84a78  ffffe25a`69d84a70 win32kbase!gTimerHashTable+0x3b0
+ffffe25a`69d84a80  ffffe25a`69d84a80 win32kbase!gTimerHashTable+0x3c0
+ffffe25a`69d84a88  ffffe25a`69d84a80 win32kbase!gTimerHashTable+0x3c0
+ffffe25a`69d84a90  ffffe25a`69d84a90 win32kbase!gTimerHashTable+0x3d0
+ffffe25a`69d84a98  ffffe25a`69d84a90 win32kbase!gTimerHashTable+0x3d0
+ffffe25a`69d84aa0  ffffe215`40617520
+ffffe25a`69d84aa8  ffffe215`40617520
+ffffe25a`69d84ab0  ffffe25a`69d84ab0 win32kbase!gTimerHashTable+0x3f0
+ffffe25a`69d84ab8  ffffe25a`69d84ab0 win32kbase!gTimerHashTable+0x3f0
+ffffe25a`69d84ac0  00000000`00000000
+ffffe25a`69d84ac8  00000000`00000000
+ffffe25a`69d84ad0  00000000`00000000
+ffffe25a`69d84ad8  00000000`00000000
+ffffe25a`69d84ae0  00000000`00000000
+ffffe25a`69d84ae8  00000000`00000000
+ffffe25a`69d84af0  00000000`00000000
+ffffe25a`69d84af8  00000000`00000000
+ffffe25a`69d84b00  00000000`00000000
+ffffe25a`69d84b08  00000000`00000000
+ffffe25a`69d84b10  00000000`00000000
+ffffe25a`69d84b18  00000000`00000000
+ffffe25a`69d84b20  00000000`00000000
+ffffe25a`69d84b28  00000000`00000000
+ffffe25a`69d84b30  00000000`00000000
+ffffe25a`69d84b38  00000000`00000000
+ffffe25a`69d84b40  00000000`00000000
+ffffe25a`69d84b48  00000000`00000000
+ffffe25a`69d84b50  00000000`00000000
+ffffe25a`69d84b58  00000000`00000000
+ffffe25a`69d84b60  00000000`00000000
+ffffe25a`69d84b68  00000000`00000000
+ffffe25a`69d84b70  00000000`00000000
+ffffe25a`69d84b78  00000000`00000000
+ffffe25a`69d84b80  00000000`00000000
+ffffe25a`69d84b88  00000000`00000000
+ffffe25a`69d84b90  00000000`00000000
+ffffe25a`69d84b98  00000000`00000000
+ffffe25a`69d84ba0  00000000`00000000
+ffffe25a`69d84ba8  00000000`00000000
+ffffe25a`69d84bb0  00000000`00000000
+ffffe25a`69d84bb8  00000000`00000000
+ffffe25a`69d84bc0  00000000`00000000
+ffffe25a`69d84bc8  00000000`00000000
+ffffe25a`69d84bd0  00000000`00000000
+ffffe25a`69d84bd8  00000000`00000000
+ffffe25a`69d84be0  00000000`00000000
+ffffe25a`69d84be8  00000000`00000000
+ffffe25a`69d84bf0  00000000`00000000
+ffffe25a`69d84bf8  00000000`00000000
+ffffe25a`69d84c00  00000000`00000000
+ffffe25a`69d84c08  00000000`00000000
+ffffe25a`69d84c10  00000000`00000000
+ffffe25a`69d84c18  00000000`00000000
+ffffe25a`69d84c20  00000000`00000000
+ffffe25a`69d84c28  00000000`00000000
+ffffe25a`69d84c30  00000000`00000000
+ffffe25a`69d84c38  00000000`00000000
+ffffe25a`69d84c40  00000000`00000000
+ffffe25a`69d84c48  00000000`00000000
+ffffe25a`69d84c50  00000000`00000000
+ffffe25a`69d84c58  00000000`00000000
+ffffe25a`69d84c60  00000000`00000000
+ffffe25a`69d84c68  00000000`00000000
+ffffe25a`69d84c70  00000000`00000000
+ffffe25a`69d84c78  00000000`00000000
+ffffe25a`69d84c80  00000000`00000000
+ffffe25a`69d84c88  00000000`00000000
+ffffe25a`69d84c90  00000000`00000000
+ffffe25a`69d84c98  00000000`00000000
+ffffe25a`69d84ca0  00000000`00000000
+ffffe25a`69d84ca8  00000000`00000000
+ffffe25a`69d84cb0  00000000`00000000
+ffffe25a`69d84cb8  00000000`00000000
+ffffe25a`69d84cc0  00000000`00000000
+ffffe25a`69d84cc8  00000000`00000000
+ffffe25a`69d84cd0  00000000`00000000
+ffffe25a`69d84cd8  00000000`00000000
+ffffe25a`69d84ce0  00000000`00000000
+ffffe25a`69d84ce8  00000000`00000000
+ffffe25a`69d84cf0  00000000`00000000
+ffffe25a`69d84cf8  00000000`00000000
+ffffe25a`69d84d00  00000000`00000000
+ffffe25a`69d84d08  00000000`00000000
+ffffe25a`69d84d10  00000000`00000000
+ffffe25a`69d84d18  00000000`00000000
+ffffe25a`69d84d20  00000000`00000000
+ffffe25a`69d84d28  00000000`00000000
+ffffe25a`69d84d30  00000000`00000000
+ffffe25a`69d84d38  00000000`00000000
+ffffe25a`69d84d40  00000000`00000000
+ffffe25a`69d84d48  00000000`00000000
+ffffe25a`69d84d50  00000000`00000000
+ffffe25a`69d84d58  00000000`00000000
+ffffe25a`69d84d60  00000000`00000000
+ffffe25a`69d84d68  00000000`00000000
+ffffe25a`69d84d70  00000000`00000000
+ffffe25a`69d84d78  00000000`00000000
+ffffe25a`69d84d80  00000000`00000000
+ffffe25a`69d84d88  00000000`00000000
+ffffe25a`69d84d90  00000000`00000000
+ffffe25a`69d84d98  00000000`00000000
+ffffe25a`69d84da0  00000000`00000000
+ffffe25a`69d84da8  00000000`00000000
+ffffe25a`69d84db0  00000000`00000000
+ffffe25a`69d84db8  00000000`00000000
+ffffe25a`69d84dc0  00000000`00000000
+ffffe25a`69d84dc8  00000000`00000000
+ffffe25a`69d84dd0  00000000`00000000
+ffffe25a`69d84dd8  00000000`00000000
+ffffe25a`69d84de0  00000000`00000000
+ffffe25a`69d84de8  00000000`00000000
+ffffe25a`69d84df0  00000000`00000000
+ffffe25a`69d84df8  00000000`00000000
+ffffe25a`69d84e00  00000000`00000000
+ffffe25a`69d84e08  00000000`00000000
+ffffe25a`69d84e10  00000000`00000000
+ffffe25a`69d84e18  00000000`00000000
+ffffe25a`69d84e20  00000000`00000000
+ffffe25a`69d84e28  00000000`00000000
+ffffe25a`69d84e30  00000000`00000000
+ffffe25a`69d84e38  00000000`00000000
+ffffe25a`69d84e40  00000000`00000000
+ffffe25a`69d84e48  00000000`00000000
+ffffe25a`69d84e50  00000000`00000000
+ffffe25a`69d84e58  00000000`00000000
+ffffe25a`69d84e60  00000000`00000000
+ffffe25a`69d84e68  00000000`00000000
+ffffe25a`69d84e70  00000000`00000000
+ffffe25a`69d84e78  00000000`00000000
+ffffe25a`69d84e80  00000000`00000000
+ffffe25a`69d84e88  00000000`00000000
+ffffe25a`69d84e90  00000000`00000000
+ffffe25a`69d84e98  00000000`00000000
+ffffe25a`69d84ea0  00000000`00000000
+ffffe25a`69d84ea8  00000000`00000000
+ffffe25a`69d84eb0  00000000`00000000
+ffffe25a`69d84eb8  00000000`00000000
+ffffe25a`69d84ec0  00000000`00000000
+ffffe25a`69d84ec8  00000000`00000000
+ffffe25a`69d84ed0  00000000`00000000
+ffffe25a`69d84ed8  00000000`00000000
+ffffe25a`69d84ee0  00000000`00000000
+ffffe25a`69d84ee8  00000000`00000000
+ffffe25a`69d84ef0  00000000`00000000
+ffffe25a`69d84ef8  00000000`00000000
+ffffe25a`69d84f00  00000000`00000000
+ffffe25a`69d84f08  00000000`00000000
+ffffe25a`69d84f10  00000000`00000000
+ffffe25a`69d84f18  00000000`00000000
+ffffe25a`69d84f20  00000000`00000000
+ffffe25a`69d84f28  00000000`00000000
+ffffe25a`69d84f30  00000000`00000000
+ffffe25a`69d84f38  00000000`00000000
+ffffe25a`69d84f40  00000000`00000000
+ffffe25a`69d84f48  00000000`00000000
+ffffe25a`69d84f50  00000000`00000000
+ffffe25a`69d84f58  00000000`00000000
+ffffe25a`69d84f60  00000000`00000000
+ffffe25a`69d84f68  00000000`00000000
+ffffe25a`69d84f70  00000000`00000000
+ffffe25a`69d84f78  00000000`00000000
+ffffe25a`69d84f80  00000000`00000000
+ffffe25a`69d84f88  00000000`00000000
+ffffe25a`69d84f90  00000000`00000000
+ffffe25a`69d84f98  00000000`00000000
+ffffe25a`69d84fa0  00000000`00000000
+ffffe25a`69d84fa8  00000000`00000000
+ffffe25a`69d84fb0  00000000`00000000
+ffffe25a`69d84fb8  00000000`00000000
+ffffe25a`69d84fc0  00000000`00000000
+ffffe25a`69d84fc8  00000000`00000000
+ffffe25a`69d84fd0  00000000`00000000
+ffffe25a`69d84fd8  00000000`00000000
+ffffe25a`69d84fe0  00000000`00000000
+ffffe25a`69d84fe8  00000000`00000000
+ffffe25a`69d84ff0  00000000`00000000
+ffffe25a`69d84ff8  00000000`00000000
+ffffe25a`69d85000  00000000`00000000
+ffffe25a`69d85008  00000000`00000000
+ffffe25a`69d85010  00000000`00000000
+ffffe25a`69d85018  00000000`00000000
+ffffe25a`69d85020  00000000`00000000
+ffffe25a`69d85028  00000000`00000000
+ffffe25a`69d85030  00000000`00000000
+ffffe25a`69d85038  00000000`00000000
+ffffe25a`69d85040  00000000`00000000
+ffffe25a`69d85048  00000000`00000000
+ffffe25a`69d85050  00000000`00000000
+ffffe25a`69d85058  00000000`00000000
+ffffe25a`69d85060  00000000`00000000
+ffffe25a`69d85068  00000000`00000000
+ffffe25a`69d85070  00000000`00000000
+ffffe25a`69d85078  00000000`00000000
+ffffe25a`69d85080  00000000`00000000
+ffffe25a`69d85088  00000000`00000000
+ffffe25a`69d85090  00000000`00000000
+ffffe25a`69d85098  00000000`00000000
+ffffe25a`69d850a0  00000000`00000000
+ffffe25a`69d850a8  00000000`00000000
+ffffe25a`69d850b0  00000000`00000000
+ffffe25a`69d850b8  00000000`00000000
+ffffe25a`69d850c0  00000000`00000000
+ffffe25a`69d850c8  00000000`00000000
+ffffe25a`69d850d0  00000000`00000000
+ffffe25a`69d850d8  00000000`00000000
+ffffe25a`69d850e0  00000000`00000000
+ffffe25a`69d850e8  00000000`00000000
+ffffe25a`69d850f0  00000000`00000000
+ffffe25a`69d850f8  00000000`00000000
+ffffe25a`69d85100  00000000`00000000
+ffffe25a`69d85108  00000000`00000000
+ffffe25a`69d85110  00000000`00000000
+ffffe25a`69d85118  00000000`00000000
+ffffe25a`69d85120  00000000`00000000
+ffffe25a`69d85128  00000000`00000000
+ffffe25a`69d85130  00000000`00000000
+ffffe25a`69d85138  00000000`00000000
+ffffe25a`69d85140  00000000`00000000
+ffffe25a`69d85148  00000000`00000000
+ffffe25a`69d85150  00000000`00000000
+ffffe25a`69d85158  00000000`00000000
+ffffe25a`69d85160  00000000`00000000
+ffffe25a`69d85168  00000000`00000000
+ffffe25a`69d85170  00000000`00000000
+ffffe25a`69d85178  00000000`00000000
+ffffe25a`69d85180  00000000`00000000
+ffffe25a`69d85188  00000000`00000000
+ffffe25a`69d85190  00000000`00000000
+ffffe25a`69d85198  00000000`00000000
+ffffe25a`69d851a0  00000000`00000000
+ffffe25a`69d851a8  00000000`00000000
+ffffe25a`69d851b0  00000000`00000000
+ffffe25a`69d851b8  00000000`00000000
+ffffe25a`69d851c0  00000000`00000000
+ffffe25a`69d851c8  00000000`00000000
+ffffe25a`69d851d0  00000000`00000000
+ffffe25a`69d851d8  00000000`00000000
+ffffe25a`69d851e0  00000000`00000000
+ffffe25a`69d851e8  00000000`00000000
+ffffe25a`69d851f0  00000000`00000000
+ffffe25a`69d851f8  00000000`00000000
+ffffe25a`69d85200  00000000`00000000
+ffffe25a`69d85208  00000000`00000000
+ffffe25a`69d85210  00000000`00000000
+ffffe25a`69d85218  00000000`00000000
+ffffe25a`69d85220  00000000`00000000
+ffffe25a`69d85228  00000000`00000000
+ffffe25a`69d85230  00000000`00000000
+ffffe25a`69d85238  00000000`00000000
+ffffe25a`69d85240  00000000`00000000
+ffffe25a`69d85248  00000000`00000000
+ffffe25a`69d85250  00000000`00000000
+ffffe25a`69d85258  00000000`00000000
+ffffe25a`69d85260  00000000`00000000
+ffffe25a`69d85268  00000000`00000000
+ffffe25a`69d85270  00000000`00000000
+ffffe25a`69d85278  00000000`00000000
+ffffe25a`69d85280  00000000`00000000
+ffffe25a`69d85288  00000000`00000000
+ffffe25a`69d85290  00000000`00000000
+ffffe25a`69d85298  00000000`00000000
+ffffe25a`69d852a0  00000000`00000000
+ffffe25a`69d852a8  00000000`00000000
+ffffe25a`69d852b0  00000000`00000000
+ffffe25a`69d852b8  00000000`00000000
+ffffe25a`69d852c0  00000000`00000000
+ffffe25a`69d852c8  00000000`00000000
+ffffe25a`69d852d0  00000000`00000000
+ffffe25a`69d852d8  00000000`00000000
+ffffe25a`69d852e0  00000000`00000000
+ffffe25a`69d852e8  00000000`00000000
+ffffe25a`69d852f0  00000000`00000000
+ffffe25a`69d852f8  00000000`00000000
+ffffe25a`69d85300  00000000`00000000
+ffffe25a`69d85308  00000000`00000000
+ffffe25a`69d85310  00000000`00000000
+ffffe25a`69d85318  00000000`00000000
+ffffe25a`69d85320  00000000`00000000
+ffffe25a`69d85328  00000000`00000000
+ffffe25a`69d85330  00000000`00000000
+ffffe25a`69d85338  00000000`00000000
+ffffe25a`69d85340  00000000`00000000
+ffffe25a`69d85348  00000000`00000000
+ffffe25a`69d85350  00000000`00000000
+ffffe25a`69d85358  00000000`00000000
+ffffe25a`69d85360  00000000`00000000
+ffffe25a`69d85368  00000000`00000000
+ffffe25a`69d85370  00000000`00000000
+ffffe25a`69d85378  00000000`00000000
+ffffe25a`69d85380  00000000`00000000
+ffffe25a`69d85388  00000000`00000000
+ffffe25a`69d85390  00000000`00000000
+ffffe25a`69d85398  00000000`00000000
+ffffe25a`69d853a0  00000000`00000000
+ffffe25a`69d853a8  00000000`00000000
+ffffe25a`69d853b0  00000000`00000000
+ffffe25a`69d853b8  00000000`00000000
+ffffe25a`69d853c0  00000000`00000000
+ffffe25a`69d853c8  00000000`00000000
+ffffe25a`69d853d0  00000000`00000000
+ffffe25a`69d853d8  00000000`00000000
+ffffe25a`69d853e0  00000000`00000000
+ffffe25a`69d853e8  00000000`00000000
+ffffe25a`69d853f0  00000000`00000000
+ffffe25a`69d853f8  00000000`00000000
+ffffe25a`69d85400  00000000`00000000
+ffffe25a`69d85408  00000000`00000000
+ffffe25a`69d85410  00000000`00000000
+ffffe25a`69d85418  00000000`00000000
+ffffe25a`69d85420  00000000`00000000
+ffffe25a`69d85428  00000000`00000000
+ffffe25a`69d85430  00000000`00000000
+ffffe25a`69d85438  00000000`00000000
+ffffe25a`69d85440  00000000`00000000
+ffffe25a`69d85448  00000000`00000000
+ffffe25a`69d85450  00000000`00000000
+ffffe25a`69d85458  00000000`00000000
+ffffe25a`69d85460  00000000`00000000
+ffffe25a`69d85468  00000000`00000000
+ffffe25a`69d85470  00000000`00000000
+ffffe25a`69d85478  00000000`00000000
+ffffe25a`69d85480  00000000`00000000
+ffffe25a`69d85488  00000000`00000000
+ffffe25a`69d85490  00000000`00000000
+ffffe25a`69d85498  00000000`00000000
+ffffe25a`69d854a0  00000000`00000000
+ffffe25a`69d854a8  00000000`00000000
+ffffe25a`69d854b0  00000000`00000000
+ffffe25a`69d854b8  00000000`00000000
+ffffe25a`69d854c0  00000000`00000000
+ffffe25a`69d854c8  00000000`00000000
+ffffe25a`69d854d0  00000000`00000000
+ffffe25a`69d854d8  00000000`00000000
+ffffe25a`69d854e0  00000000`00000000
+ffffe25a`69d854e8  00000000`00000000
+ffffe25a`69d854f0  00000000`00000000
+ffffe25a`69d854f8  00000000`00000000
+ffffe25a`69d85500  00000000`00000000
+ffffe25a`69d85508  00000000`00000000
+ffffe25a`69d85510  00000000`00000000
+ffffe25a`69d85518  00000000`00000000
+ffffe25a`69d85520  00000000`00000000
+ffffe25a`69d85528  00000000`00000000
+ffffe25a`69d85530  00000000`00000000
+ffffe25a`69d85538  00000000`00000000
+ffffe25a`69d85540  00000000`00000000
+ffffe25a`69d85548  00000000`00000000
+ffffe25a`69d85550  00000000`00000000
+ffffe25a`69d85558  00000000`00000000
+ffffe25a`69d85560  00000000`00000000
+ffffe25a`69d85568  00000000`00000000
+ffffe25a`69d85570  00000000`00000000
+ffffe25a`69d85578  00000000`00000000
+ffffe25a`69d85580  00000000`00000000
+ffffe25a`69d85588  00000000`00000000
+ffffe25a`69d85590  00000000`00000000
+ffffe25a`69d85598  00000000`00000000
+ffffe25a`69d855a0  00000000`00000000
+ffffe25a`69d855a8  00000000`00000000
+ffffe25a`69d855b0  00000000`00000000
+ffffe25a`69d855b8  00000000`00000000
+ffffe25a`69d855c0  00000000`00000000
+ffffe25a`69d855c8  00000000`00000000
+ffffe25a`69d855d0  00000000`00000000
+ffffe25a`69d855d8  00000000`00000000
+ffffe25a`69d855e0  00000000`00000000
+ffffe25a`69d855e8  00000000`00000000
+ffffe25a`69d855f0  00000000`00000000
+ffffe25a`69d855f8  00000000`00000000
+ffffe25a`69d85600  00000000`00000000
+ffffe25a`69d85608  00000000`00000000
+ffffe25a`69d85610  00000000`00000000
+ffffe25a`69d85618  00000000`00000000
+ffffe25a`69d85620  00000000`00000000
+ffffe25a`69d85628  00000000`00000000
+ffffe25a`69d85630  00000000`00000000
+ffffe25a`69d85638  00000000`00000000
+ffffe25a`69d85640  00000000`00000000
+ffffe25a`69d85648  00000000`00000000
+ffffe25a`69d85650  00000000`00000000
+ffffe25a`69d85658  00000000`00000000
+ffffe25a`69d85660  00000000`00000000
+ffffe25a`69d85668  00000000`00000000
+ffffe25a`69d85670  00000000`00000000
+ffffe25a`69d85678  00000000`00000000
+ffffe25a`69d85680  00000000`00000000
+ffffe25a`69d85688  00000000`00000000
+ffffe25a`69d85690  00000000`00000000
+ffffe25a`69d85698  00000000`00000000
+ffffe25a`69d856a0  00000000`00000000
+ffffe25a`69d856a8  00000000`00000000
+ffffe25a`69d856b0  00000000`00000000
+ffffe25a`69d856b8  00000000`00000000
+ffffe25a`69d856c0  00000000`00000000
+ffffe25a`69d856c8  00000000`00000000
+ffffe25a`69d856d0  00000000`00000000
+ffffe25a`69d856d8  00000000`00000000
+ffffe25a`69d856e0  00000000`00000000
+ffffe25a`69d856e8  00000000`00000000
+ffffe25a`69d856f0  00000000`00000000
+ffffe25a`69d856f8  00000000`00000000
+ffffe25a`69d85700  00000000`00000000
+ffffe25a`69d85708  00000000`00000000
+ffffe25a`69d85710  00000000`00000000
+ffffe25a`69d85718  00000000`00000000
+ffffe25a`69d85720  00000000`00000000
+ffffe25a`69d85728  00000000`00000000
+ffffe25a`69d85730  00000000`00000000
+ffffe25a`69d85738  00000000`00000000
+ffffe25a`69d85740  00000000`00000000
+ffffe25a`69d85748  00000000`00000000
+ffffe25a`69d85750  00000000`00000000
+ffffe25a`69d85758  00000000`00000000
+ffffe25a`69d85760  00000000`00000000
+ffffe25a`69d85768  00000000`00000000
+ffffe25a`69d85770  00000000`00000000
+ffffe25a`69d85778  00000000`00000000
+ffffe25a`69d85780  00000000`00000000
+ffffe25a`69d85788  00000000`00000000
+ffffe25a`69d85790  00000000`00000000
+ffffe25a`69d85798  00000000`00000000
+ffffe25a`69d857a0  00000000`00000000
+ffffe25a`69d857a8  00000000`00000000
+ffffe25a`69d857b0  00000000`00000000
+ffffe25a`69d857b8  00000000`00000000
+ffffe25a`69d857c0  00000000`00000000
+ffffe25a`69d857c8  00000000`00000000
+ffffe25a`69d857d0  00000000`00000000
+ffffe25a`69d857d8  00000000`00000000
+ffffe25a`69d857e0  00000000`00000000
+ffffe25a`69d857e8  00000000`00000000
+ffffe25a`69d857f0  00000000`00000000
+ffffe25a`69d857f8  00000000`00000000
+ffffe25a`69d85800  00000000`00000000
+ffffe25a`69d85808  00000000`00000000
+ffffe25a`69d85810  00000000`00000000
+ffffe25a`69d85818  00000000`00000000
+ffffe25a`69d85820  00000000`00000000
+ffffe25a`69d85828  00000000`00000000
+ffffe25a`69d85830  00000000`00000000
+ffffe25a`69d85838  00000000`00000000
+ffffe25a`69d85840  00000000`00000000
+ffffe25a`69d85848  00000000`00000000
+ffffe25a`69d85850  00000000`00000000
+ffffe25a`69d85858  00000000`00000000
+ffffe25a`69d85860  00000000`00000000
+ffffe25a`69d85868  00000000`00000000
+ffffe25a`69d85870  00000000`00000000
+ffffe25a`69d85878  00000000`00000000
+ffffe25a`69d85880  00000000`00000000
+ffffe25a`69d85888  00000000`00000000
+ffffe25a`69d85890  00000000`00000000
+ffffe25a`69d85898  00000000`00000000
+ffffe25a`69d858a0  00000000`00000000
+ffffe25a`69d858a8  00000000`00000000
+ffffe25a`69d858b0  00000000`00000000
+ffffe25a`69d858b8  00000000`00000000
+ffffe25a`69d858c0  00000000`00000000
+ffffe25a`69d858c8  00000000`00000000
+ffffe25a`69d858d0  00000000`00000000
+ffffe25a`69d858d8  00000000`00000000
+ffffe25a`69d858e0  00000000`00000000
+ffffe25a`69d858e8  00000000`00000000
+ffffe25a`69d858f0  00000000`00000000
+ffffe25a`69d858f8  00000000`00000000
+ffffe25a`69d85900  00000000`00000000
+ffffe25a`69d85908  00000000`00000000
+ffffe25a`69d85910  00000000`00000000
+ffffe25a`69d85918  00000000`00000000
+ffffe25a`69d85920  00000000`00000000
+ffffe25a`69d85928  00000000`00000000
+ffffe25a`69d85930  00000000`00000000
+ffffe25a`69d85938  00000000`00000000
+ffffe25a`69d85940  00000000`00000000
+ffffe25a`69d85948  00000000`00000000
+ffffe25a`69d85950  00000000`00000000
+ffffe25a`69d85958  00000000`00000000
+ffffe25a`69d85960  00000000`00000000
+ffffe25a`69d85968  00000000`00000000
+ffffe25a`69d85970  00000000`00000000
+ffffe25a`69d85978  00000000`00000000
+ffffe25a`69d85980  00000000`00000000
+ffffe25a`69d85988  00000000`00000000
+ffffe25a`69d85990  00000000`00000000
+ffffe25a`69d85998  00000000`00000000
+ffffe25a`69d859a0  00000000`00000000
+ffffe25a`69d859a8  00000000`00000000
+ffffe25a`69d859b0  00000000`00000000
+ffffe25a`69d859b8  00000000`00000000
+ffffe25a`69d859c0  00000000`00000000
+ffffe25a`69d859c8  00000000`00000000
+ffffe25a`69d859d0  00000000`00000000
+ffffe25a`69d859d8  00000000`00000000
+ffffe25a`69d859e0  00000000`00000000
+ffffe25a`69d859e8  00000000`00000000
+ffffe25a`69d859f0  00000000`00000000
+ffffe25a`69d859f8  00000000`00000000
+ffffe25a`69d85a00  00000000`00000000
+ffffe25a`69d85a08  00000000`00000000
+ffffe25a`69d85a10  00000000`00000000
+ffffe25a`69d85a18  00000000`00000000
+ffffe25a`69d85a20  00000000`00000000
+ffffe25a`69d85a28  00000000`00000000
+ffffe25a`69d85a30  00000000`00000000
+ffffe25a`69d85a38  00000000`00000000
+ffffe25a`69d85a40  00000000`00000000
+ffffe25a`69d85a48  00000000`00000000
+ffffe25a`69d85a50  00000000`00000000
+ffffe25a`69d85a58  00000000`00000000
+ffffe25a`69d85a60  00000000`00000000
+ffffe25a`69d85a68  00000000`00000000
+ffffe25a`69d85a70  00000000`00000000
+ffffe25a`69d85a78  00000000`00000000
+ffffe25a`69d85a80  00000000`00000000
+ffffe25a`69d85a88  00000000`00000000
+ffffe25a`69d85a90  00000000`00000000
+ffffe25a`69d85a98  40000000`00000000
+ffffe25a`69d85aa0  ffffe25a`69d85aa0 win32kbase!gtmrAdjustmentListHead
+ffffe25a`69d85aa8  ffffe25a`69d85aa0 win32kbase!gtmrAdjustmentListHead
+ffffe25a`69d85ab0  ffffe215`406174f8
+ffffe25a`69d85ab8  ffffe215`40617098
+ffffe25a`69d85ac0  ffffbb08`3af6ad30
+ffffe25a`69d85ac8  00000000`00000000
+ffffe25a`69d85ad0  00000000`00000005
+ffffe25a`69d85ad8  ffffe215`40830000
+ffffe25a`69d85ae0  ffffe215`40646050
+ffffe25a`69d85ae8  ffffe215`40639d90
+ffffe25a`69d85af0  00000000`00000000
+ffffe25a`69d85af8  00000000`00000000
+ffffe25a`69d85b00  00000000`00000000
+ffffe25a`69d85b08  00000000`00000000
+ffffe25a`69d85b10  ffffe25a`69d85b10 win32kbase!gsmsList
+ffffe25a`69d85b18  ffffe25a`69d85b10 win32kbase!gsmsList
+ffffe25a`69d85b20  00000000`00000000
+ffffe25a`69d85b28  00000000`00000000
+ffffe25a`69d85b30  00000000`00000000
+ffffe25a`69d85b38  00000000`00000000
+ffffe25a`69d85b40  00000000`00000000
+ffffe25a`69d85b48  00000001`00000000
+ffffe25a`69d85b50  00000000`00000004
+ffffe25a`69d85b58  ffffe215`40606010
+ffffe25a`69d85b60  00000000`00000000
+ffffe25a`69d85b68  00000000`00000000
+ffffe25a`69d85b70  00000000`00000000
+ffffe25a`69d85b78  00000000`00000000
+ffffe25a`69d85b80  00000000`00000000
+ffffe25a`69d85b88  00000000`00000000
+ffffe25a`69d85b90  00000000`00000000
+ffffe25a`69d85b98  00000000`00000000
+ffffe25a`69d85ba0  00000000`00000000
+ffffe25a`69d85ba8  00000000`00000000
+ffffe25a`69d85bb0  00000000`00000000
+ffffe25a`69d85bb8  00000000`00000000
+ffffe25a`69d85bc0  00000000`00000000
+ffffe25a`69d85bc8  00000000`00000000
+ffffe25a`69d85bd0  00000000`00000000
+ffffe25a`69d85bd8  00000000`00000000
+ffffe25a`69d85be0  00000000`00000000
+ffffe25a`69d85be8  00000000`00000000
+ffffe25a`69d85bf0  00000000`00000000
+ffffe25a`69d85bf8  00000000`00000000
+ffffe25a`69d85c00  00000000`00000000
+ffffe25a`69d85c08  00000000`00000000
+ffffe25a`69d85c10  00000000`00000000
+ffffe25a`69d85c18  00000000`00000000
+ffffe25a`69d85c20  00000000`00000000
+ffffe25a`69d85c28  00000000`00000000
+ffffe25a`69d85c30  00000000`00000000
+ffffe25a`69d85c38  00000000`00000000
+ffffe25a`69d85c40  00000000`00000000
+ffffe25a`69d85c48  00000000`000100bf
+ffffe25a`69d85c50  00000000`010a01ac
+ffffe25a`69d85c58  0000000f`00000007
+ffffe25a`69d85c60  00000000`00000000
+ffffe25a`69d85c68  00000011`0000000d
+ffffe25a`69d85c70  00000000`010a01aa
+ffffe25a`69d85c78  0000000f`00000007
+ffffe25a`69d85c80  00000000`000a01ae
+ffffe25a`69d85c88  00000000`010a01b0
+ffffe25a`69d85c90  00000000`500a01b3
+ffffe25a`69d85c98  00000000`00000000
+ffffe25a`69d85ca0  00000000`000a01ad
+ffffe25a`69d85ca8  0000000f`00000007
+ffffe25a`69d85cb0  00000000`00000000
+ffffe25a`69d85cb8  00000011`0000000d
+ffffe25a`69d85cc0  00000000`000a01ab
+ffffe25a`69d85cc8  0000000f`00000007
+ffffe25a`69d85cd0  00000000`000a01af
+ffffe25a`69d85cd8  00000000`000a01b1
+ffffe25a`69d85ce0  00000000`020a00c5
+ffffe25a`69d85ce8  00000000`01100070
+ffffe25a`69d85cf0  00000000`00000000
+ffffe25a`69d85cf8  00000180`00000200
+ffffe25a`69d85d00  ffffe215`4062f7b0
+ffffe25a`69d85d08  00000000`00000000
+ffffe25a`69d85d10  00000000`00000000
+ffffe25a`69d85d18  00000000`00000000
+ffffe25a`69d85d20  00000000`00000000
+ffffe25a`69d85d28  00000000`00000000
+ffffe25a`69d85d30  00000000`00000000
+ffffe25a`69d85d38  00000000`00000000
+ffffe25a`69d85d40  00000000`00000000
+ffffe25a`69d85d48  00000000`00000000
+ffffe25a`69d85d50  00000000`00000000
+ffffe25a`69d85d58  00000000`00000000
+ffffe25a`69d85d60  00000000`00000000
+ffffe25a`69d85d68  00000000`00000000
+ffffe25a`69d85d70  00000000`00000000
+ffffe25a`69d85d78  00000000`00000000
+ffffe25a`69d85d80  00000000`00000000
+ffffe25a`69d85d88  00000000`00000000
+ffffe25a`69d85d90  00000000`00000000
+ffffe25a`69d85d98  00000000`00000000
+ffffe25a`69d85da0  00000000`00000000
+ffffe25a`69d85da8  00000000`00000000
+ffffe25a`69d85db0  00000000`00000000
+ffffe25a`69d85db8  00000000`00000000
+ffffe25a`69d85dc0  00000000`00000000
+ffffe25a`69d85dc8  00000000`00000000
+ffffe25a`69d85dd0  00000000`00000000
+ffffe25a`69d85dd8  00000000`00000000
+ffffe25a`69d85de0  00000000`00000000
+ffffe25a`69d85de8  00000000`00000000
+ffffe25a`69d85df0  00000000`00000000
+ffffe25a`69d85df8  00000000`00000000
+ffffe25a`69d85e00  00000000`00000000
+ffffe25a`69d85e08  00000000`00000000
+ffffe25a`69d85e10  00000000`00000000
+ffffe25a`69d85e18  00000000`00000000
+ffffe25a`69d85e20  00000000`00000000
+ffffe25a`69d85e28  00000000`00000000
+ffffe25a`69d85e30  00000000`00000000
+ffffe25a`69d85e38  00000000`00000000
+ffffe25a`69d85e40  00000002`00000000
+ffffe25a`69d85e48  00000000`00000000
+ffffe25a`69d85e50  00000000`00000000
+ffffe25a`69d85e58  00000000`00000000
+ffffe25a`69d85e60  00000000`00000001
+ffffe25a`69d85e68  00000000`00000000
+ffffe25a`69d85e70  00000000`00000000
+ffffe25a`69d85e78  ffffffff`800005b4
+ffffe25a`69d85e80  00000000`00000000
+ffffe25a`69d85e88  00000000`00000000
+ffffe25a`69d85e90  ffffe25a`69d85e90 win32kbase!gPowerRequestList
+ffffe25a`69d85e98  ffffe25a`69d85e90 win32kbase!gPowerRequestList
+ffffe25a`69d85ea0  00000000`00000000
+ffffe25a`69d85ea8  00000000`00000000
+ffffe25a`69d85eb0  00000000`00000000
+ffffe25a`69d85eb8  00000000`00000000
+ffffe25a`69d85ec0  00000000`00000000
+ffffe25a`69d85ec8  00000000`00000000
+ffffe25a`69d85ed0  00000000`00000000
+ffffe25a`69d85ed8  00000000`00000000
+ffffe25a`69d85ee0  00000000`00000000
+ffffe25a`69d85ee8  00000000`00000000
+ffffe25a`69d85ef0  00000000`00000000
+ffffe25a`69d85ef8  00000000`00000000
+ffffe25a`69d85f00  00000000`00000000
+ffffe25a`69d85f08  00000000`00000000
+ffffe25a`69d85f10  00000000`00000000
+ffffe25a`69d85f18  00000000`00000000
+ffffe25a`69d85f20  00000000`00000000
+ffffe25a`69d85f28  00000000`00000000
+ffffe25a`69d85f30  00000000`00000000
+ffffe25a`69d85f38  00000000`00000000
+ffffe25a`69d85f40  00000000`00000000
+ffffe25a`69d85f48  00000000`00000000
+ffffe25a`69d85f50  00000000`00000000
+ffffe25a`69d85f58  00000000`00000000
+ffffe25a`69d85f60  00000000`00000000
+ffffe25a`69d85f68  00000000`00000000
+ffffe25a`69d85f70  00000000`00000000
+ffffe25a`69d85f78  00000000`00000000
+ffffe25a`69d85f80  00000000`00000000
+ffffe25a`69d85f88  00000000`00000000
+ffffe25a`69d85f90  00000000`00000000
+ffffe25a`69d85f98  00000000`00000000
+ffffe25a`69d85fa0  00000000`00000000
+ffffe25a`69d85fa8  00000000`00000000
+ffffe25a`69d85fb0  00000000`00000000
+ffffe25a`69d85fb8  00000000`00000000
+ffffe25a`69d85fc0  00000000`00000000
+ffffe25a`69d85fc8  00000000`00000000
+ffffe25a`69d85fd0  00000000`00000000
+ffffe25a`69d85fd8  00000000`00000000
+ffffe25a`69d85fe0  00000000`00000000
+ffffe25a`69d85fe8  00000000`00000000
+ffffe25a`69d85ff0  00000000`00000000
+ffffe25a`69d85ff8  00000000`00000000
+ffffe25a`69d86000  00000000`00000000
+ffffe25a`69d86008  00000000`00000000
+ffffe25a`69d86010  00000000`00000000
+ffffe25a`69d86018  00000000`00000000
+ffffe25a`69d86020  00000000`00000000
+ffffe25a`69d86028  00000000`00000000
+ffffe25a`69d86030  00000000`00000000
+ffffe25a`69d86038  00000000`00000000
+ffffe25a`69d86040  00000000`00000000
+ffffe25a`69d86048  00000000`00000000
+ffffe25a`69d86050  00000000`00000000
+ffffe25a`69d86058  00000000`00000000
+ffffe25a`69d86060  00000000`00000000
+ffffe25a`69d86068  00000000`00000000
+ffffe25a`69d86070  00000000`00000000
+ffffe25a`69d86078  00000000`00000000
+ffffe25a`69d86080  00000000`00000000
+ffffe25a`69d86088  00000000`00000000
+ffffe25a`69d86090  00000000`00000000
+ffffe25a`69d86098  00000000`00000000
+ffffe25a`69d860a0  00000000`00000000
+ffffe25a`69d860a8  00000000`00000000
+ffffe25a`69d860b0  00000000`00000000
+ffffe25a`69d860b8  00000000`00000000
+ffffe25a`69d860c0  00000000`00000000
+ffffe25a`69d860c8  00000000`00000000
+ffffe25a`69d860d0  00000000`00000000
+ffffe25a`69d860d8  00000000`00000000
+ffffe25a`69d860e0  00000000`00000000
+ffffe25a`69d860e8  00000000`00000000
+ffffe25a`69d860f0  00000000`00000000
+ffffe25a`69d860f8  00000000`00000000
+ffffe25a`69d86100  00000000`00000000
+ffffe25a`69d86108  00000000`00000000
+ffffe25a`69d86110  00000000`00000000
+ffffe25a`69d86118  00000000`00000000
+ffffe25a`69d86120  00000000`00000000
+ffffe25a`69d86128  00000000`00000000
+ffffe25a`69d86130  00000000`00000000
+ffffe25a`69d86138  00000000`00000000
+ffffe25a`69d86140  00000000`00000000
+ffffe25a`69d86148  00000000`00000000
+ffffe25a`69d86150  00000000`00000000
+ffffe25a`69d86158  00000000`00000000
+ffffe25a`69d86160  00000000`00000000
+ffffe25a`69d86168  00000000`00000000
+ffffe25a`69d86170  00000000`00000001
+ffffe25a`69d86178  ffffe215`40820320
+ffffe25a`69d86180  0000fc04`0000fe01
+ffffe25a`69d86188  0000f810`0000fa09
+ffffe25a`69d86190  0000f424`0000f619
+ffffe25a`69d86198  0000f040`0000f231
+ffffe25a`69d861a0  0000ec64`0000ee51
+ffffe25a`69d861a8  0000e890`0000ea79
+ffffe25a`69d861b0  0000e4c4`0000e6a9
+ffffe25a`69d861b8  0000e100`0000e2e1
+ffffe25a`69d861c0  0000dd44`0000df21
+ffffe25a`69d861c8  0000d990`0000db69
+ffffe25a`69d861d0  0000d5e4`0000d7b9
+ffffe25a`69d861d8  0000d240`0000d411
+ffffe25a`69d861e0  0000cea4`0000d071
+ffffe25a`69d861e8  0000cb10`0000ccd9
+ffffe25a`69d861f0  0000c784`0000c949
+ffffe25a`69d861f8  0000c400`0000c5c1
+ffffe25a`69d86200  0000c084`0000c241
+ffffe25a`69d86208  0000bd10`0000bec9
+ffffe25a`69d86210  0000b9a4`0000bb59
+ffffe25a`69d86218  0000b640`0000b7f1
+ffffe25a`69d86220  0000b2e4`0000b491
+ffffe25a`69d86228  0000af90`0000b139
+ffffe25a`69d86230  0000ac44`0000ade9
+ffffe25a`69d86238  0000a900`0000aaa1
+ffffe25a`69d86240  0000a5c4`0000a761
+ffffe25a`69d86248  0000a290`0000a429
+ffffe25a`69d86250  00009f64`0000a0f9
+ffffe25a`69d86258  00009c40`00009dd1
+ffffe25a`69d86260  00009924`00009ab1
+ffffe25a`69d86268  00009610`00009799
+ffffe25a`69d86270  00009304`00009489
+ffffe25a`69d86278  00009000`00009181
+ffffe25a`69d86280  00008d04`00008e81
+ffffe25a`69d86288  00008a10`00008b89
+ffffe25a`69d86290  00008724`00008899
+ffffe25a`69d86298  00008440`000085b1
+ffffe25a`69d862a0  00008164`000082d1
+ffffe25a`69d862a8  00007e90`00007ff9
+ffffe25a`69d862b0  00007bc4`00007d29
+ffffe25a`69d862b8  00007900`00007a61
+ffffe25a`69d862c0  00007644`000077a1
+ffffe25a`69d862c8  00007390`000074e9
+ffffe25a`69d862d0  000070e4`00007239
+ffffe25a`69d862d8  00006e40`00006f91
+ffffe25a`69d862e0  00006ba4`00006cf1
+ffffe25a`69d862e8  00006910`00006a59
+ffffe25a`69d862f0  00006684`000067c9
+ffffe25a`69d862f8  00006400`00006541
+ffffe25a`69d86300  00006184`000062c1
+ffffe25a`69d86308  00005f10`00006049
+ffffe25a`69d86310  00005ca4`00005dd9
+ffffe25a`69d86318  00005a40`00005b71
+ffffe25a`69d86320  000057e4`00005911
+ffffe25a`69d86328  00005590`000056b9
+ffffe25a`69d86330  00005344`00005469
+ffffe25a`69d86338  00005100`00005221
+ffffe25a`69d86340  00004ec4`00004fe1
+ffffe25a`69d86348  00004c90`00004da9
+ffffe25a`69d86350  00004a64`00004b79
+ffffe25a`69d86358  00004840`00004951
+ffffe25a`69d86360  00004624`00004731
+ffffe25a`69d86368  00004410`00004519
+ffffe25a`69d86370  00004204`00004309
+ffffe25a`69d86378  00004000`00004101
+ffffe25a`69d86380  00003e04`00003f01
+ffffe25a`69d86388  00003c10`00003d09
+ffffe25a`69d86390  00003a24`00003b19
+ffffe25a`69d86398  00003840`00003931
+ffffe25a`69d863a0  00003664`00003751
+ffffe25a`69d863a8  00003490`00003579
+ffffe25a`69d863b0  000032c4`000033a9
+ffffe25a`69d863b8  00003100`000031e1
+ffffe25a`69d863c0  00002f44`00003021
+ffffe25a`69d863c8  00002d90`00002e69
+ffffe25a`69d863d0  00002be4`00002cb9
+ffffe25a`69d863d8  00002a40`00002b11
+ffffe25a`69d863e0  000028a4`00002971
+ffffe25a`69d863e8  00002710`000027d9
+ffffe25a`69d863f0  00002584`00002649
+ffffe25a`69d863f8  00002400`000024c1
+ffffe25a`69d86400  00002284`00002341
+ffffe25a`69d86408  00002110`000021c9
+ffffe25a`69d86410  00001fa4`00002059
+ffffe25a`69d86418  00001e40`00001ef1
+ffffe25a`69d86420  00001ce4`00001d91
+ffffe25a`69d86428  00001b90`00001c39
+ffffe25a`69d86430  00001a44`00001ae9
+ffffe25a`69d86438  00001900`000019a1
+ffffe25a`69d86440  000017c4`00001861
+ffffe25a`69d86448  00001690`00001729
+ffffe25a`69d86450  00001564`000015f9
+ffffe25a`69d86458  00001440`000014d1
+ffffe25a`69d86460  00001324`000013b1
+ffffe25a`69d86468  00001210`00001299
+ffffe25a`69d86470  00001104`00001189
+ffffe25a`69d86478  00001000`00001081
+ffffe25a`69d86480  00000f04`00000f81
+ffffe25a`69d86488  00000e10`00000e89
+ffffe25a`69d86490  00000d24`00000d99
+ffffe25a`69d86498  00000c40`00000cb1
+ffffe25a`69d864a0  00000b64`00000bd1
+ffffe25a`69d864a8  00000a90`00000af9
+ffffe25a`69d864b0  000009c4`00000a29
+ffffe25a`69d864b8  00000900`00000961
+ffffe25a`69d864c0  00000844`000008a1
+ffffe25a`69d864c8  00000790`000007e9
+ffffe25a`69d864d0  000006e4`00000739
+ffffe25a`69d864d8  00000640`00000691
+ffffe25a`69d864e0  000005a4`000005f1
+ffffe25a`69d864e8  00000510`00000559
+ffffe25a`69d864f0  00000484`000004c9
+ffffe25a`69d864f8  00000400`00000441
+ffffe25a`69d86500  00000384`000003c1
+ffffe25a`69d86508  00000310`00000349
+ffffe25a`69d86510  000002a4`000002d9
+ffffe25a`69d86518  00000240`00000271
+ffffe25a`69d86520  000001e4`00000211
+ffffe25a`69d86528  00000190`000001b9
+ffffe25a`69d86530  00000144`00000169
+ffffe25a`69d86538  00000100`00000121
+ffffe25a`69d86540  000000c4`000000e1
+ffffe25a`69d86548  00000090`000000a9
+ffffe25a`69d86550  00000064`00000079
+ffffe25a`69d86558  00000040`00000051
+ffffe25a`69d86560  00000024`00000031
+ffffe25a`69d86568  00000010`00000019
+ffffe25a`69d86570  00000004`00000009
+ffffe25a`69d86578  00000000`00000001
+ffffe25a`69d86580  00000004`00000001
+ffffe25a`69d86588  00000010`00000009
+ffffe25a`69d86590  00000024`00000019
+ffffe25a`69d86598  00000040`00000031
+ffffe25a`69d865a0  00000064`00000051
+ffffe25a`69d865a8  00000090`00000079
+ffffe25a`69d865b0  000000c4`000000a9
+ffffe25a`69d865b8  00000100`000000e1
+ffffe25a`69d865c0  00000144`00000121
+ffffe25a`69d865c8  00000190`00000169
+ffffe25a`69d865d0  000001e4`000001b9
+ffffe25a`69d865d8  00000240`00000211
+ffffe25a`69d865e0  000002a4`00000271
+ffffe25a`69d865e8  00000310`000002d9
+ffffe25a`69d865f0  00000384`00000349
+ffffe25a`69d865f8  00000400`000003c1
+ffffe25a`69d86600  00000484`00000441
+ffffe25a`69d86608  00000510`000004c9
+ffffe25a`69d86610  000005a4`00000559
+ffffe25a`69d86618  00000640`000005f1
+ffffe25a`69d86620  000006e4`00000691
+ffffe25a`69d86628  00000790`00000739
+ffffe25a`69d86630  00000844`000007e9
+ffffe25a`69d86638  00000900`000008a1
+ffffe25a`69d86640  000009c4`00000961
+ffffe25a`69d86648  00000a90`00000a29
+ffffe25a`69d86650  00000b64`00000af9
+ffffe25a`69d86658  00000c40`00000bd1
+ffffe25a`69d86660  00000d24`00000cb1
+ffffe25a`69d86668  00000e10`00000d99
+ffffe25a`69d86670  00000f04`00000e89
+ffffe25a`69d86678  00001000`00000f81
+ffffe25a`69d86680  00001104`00001081
+ffffe25a`69d86688  00001210`00001189
+ffffe25a`69d86690  00001324`00001299
+ffffe25a`69d86698  00001440`000013b1
+ffffe25a`69d866a0  00001564`000014d1
+ffffe25a`69d866a8  00001690`000015f9
+ffffe25a`69d866b0  000017c4`00001729
+ffffe25a`69d866b8  00001900`00001861
+ffffe25a`69d866c0  00001a44`000019a1
+ffffe25a`69d866c8  00001b90`00001ae9
+ffffe25a`69d866d0  00001ce4`00001c39
+ffffe25a`69d866d8  00001e40`00001d91
+ffffe25a`69d866e0  00001fa4`00001ef1
+ffffe25a`69d866e8  00002110`00002059
+ffffe25a`69d866f0  00002284`000021c9
+ffffe25a`69d866f8  00002400`00002341
+ffffe25a`69d86700  00002584`000024c1
+ffffe25a`69d86708  00002710`00002649
+ffffe25a`69d86710  000028a4`000027d9
+ffffe25a`69d86718  00002a40`00002971
+ffffe25a`69d86720  00002be4`00002b11
+ffffe25a`69d86728  00002d90`00002cb9
+ffffe25a`69d86730  00002f44`00002e69
+ffffe25a`69d86738  00003100`00003021
+ffffe25a`69d86740  000032c4`000031e1
+ffffe25a`69d86748  00003490`000033a9
+ffffe25a`69d86750  00003664`00003579
+ffffe25a`69d86758  00003840`00003751
+ffffe25a`69d86760  00003a24`00003931
+ffffe25a`69d86768  00003c10`00003b19
+ffffe25a`69d86770  00003e04`00003d09
+ffffe25a`69d86778  00004000`00003f01
+ffffe25a`69d86780  00004204`00004101
+ffffe25a`69d86788  00004410`00004309
+ffffe25a`69d86790  00004624`00004519
+ffffe25a`69d86798  00004840`00004731
+ffffe25a`69d867a0  00004a64`00004951
+ffffe25a`69d867a8  00004c90`00004b79
+ffffe25a`69d867b0  00004ec4`00004da9
+ffffe25a`69d867b8  00005100`00004fe1
+ffffe25a`69d867c0  00005344`00005221
+ffffe25a`69d867c8  00005590`00005469
+ffffe25a`69d867d0  000057e4`000056b9
+ffffe25a`69d867d8  00005a40`00005911
+ffffe25a`69d867e0  00005ca4`00005b71
+ffffe25a`69d867e8  00005f10`00005dd9
+ffffe25a`69d867f0  00006184`00006049
+ffffe25a`69d867f8  00006400`000062c1
+ffffe25a`69d86800  00006684`00006541
+ffffe25a`69d86808  00006910`000067c9
+ffffe25a`69d86810  00006ba4`00006a59
+ffffe25a`69d86818  00006e40`00006cf1
+ffffe25a`69d86820  000070e4`00006f91
+ffffe25a`69d86828  00007390`00007239
+ffffe25a`69d86830  00007644`000074e9
+ffffe25a`69d86838  00007900`000077a1
+ffffe25a`69d86840  00007bc4`00007a61
+ffffe25a`69d86848  00007e90`00007d29
+ffffe25a`69d86850  00008164`00007ff9
+ffffe25a`69d86858  00008440`000082d1
+ffffe25a`69d86860  00008724`000085b1
+ffffe25a`69d86868  00008a10`00008899
+ffffe25a`69d86870  00008d04`00008b89
+ffffe25a`69d86878  00009000`00008e81
+ffffe25a`69d86880  00009304`00009181
+ffffe25a`69d86888  00009610`00009489
+ffffe25a`69d86890  00009924`00009799
+ffffe25a`69d86898  00009c40`00009ab1
+ffffe25a`69d868a0  00009f64`00009dd1
+ffffe25a`69d868a8  0000a290`0000a0f9
+ffffe25a`69d868b0  0000a5c4`0000a429
+ffffe25a`69d868b8  0000a900`0000a761
+ffffe25a`69d868c0  0000ac44`0000aaa1
+ffffe25a`69d868c8  0000af90`0000ade9
+ffffe25a`69d868d0  0000b2e4`0000b139
+ffffe25a`69d868d8  0000b640`0000b491
+ffffe25a`69d868e0  0000b9a4`0000b7f1
+ffffe25a`69d868e8  0000bd10`0000bb59
+ffffe25a`69d868f0  0000c084`0000bec9
+ffffe25a`69d868f8  0000c400`0000c241
+ffffe25a`69d86900  0000c784`0000c5c1
+ffffe25a`69d86908  0000cb10`0000c949
+ffffe25a`69d86910  0000cea4`0000ccd9
+ffffe25a`69d86918  0000d240`0000d071
+ffffe25a`69d86920  0000d5e4`0000d411
+ffffe25a`69d86928  0000d990`0000d7b9
+ffffe25a`69d86930  0000dd44`0000db69
+ffffe25a`69d86938  0000e100`0000df21
+ffffe25a`69d86940  0000e4c4`0000e2e1
+ffffe25a`69d86948  0000e890`0000e6a9
+ffffe25a`69d86950  0000ec64`0000ea79
+ffffe25a`69d86958  0000f040`0000ee51
+ffffe25a`69d86960  0000f424`0000f231
+ffffe25a`69d86968  0000f810`0000f619
+ffffe25a`69d86970  0000fc04`0000fa09
+ffffe25a`69d86978  00000654`0000fe01
+ffffe25a`69d86980  00000000`00000000
+ffffe25a`69d86988  00000000`00000000
+ffffe25a`69d86990  ffffe25a`69d86990 win32kbase!GreEngLoadModuleAllocList
+ffffe25a`69d86998  ffffe25a`69d86990 win32kbase!GreEngLoadModuleAllocList
+ffffe25a`69d869a0  ffffbb08`3a674580
+ffffe25a`69d869a8  ffffbb08`409ee280
+ffffe25a`69d869b0  00000000`00000000
+ffffe25a`69d869b8  ffffe215`428e05c0
+ffffe25a`69d869c0  00000006`000007b3
+ffffe25a`69d869c8  00000004`00000004
+ffffe25a`69d869d0  00000000`00000000
+ffffe25a`69d869d8  ffffe215`428e04a0
+ffffe25a`69d869e0  00000006`000007bd
+ffffe25a`69d869e8  00000004`00000004
+ffffe25a`69d869f0  00000000`00000000
+ffffe25a`69d869f8  ffffe215`428e0770
+ffffe25a`69d86a00  00000006`000007c7
+ffffe25a`69d86a08  00000004`00000004
+ffffe25a`69d86a10  00000000`00000000
+ffffe25a`69d86a18  ffffe215`428e0380
+ffffe25a`69d86a20  00000006`000007d1
+ffffe25a`69d86a28  00000004`00000004
+ffffe25a`69d86a30  00000000`00000000
+ffffe25a`69d86a38  ffffe215`428e06e0
+ffffe25a`69d86a40  00000006`000007db
+ffffe25a`69d86a48  00000004`00000004
+ffffe25a`69d86a50  00000000`00000000
+ffffe25a`69d86a58  ffffe215`428e0c80
+ffffe25a`69d86a60  00000006`000007e4
+ffffe25a`69d86a68  00000004`00000004
+ffffe25a`69d86a70  00000000`00000000
+ffffe25a`69d86a78  ffffe215`428e0530
+ffffe25a`69d86a80  00000006`000007f0
+ffffe25a`69d86a88  00000004`00000004
+ffffe25a`69d86a90  00000000`00000000
+ffffe25a`69d86a98  ffffe215`428e00b0
+ffffe25a`69d86aa0  00000006`000007fa
+ffffe25a`69d86aa8  00000004`00000004
+ffffe25a`69d86ab0  ffffe25a`69d86ab0 win32kbase!gObRimDevList
+ffffe25a`69d86ab8  ffffe25a`69d86ab0 win32kbase!gObRimDevList
+ffffe25a`69d86ac0  ffffe25a`69d86ac0 win32kbase!gObRimInputObserverList
+ffffe25a`69d86ac8  ffffe25a`69d86ac0 win32kbase!gObRimInputObserverList
+ffffe25a`69d86ad0  00000000`00000000
+ffffe25a`69d86ad8  00000000`00000000
+ffffe25a`69d86ae0  00000000`00000000
+ffffe25a`69d86ae8  00000000`00000000
+ffffe25a`69d86af0  00000000`00000000
+ffffe25a`69d86af8  00000000`00000000
+ffffe25a`69d86b00  00000000`00000000
+ffffe25a`69d86b08  00000000`00000000
+ffffe25a`69d86b10  ffffe25a`69d86b10 win32kbase!RawInputManagerObject::gHidRequestTable
+ffffe25a`69d86b18  ffffe25a`69d86b10 win32kbase!RawInputManagerObject::gHidRequestTable
+ffffe25a`69d86b20  ffffe215`407ff300
+ffffe25a`69d86b28  ffffe215`407ff300
+ffffe25a`69d86b30  ffffe215`406dba90
+ffffe25a`69d86b38  ffffe215`406dba90
+ffffe25a`69d86b40  00000000`00000000
+ffffe25a`69d86b48  00000000`00000000
+ffffe25a`69d86b50  ffffbb08`3ad95cd0
+ffffe25a`69d86b58  00000000`00000000
+ffffe25a`69d86b60  00000000`00000000
+ffffe25a`69d86b68  00000000`00000000
+ffffe25a`69d86b70  00000000`00000000
+ffffe25a`69d86b78  00000000`00000000
+ffffe25a`69d86b80  00000000`00000000
+ffffe25a`69d86b88  00000000`00000000
+ffffe25a`69d86b90  00000000`00000000
+ffffe25a`69d86b98  00000000`00000000
+ffffe25a`69d86ba0  00000000`00000000
+ffffe25a`69d86ba8  00000000`00000000
+ffffe25a`69d86bb0  00000000`00000001
+ffffe25a`69d86bb8  0036ee80`0000ea60
+ffffe25a`69d86bc0  00000001`01499700
+ffffe25a`69d86bc8  000003e8`0000ea60
+ffffe25a`69d86bd0  40080022`01499700
+ffffe25a`69d86bd8  000000a8`00000001
+ffffe25a`69d86be0  00000000`00000000
+ffffe25a`69d86be8  00000000`000034fa
+ffffe25a`69d86bf0  00000000`0816e49f
+ffffe25a`69d86bf8  00000000`0816e49f
+ffffe25a`69d86c00  00000000`000034fa
+ffffe25a`69d86c08  00000000`000034fa
+ffffe25a`69d86c10  00000000`00000000
+ffffe25a`69d86c18  00000000`00000000
+ffffe25a`69d86c20  00000000`00000000
+ffffe25a`69d86c28  00000000`00000000
+ffffe25a`69d86c30  00000000`00000000
+ffffe25a`69d86c38  00000000`00000000
+ffffe25a`69d86c40  00000000`00000000
+ffffe25a`69d86c48  00000000`00000000
+ffffe25a`69d86c50  00000000`00000000
+ffffe25a`69d86c58  00000000`00000000
+ffffe25a`69d86c60  00000000`00000000
+ffffe25a`69d86c68  00000000`00000000
+ffffe25a`69d86c70  00000000`00000000
+ffffe25a`69d86c78  00000000`00000000
+ffffe25a`69d86c80  00000000`00000000
+ffffe25a`69d86c88  00000000`00000000
+ffffe25a`69d86c90  00000000`00000000
+ffffe25a`69d86c98  00000000`00000000
+ffffe25a`69d86ca0  00000000`00000000
+ffffe25a`69d86ca8  00000000`00000000
+ffffe25a`69d86cb0  00000000`00000000
+ffffe25a`69d86cb8  00000000`00000000
+ffffe25a`69d86cc0  00000000`00000000
+ffffe25a`69d86cc8  00000000`00000000
+ffffe25a`69d86cd0  00000000`00000000
+ffffe25a`69d86cd8  00000000`00000000
+ffffe25a`69d86ce0  00000000`00000000
+ffffe25a`69d86ce8  00000000`00000000
+ffffe25a`69d86cf0  00000000`00000000
+ffffe25a`69d86cf8  00000000`00000000
+ffffe25a`69d86d00  00000000`00000000
+ffffe25a`69d86d08  00000000`00000000
+ffffe25a`69d86d10  00000000`00000000
+ffffe25a`69d86d18  00000000`00000000
+ffffe25a`69d86d20  00000000`00000000
+ffffe25a`69d86d28  00000000`00000000
+ffffe25a`69d86d30  00000000`00000000
+ffffe25a`69d86d38  00000000`00000000
+ffffe25a`69d86d40  00000000`00000000
+ffffe25a`69d86d48  00000000`00000000
+ffffe25a`69d86d50  00000000`00000000
+ffffe25a`69d86d58  00000000`00000000
+ffffe25a`69d86d60  00000000`00000000
+ffffe25a`69d86d68  00000000`00000000
+ffffe25a`69d86d70  00000000`00000000
+ffffe25a`69d86d78  00000000`00000000
+ffffe25a`69d86d80  00000000`00000000
+ffffe25a`69d86d88  00000000`00000000
+ffffe25a`69d86d90  00000000`00000000
+ffffe25a`69d86d98  00000000`00000000
+ffffe25a`69d86da0  00000000`00000000
+ffffe25a`69d86da8  00000000`00000000
+ffffe25a`69d86db0  00000000`00000000
+ffffe25a`69d86db8  00000000`00000000
+ffffe25a`69d86dc0  00000000`00000000
+ffffe25a`69d86dc8  00000000`00000000
+ffffe25a`69d86dd0  00000000`00000000
+ffffe25a`69d86dd8  00000000`00000000
+ffffe25a`69d86de0  00000000`00000000
+ffffe25a`69d86de8  00000000`00000000
+ffffe25a`69d86df0  00000000`00000000
+ffffe25a`69d86df8  00000000`00000000
+ffffe25a`69d86e00  00000000`00000000
+ffffe25a`69d86e08  00000000`00000000
+ffffe25a`69d86e10  ffffe215`4062f7b0
+ffffe25a`69d86e18  00000000`00020008
+ffffe25a`69d86e20  00000000`000000dd
+ffffe25a`69d86e28  00000000`00000000
+ffffe25a`69d86e30  00000000`00000000
+ffffe25a`69d86e38  00000000`00989680
+ffffe25a`69d86e40  00000000`00000000
+ffffe25a`69d86e48  ffffd201`098e8ae0
+ffffe25a`69d86e50  ffffbb08`3dcc0b90
+ffffe25a`69d86e58  ffffbb08`3dcbfb10
+ffffe25a`69d86e60  00000000`00000000
+ffffe25a`69d86e68  00000000`00000000
+ffffe25a`69d86e70  00000000`00000000
+ffffe25a`69d86e78  00000000`00000000
+ffffe25a`69d86e80  ffffe215`40605010
+ffffe25a`69d86e88  00000000`00000000
+ffffe25a`69d86e90  00000000`00000000
+ffffe25a`69d86e98  00000000`00000000
+ffffe25a`69d86ea0  00000000`00000000
+ffffe25a`69d86ea8  ffffe215`40605e90
+ffffe25a`69d86eb0  00000000`00000000
+ffffe25a`69d86eb8  00000000`00000000
+ffffe25a`69d86ec0  00000000`00000000
+ffffe25a`69d86ec8  00000000`00000000
+ffffe25a`69d86ed0  00000000`00000000
+ffffe25a`69d86ed8  00000000`00000001
+ffffe25a`69d86ee0  00000000`0000c044
+ffffe25a`69d86ee8  00000000`00000000
+ffffe25a`69d86ef0  00000000`00000000
+ffffe25a`69d86ef8  ffffbb08`3d0f98b0
+ffffe25a`69d86f00  00000000`00000000
+ffffe25a`69d86f08  00000000`00000000
+ffffe25a`69d86f10  00000000`00000000
+ffffe25a`69d86f18  001e0000`00000000
+ffffe25a`69d86f20  00000000`000001f4
+ffffe25a`69d86f28  00000000`00000000
+ffffe25a`69d86f30  00000000`00000003
+ffffe25a`69d86f38  ffffbb08`3dcd7a80
+ffffe25a`69d86f40  00000000`00000000
+ffffe25a`69d86f48  00000000`00000000
+ffffe25a`69d86f50  00000000`00000000
+ffffe25a`69d86f58  ffffe215`4061c1a0
+ffffe25a`69d86f60  00000000`00000000
+ffffe25a`69d86f68  00000000`00000000
+ffffe25a`69d86f70  00000000`00000000
+ffffe25a`69d86f78  00000000`0000001d
+ffffe25a`69d86f80  00000000`00000000
+ffffe25a`69d86f88  00000000`0000001f
+ffffe25a`69d86f90  00000000`00000000
+ffffe25a`69d86f98  00000000`00000021
+ffffe25a`69d86fa0  00000000`00000000
+ffffe25a`69d86fa8  00000000`00000023
+ffffe25a`69d86fb0  00000000`00000000
+ffffe25a`69d86fb8  00000000`00000025
+ffffe25a`69d86fc0  00000000`00000000
+ffffe25a`69d86fc8  00000000`00000000
+ffffe25a`69d86fd0  00000000`00000000
+ffffe25a`69d86fd8  00000000`00000000
+ffffe25a`69d86fe0  00000000`00000000
+ffffe25a`69d86fe8  00000000`00000000
+ffffe25a`69d86ff0  00000000`00000000
+ffffe25a`69d86ff8  00000000`00000000
+ffffe25a`69d87000  00000000`00000000
+ffffe25a`69d87008  00000000`00000000
+ffffe25a`69d87010  00000000`00000000
+ffffe25a`69d87018  00000000`00000000
+ffffe25a`69d87020  00000000`00000000
+ffffe25a`69d87028  00000000`00000000
+ffffe25a`69d87030  00670065`0052005c
+ffffe25a`69d87038  00720074`00730069
+ffffe25a`69d87040  00730055`005c0079
+ffffe25a`69d87048  002e005c`00720065
+ffffe25a`69d87050  00610066`00650044
+ffffe25a`69d87058  005c0074`006c0075
+ffffe25a`69d87060  00390032`00300000
+ffffe25a`69d87068  00320039`00320038
+ffffe25a`69d87070  00350035`002d0036
+ffffe25a`69d87078  00310035`00370033
+ffffe25a`69d87080  002d0033`00360036
+ffffe25a`69d87088  00370035`00330032
+ffffe25a`69d87090  00330031`00390032
+ffffe25a`69d87098  00300031`002d0034
+ffffe25a`69d870a0  0000005c`00360030
+ffffe25a`69d870a8  00000000`00000000
+ffffe25a`69d870b0  00000000`00000000
+ffffe25a`69d870b8  00000000`00000000
+ffffe25a`69d870c0  00000000`00000000
+ffffe25a`69d870c8  00000000`00000000
+ffffe25a`69d870d0  00000000`00000000
+ffffe25a`69d870d8  00000000`00000000
+ffffe25a`69d870e0  00000000`00000000
+ffffe25a`69d870e8  00000000`00000000
+ffffe25a`69d870f0  00000000`00000000
+ffffe25a`69d870f8  00000000`00000000
+ffffe25a`69d87100  00000000`00000000
+ffffe25a`69d87108  00000000`00000000
+ffffe25a`69d87110  00000000`00000000
+ffffe25a`69d87118  00000000`00000000
+ffffe25a`69d87120  00000000`00000000
+ffffe25a`69d87128  00000000`00000000
+ffffe25a`69d87130  00000000`00000000
+ffffe25a`69d87138  00000000`00000000
+ffffe25a`69d87140  00000000`00000000
+ffffe25a`69d87148  00000000`00000000
+ffffe25a`69d87150  00000000`00000000
+ffffe25a`69d87158  00000000`00000000
+ffffe25a`69d87160  00000000`00000000
+ffffe25a`69d87168  00000000`00000000
+ffffe25a`69d87170  00000000`00000000
+ffffe25a`69d87178  00000000`00000000
+ffffe25a`69d87180  00000000`00000000
+ffffe25a`69d87188  00000000`00000000
+ffffe25a`69d87190  00000000`00000000
+ffffe25a`69d87198  00000000`00000000
+ffffe25a`69d871a0  00000000`00000000
+ffffe25a`69d871a8  00000000`00000000
+ffffe25a`69d871b0  00000000`00000000
+ffffe25a`69d871b8  00000000`00000000
+ffffe25a`69d871c0  00000000`00000000
+ffffe25a`69d871c8  00000000`00000000
+ffffe25a`69d871d0  00000000`00000000
+ffffe25a`69d871d8  00000000`00000000
+ffffe25a`69d871e0  00000000`00000000
+ffffe25a`69d871e8  00000000`00000000
+ffffe25a`69d871f0  00000000`00000000
+ffffe25a`69d871f8  00000000`00000000
+ffffe25a`69d87200  00000000`00000000
+ffffe25a`69d87208  00000000`00000000
+ffffe25a`69d87210  00000000`00000000
+ffffe25a`69d87218  00000000`00000000
+ffffe25a`69d87220  00000000`00000000
+ffffe25a`69d87228  00000000`00000000
+ffffe25a`69d87230  00000000`00000000
+ffffe25a`69d87238  00000000`00000000
+ffffe25a`69d87240  00000000`00000000
+ffffe25a`69d87248  00000000`00000000
+ffffe25a`69d87250  00000000`00000000
+ffffe25a`69d87258  00000000`00000000
+ffffe25a`69d87260  00000000`00000000
+ffffe25a`69d87268  ffffffff`800003f0
+ffffe25a`69d87270  00000000`00000000
+ffffe25a`69d87278  ffffe25a`69d87278 win32kbase!gSfmState+0x28
+ffffe25a`69d87280  ffffe25a`69d87278 win32kbase!gSfmState+0x28
+ffffe25a`69d87288  00000000`00000000
+ffffe25a`69d87290  00000000`00000000
+ffffe25a`69d87298  00000000`00000000
+ffffe25a`69d872a0  00000000`00000000
+ffffe25a`69d872a8  00000000`00000000
+ffffe25a`69d872b0  00000000`00000000
+ffffe25a`69d872b8  00000000`00000000
+ffffe25a`69d872c0  00000000`00000000
+ffffe25a`69d872c8  00000000`00000000
+ffffe25a`69d872d0  00000000`00000000
+ffffe25a`69d872d8  00000000`00000000
+ffffe25a`69d872e0  00000000`00000000
+ffffe25a`69d872e8  00000000`00000000
+ffffe25a`69d872f0  00000000`00000000
+ffffe25a`69d872f8  000003a6`00000000
+ffffe25a`69d87300  00000000`000003b4
+ffffe25a`69d87308  00000000`00000000
+ffffe25a`69d87310  00000000`00000000
+ffffe25a`69d87318  00000000`00000000
+ffffe25a`69d87320  00000000`00000000
+ffffe25a`69d87328  00000000`00000000
+ffffe25a`69d87330  00000000`00000000
+ffffe25a`69d87338  00000000`00000000
+ffffe25a`69d87340  00000000`00000000
+ffffe25a`69d87348  00000000`00000000
+ffffe25a`69d87350  00000000`00000000
+ffffe25a`69d87358  00000000`00000000
+ffffe25a`69d87360  00000000`00000000
+ffffe25a`69d87368  00000000`00000000
+ffffe25a`69d87370  00000000`00000000
+ffffe25a`69d87378  00000000`00000000
+ffffe25a`69d87380  00000000`00000000
+ffffe25a`69d87388  00000000`00000000
+ffffe25a`69d87390  00000000`00000000
+ffffe25a`69d87398  00000000`00000000
+ffffe25a`69d873a0  00000000`00000000
+ffffe25a`69d873a8  00000000`00000000
+ffffe25a`69d873b0  00000000`00000000
+ffffe25a`69d873b8  00000000`00000000
+ffffe25a`69d873c0  00000000`00000000
+ffffe25a`69d873c8  00000000`00000000
+ffffe25a`69d873d0  00000000`00000000
+ffffe25a`69d873d8  00000000`00000000
+ffffe25a`69d873e0  00000000`00000000
+ffffe25a`69d873e8  00000000`00000000
+ffffe25a`69d873f0  00000000`00000000
+ffffe25a`69d873f8  00000000`00000000
+ffffe25a`69d87400  ffffbb08`3a91f6a0
+ffffe25a`69d87408  00000000`00000000
+ffffe25a`69d87410  00000000`00000000
+ffffe25a`69d87418  00000000`00000000
+ffffe25a`69d87420  00000000`00000000
+ffffe25a`69d87428  00000000`00000000
+ffffe25a`69d87430  00000000`00000000
+ffffe25a`69d87438  00000000`00000000
+ffffe25a`69d87440  00000040`80000000
+ffffe25a`69d87448  00000000`00000000
+ffffe25a`69d87450  00000000`00000000
+ffffe25a`69d87458  00000000`00000000
+ffffe25a`69d87460  00000000`00000000
+ffffe25a`69d87468  00000000`00000000
+ffffe25a`69d87470  00000000`00000000
+ffffe25a`69d87478  00000000`00000000
+ffffe25a`69d87480  00000000`00000000
+ffffe25a`69d87488  00000000`00000000
+ffffe25a`69d87490  00000000`00000000
+ffffe25a`69d87498  00000000`00000000
+ffffe25a`69d874a0  00000000`00000000
+ffffe25a`69d874a8  00000000`00000000
+ffffe25a`69d874b0  00000000`00000000
+ffffe25a`69d874b8  00000000`00000000
+ffffe25a`69d874c0  00000000`00000000
+ffffe25a`69d874c8  00000000`00000000
+ffffe25a`69d874d0  00000000`00000000
+ffffe25a`69d874d8  00000000`00000000
+ffffe25a`69d874e0  00000000`00000000
+ffffe25a`69d874e8  00000000`00000000
+ffffe25a`69d874f0  00000000`00000000
+ffffe25a`69d874f8  00000000`00000000
+ffffe25a`69d87500  00000000`00000000
+ffffe25a`69d87508  00000000`00000000
+ffffe25a`69d87510  000001f4`00000000
+ffffe25a`69d87518  000004e2`000002ee
+ffffe25a`69d87520  00000000`000004e2
+ffffe25a`69d87528  000007d0`00000fa0
+ffffe25a`69d87530  000003e8`000003e8
+ffffe25a`69d87538  00000000`000007d0
+ffffe25a`69d87540  000001f4`000000fa
+ffffe25a`69d87548  000002ee`000002ee
+ffffe25a`69d87550  000001f4`000003e8
+ffffe25a`69d87558  00000000`00000032
+ffffe25a`69d87560  0000012c`00000096
+ffffe25a`69d87568  000002ee`000001f4
+ffffe25a`69d87570  00000000`00000000
+ffffe25a`69d87578  00000000`00000000
+ffffe25a`69d87580  00000000`00000000
+ffffe25a`69d87588  00000000`00000000
+ffffe25a`69d87590  0000012c`0000012c
+ffffe25a`69d87598  000001c2`0000012c
+ffffe25a`69d875a0  00000014`000001f4
+ffffe25a`69d875a8  000001f4`000001f4
+ffffe25a`69d875b0  000001f4`000001f4
+ffffe25a`69d875b8  00000019`000002ee
+ffffe25a`69d875c0  00015f90`00000032
+ffffe25a`69d875c8  00000014`00015f90
+ffffe25a`69d875d0  000000fa`000f4240
+ffffe25a`69d875d8  000000c8`00000032
+ffffe25a`69d875e0  000003e8`000000d7
+ffffe25a`69d875e8  000001f4`00000064
+ffffe25a`69d875f0  0000012c`0000012c
+ffffe25a`69d875f8  0000012c`0000012c
+ffffe25a`69d87600  00000032`000003fe
+ffffe25a`69d87608  00000032`00000032
+ffffe25a`69d87610  000000c8`00000032
+ffffe25a`69d87618  0000010e`0000010e
+ffffe25a`69d87620  0000010e`0000010e
+ffffe25a`69d87628  00000046`00000000
+ffffe25a`69d87630  00000064`00000078
+ffffe25a`69d87638  00000064`00000064
+ffffe25a`69d87640  000f4240`000000fa
+ffffe25a`69d87648  017d7840`00f42400
+ffffe25a`69d87650  0000012c`0000012c
+ffffe25a`69d87658  0000021c`0000012c
+ffffe25a`69d87660  0000032a`0000010e
+ffffe25a`69d87668  000003e8`0000012c
+ffffe25a`69d87670  00000000`000003e8
+ffffe25a`69d87678  000003e8`00000000
+ffffe25a`69d87680  000057e4`0000012c
+ffffe25a`69d87688  00000021`00002710
+ffffe25a`69d87690  00000308`00000000
+ffffe25a`69d87698  000000c8`00000064
+ffffe25a`69d876a0  00000064`00000064
+ffffe25a`69d876a8  00000064`00000064
+ffffe25a`69d876b0  00000032`000003e8
+ffffe25a`69d876b8  00000000`00000000
+ffffe25a`69d876c0  00000000`00000000
+ffffe25a`69d876c8  00000000`00000000
+ffffe25a`69d876d0  00000000`00000000
+ffffe25a`69d876d8  00000000`00000000
+ffffe25a`69d876e0  00000000`00000000
+ffffe25a`69d876e8  00000000`00000000
+ffffe25a`69d876f0  00000000`00000000
+ffffe25a`69d876f8  00000000`00000000
+ffffe25a`69d87700  00000000`00000000
+ffffe25a`69d87708  00000000`00000000
+ffffe25a`69d87710  00000000`00000000
+ffffe25a`69d87718  00000000`00000000
+ffffe25a`69d87720  00000000`00000000
+ffffe25a`69d87728  00000000`00000000
+ffffe25a`69d87730  00000000`00000000
+ffffe25a`69d87738  ffffbb08`3d2a3570
+ffffe25a`69d87740  00000000`00000000
+ffffe25a`69d87748  00000000`00000000
+ffffe25a`69d87750  00000000`00000000
+ffffe25a`69d87758  00000000`00000000
+ffffe25a`69d87760  00000000`00000000
+ffffe25a`69d87768  00000000`0000c036
+ffffe25a`69d87770  00000000`00000000
+ffffe25a`69d87778  00000000`00000000
+ffffe25a`69d87780  00000000`00000000
+ffffe25a`69d87788  00000000`00000000
+ffffe25a`69d87790  00000000`00000000
+ffffe25a`69d87798  00000000`00000000
+ffffe25a`69d877a0  00000000`00000000
+ffffe25a`69d877a8  00000000`00000000
+ffffe25a`69d877b0  00000000`00000000
+ffffe25a`69d877b8  00000000`00000000
+ffffe25a`69d877c0  00000000`00000000
+ffffe25a`69d877c8  00000000`00000000
+ffffe25a`69d877d0  00000000`00000000
+ffffe25a`69d877d8  00000000`00000000
+ffffe25a`69d877e0  00000000`00000000
+ffffe25a`69d877e8  00000000`00000000
+ffffe25a`69d877f0  00000000`00000000
+ffffe25a`69d877f8  00000000`00000000
+ffffe25a`69d87800  00000000`00000000
+ffffe25a`69d87808  00000000`00000000
+ffffe25a`69d87810  00000000`00000000
+ffffe25a`69d87818  00000000`00000000
+ffffe25a`69d87820  00000000`00000000
+ffffe25a`69d87828  00000000`00000000
+ffffe25a`69d87830  00000000`00000000
+ffffe25a`69d87838  00000000`00000000
+ffffe25a`69d87840  00000000`00000000
+ffffe25a`69d87848  00000000`00000000
+ffffe25a`69d87850  00000000`00000000
+ffffe25a`69d87858  00000000`00000000
+ffffe25a`69d87860  00000000`00000000
+ffffe25a`69d87868  00000000`00000000
+ffffe25a`69d87870  00000000`00000000
+ffffe25a`69d87878  00000000`00000000
+ffffe25a`69d87880  00000000`00000000
+ffffe25a`69d87888  00000000`00000000
+ffffe25a`69d87890  00000000`00000000
+ffffe25a`69d87898  00000000`00000000
+ffffe25a`69d878a0  00000000`00000000
+ffffe25a`69d878a8  00000000`00000000
+ffffe25a`69d878b0  00000000`00000000
+ffffe25a`69d878b8  00000000`00000000
+ffffe25a`69d878c0  00000000`00000000
+ffffe25a`69d878c8  00000000`00000000
+ffffe25a`69d878d0  00000000`00000000
+ffffe25a`69d878d8  00000000`00000000
+ffffe25a`69d878e0  00000000`00000000
+ffffe25a`69d878e8  00000000`00000000
+ffffe25a`69d878f0  00000000`00000000
+ffffe25a`69d878f8  00000000`00000000
+ffffe25a`69d87900  00000000`00000000
+ffffe25a`69d87908  00000000`00000000
+ffffe25a`69d87910  00000000`00000000
+ffffe25a`69d87918  00000000`00000000
+ffffe25a`69d87920  00000000`00000000
+ffffe25a`69d87928  00000000`00000000
+ffffe25a`69d87930  00000000`00000000
+ffffe25a`69d87938  00000000`00000000
+ffffe25a`69d87940  00000000`00000000
+ffffe25a`69d87948  00000000`00000000
+ffffe25a`69d87950  00000000`00000000
+ffffe25a`69d87958  00000000`00000000
+ffffe25a`69d87960  00000000`00000000
+ffffe25a`69d87968  00000000`00000000
+ffffe25a`69d87970  00000000`00000000
+ffffe25a`69d87978  00000000`00000000
+ffffe25a`69d87980  00000000`00000000
+ffffe25a`69d87988  00000000`00000000
+ffffe25a`69d87990  00000000`00000000
+ffffe25a`69d87998  00000000`00000000
+ffffe25a`69d879a0  00000000`00000000
+ffffe25a`69d879a8  00000000`00000000
+ffffe25a`69d879b0  00000000`00000000
+ffffe25a`69d879b8  00000000`00000000
+ffffe25a`69d879c0  00000000`00000000
+ffffe25a`69d879c8  00000000`00000000
+ffffe25a`69d879d0  00000000`00000000
+ffffe25a`69d879d8  00000000`00000000
+ffffe25a`69d879e0  00000000`00000000
+ffffe25a`69d879e8  00000000`00000000
+ffffe25a`69d879f0  00000000`00000000
+ffffe25a`69d879f8  00000000`00000000
+ffffe25a`69d87a00  00000000`00000000
+ffffe25a`69d87a08  00000000`00000000
+ffffe25a`69d87a10  00000000`00000000
+ffffe25a`69d87a18  00000000`00000000
+ffffe25a`69d87a20  00000000`00000000
+ffffe25a`69d87a28  00000000`00000000
+ffffe25a`69d87a30  00000000`00000000
+ffffe25a`69d87a38  00000000`00000000
+ffffe25a`69d87a40  00000000`00000000
+ffffe25a`69d87a48  00000000`00000000
+ffffe25a`69d87a50  00000000`00000000
+ffffe25a`69d87a58  00000000`00000000
+ffffe25a`69d87a60  00000000`00000000
+ffffe25a`69d87a68  00000000`00000000
+ffffe25a`69d87a70  003e0000`00000127
+ffffe25a`69d87a78  01d52db6`b5648b03
+ffffe25a`69d87a80  00000040`00000a10
+ffffe25a`69d87a88  ffffe215`0006bbff
+ffffe25a`69d87a90  003e0000`0000004b
+ffffe25a`69d87a98  01d52db5`b850ad96
+ffffe25a`69d87aa0  00000010`00000c3c
+ffffe25a`69d87aa8  00000000`0006f60b
+ffffe25a`69d87ab0  003e0000`000000ad
+ffffe25a`69d87ab8  01d52db5`de92aa68
+ffffe25a`69d87ac0  00000040`00000600
+ffffe25a`69d87ac8  ffffe215`00065825
+ffffe25a`69d87ad0  003e0000`00000068
+ffffe25a`69d87ad8  01d52db5`ba625fc9
+ffffe25a`69d87ae0  00000000`000012b4
+ffffe25a`69d87ae8  00000000`0006ba79
+ffffe25a`69d87af0  003e0000`00000030
+ffffe25a`69d87af8  01d52db5`b7aaece2
+ffffe25a`69d87b00  00000040`000007b0
+ffffe25a`69d87b08  ffffe215`00065edc
+ffffe25a`69d87b10  003e0000`00000128
+ffffe25a`69d87b18  01d52db6`b564e940
+ffffe25a`69d87b20  00000040`0000237c
+ffffe25a`69d87b28  ffffe215`0006bbff
+ffffe25a`69d87b30  003e0000`00000034
+ffffe25a`69d87b38  01d52db5`b7d73cc2
+ffffe25a`69d87b40  00000040`00000878
+ffffe25a`69d87b48  ffffe215`00066024
+ffffe25a`69d87b50  003e0000`00000049
+ffffe25a`69d87b58  01d52db5`b84c58ab
+ffffe25a`69d87b60  00000040`00000c08
+ffffe25a`69d87b68  ffffe215`0006ba79
+ffffe25a`69d87b70  003e0000`00000054
+ffffe25a`69d87b78  01d52db5`b8600b41
+ffffe25a`69d87b80  00000050`00000cec
+ffffe25a`69d87b88  ffffe215`0006befd
+ffffe25a`69d87b90  003e0000`0000005a
+ffffe25a`69d87b98  01d52db5`b9148798
+ffffe25a`69d87ba0  00000010`00000fdc
+ffffe25a`69d87ba8  00000000`0006b6ee
+ffffe25a`69d87bb0  003e0000`00000039
+ffffe25a`69d87bb8  01d52db5`b7fe774b
+ffffe25a`69d87bc0  00000040`00000960
+ffffe25a`69d87bc8  00000000`000660ef
+ffffe25a`69d87bd0  003e0000`0000005c
+ffffe25a`69d87bd8  01d52db5`b950ccb3
+ffffe25a`69d87be0  00000010`000002cc
+ffffe25a`69d87be8  00000000`0006adb7
+ffffe25a`69d87bf0  003e0000`00000016
+ffffe25a`69d87bf8  01d52db5`b735c6e4
+ffffe25a`69d87c00  00000050`000001a4
+ffffe25a`69d87c08  00000000`0006f4d2
+ffffe25a`69d87c10  003e0000`00000053
+ffffe25a`69d87c18  01d52db5`b85ff3ae
+ffffe25a`69d87c20  00000050`00000ce4
+ffffe25a`69d87c28  00000000`0006b846
+ffffe25a`69d87c30  003e0000`00000125
+ffffe25a`69d87c38  01d52db6`b55f7a95
+ffffe25a`69d87c40  00000040`00000ac4
+ffffe25a`69d87c48  ffffe215`0006bc0f
+ffffe25a`69d87c50  003e0000`000000e8
+ffffe25a`69d87c58  01d52db6`504bb32a
+ffffe25a`69d87c60  00000040`00001438
+ffffe25a`69d87c68  ffffe215`0006e448
+ffffe25a`69d87c70  003e0000`000000d5
+ffffe25a`69d87c78  01d52db6`0338d5ba
+ffffe25a`69d87c80  00000040`0000024c
+ffffe25a`69d87c88  ffffe215`00062945
+ffffe25a`69d87c90  003e0000`000000d4
+ffffe25a`69d87c98  01d52db6`032c5295
+ffffe25a`69d87ca0  00000040`00001854
+ffffe25a`69d87ca8  ffffe215`00062954
+ffffe25a`69d87cb0  003e0000`000000e2
+ffffe25a`69d87cb8  01d52db6`47625ece
+ffffe25a`69d87cc0  00000050`00000504
+ffffe25a`69d87cc8  00000000`00062e85
+ffffe25a`69d87cd0  003e0000`00000060
+ffffe25a`69d87cd8  01d52db5`ba19de90
+ffffe25a`69d87ce0  00000040`00001160
+ffffe25a`69d87ce8  ffffe215`00064885
+ffffe25a`69d87cf0  00000000`00000000
+ffffe25a`69d87cf8  00000000`0000c034
+ffffe25a`69d87d00  00000000`00000000
+ffffe25a`69d87d08  00000000`00000000
+ffffe25a`69d87d10  00000000`00000000
+ffffe25a`69d87d18  00000000`00000000
+ffffe25a`69d87d20  00000000`00000000
+ffffe25a`69d87d28  00000000`00000000
+ffffe25a`69d87d30  00000000`00000000
+ffffe25a`69d87d38  00000000`00000000
+ffffe25a`69d87d40  00000001`00000000
+ffffe25a`69d87d48  00000000`00000000
+ffffe25a`69d87d50  ffffffff`00000000
+ffffe25a`69d87d58  00000000`00000000
+ffffe25a`69d87d60  00000000`00000161
+ffffe25a`69d87d68  00000000`00000000
+ffffe25a`69d87d70  00000000`00000000
+ffffe25a`69d87d78  00000000`00000000
+ffffe25a`69d87d80  00000000`00000000
+ffffe25a`69d87d88  00000000`00000000
+ffffe25a`69d87d90  00000000`00000000
+ffffe25a`69d87d98  00000000`00000000
+ffffe25a`69d87da0  00000000`00000000
+ffffe25a`69d87da8  00000000`00000000
+ffffe25a`69d87db0  00000000`00000000
+ffffe25a`69d87db8  00000000`00000000
+ffffe25a`69d87dc0  00000000`00000000
+ffffe25a`69d87dc8  00000000`00000000
+ffffe25a`69d87dd0  00000000`00000000
+ffffe25a`69d87dd8  00000000`00000000
+ffffe25a`69d87de0  00000000`00000000
+ffffe25a`69d87de8  00000000`00000000
+ffffe25a`69d87df0  00000000`00000000
+ffffe25a`69d87df8  00000000`00000000
+ffffe25a`69d87e00  00000000`00000000
+ffffe25a`69d87e08  00000000`00000000
+ffffe25a`69d87e10  00000000`00000000
+ffffe25a`69d87e18  00000000`00000000
+ffffe25a`69d87e20  00000000`00000000
+ffffe25a`69d87e28  00000000`00000000
+ffffe25a`69d87e30  00000000`00000000
+ffffe25a`69d87e38  00000000`00000000
+ffffe25a`69d87e40  00000000`00000000
+ffffe25a`69d87e48  00000000`00000000
+ffffe25a`69d87e50  00000000`00000000
+ffffe25a`69d87e58  00000000`00000000
+ffffe25a`69d87e60  00000000`00000000
+ffffe25a`69d87e68  00000000`00000000
+ffffe25a`69d87e70  00000000`00000000
+ffffe25a`69d87e78  00000000`00000000
+ffffe25a`69d87e80  00000000`00000000
+ffffe25a`69d87e88  00000000`00000000
+ffffe25a`69d87e90  00000000`00000000
+ffffe25a`69d87e98  00000000`00000000
+ffffe25a`69d87ea0  00000000`00000000
+ffffe25a`69d87ea8  00000000`00000000
+ffffe25a`69d87eb0  00000000`00000000
+ffffe25a`69d87eb8  00000000`00000000
+ffffe25a`69d87ec0  00000000`00000000
+ffffe25a`69d87ec8  00000000`00000000
+ffffe25a`69d87ed0  00000000`00000000
+ffffe25a`69d87ed8  00000000`00000000
+ffffe25a`69d87ee0  00000000`00000000
+ffffe25a`69d87ee8  00000000`00000000
+ffffe25a`69d87ef0  00000000`00000000
+ffffe25a`69d87ef8  00000000`00000000
+ffffe25a`69d87f00  00000000`00000000
+ffffe25a`69d87f08  00000000`00000000
+ffffe25a`69d87f10  00000000`00000000
+ffffe25a`69d87f18  00000000`00000000
+ffffe25a`69d87f20  00000000`00000000
+ffffe25a`69d87f28  00000000`00000000
+ffffe25a`69d87f30  00000000`00000000
+ffffe25a`69d87f38  00000000`00000000
+ffffe25a`69d87f40  00000000`00000000
+ffffe25a`69d87f48  00000000`00000000
+ffffe25a`69d87f50  00000000`00000000
+ffffe25a`69d87f58  00000000`00000000
+ffffe25a`69d87f60  00000000`00000000
+ffffe25a`69d87f68  00000000`00000000
+ffffe25a`69d87f70  00000000`00000000
+ffffe25a`69d87f78  00000000`00000000
+ffffe25a`69d87f80  00000000`00000000
+ffffe25a`69d87f88  00000000`00000000
+ffffe25a`69d87f90  00000000`00000000
+ffffe25a`69d87f98  00000000`00000000
+ffffe25a`69d87fa0  00000000`00000000
+ffffe25a`69d87fa8  00000000`00000000
+ffffe25a`69d87fb0  00000000`00000000
+ffffe25a`69d87fb8  00000000`00000000
+ffffe25a`69d87fc0  00000000`00000000
+ffffe25a`69d87fc8  00000000`00000000
+ffffe25a`69d87fd0  00000000`00000000
+ffffe25a`69d87fd8  00000000`00000000
+ffffe25a`69d87fe0  00000000`00000000
+ffffe25a`69d87fe8  00000000`00000000
+ffffe25a`69d87ff0  00000000`00000000
+ffffe25a`69d87ff8  00000000`00000000
+ffffe25a`69d88000  000010cd`00001008
+ffffe25a`69d88008  000010d4`001bf348
+ffffe25a`69d88010  001bf364`000012b6
+ffffe25a`69d88018  00001339`000012c0
+ffffe25a`69d88020  00001340`001bf39c
+ffffe25a`69d88028  001bf3c8`0000159f
+ffffe25a`69d88030  00001629`000015b0
+ffffe25a`69d88038  00001630`001bf3fc
+ffffe25a`69d88040  001bf428`000017a9
+ffffe25a`69d88048  00001809`000017b0
+ffffe25a`69d88050  00001810`001bf474
+ffffe25a`69d88058  001bf484`000018e0
+ffffe25a`69d88060  0000190e`000018f0
+ffffe25a`69d88068  00001920`001bf4c0
+ffffe25a`69d88070  001bf4cc`00001a13
+ffffe25a`69d88078  00001a9d`00001a20
+ffffe25a`69d88080  00001aa4`001bf4f8
+ffffe25a`69d88088  001bf520`00001b4b
+ffffe25a`69d88090  00001b6e`00001b60
+ffffe25a`69d88098  00001b74`001bf4c0
+ffffe25a`69d880a0  001bf54c`00001c5f
+ffffe25a`69d880a8  00001ca9`00001c70
+ffffe25a`69d880b0  00001cb0`001bf474
+ffffe25a`69d880b8  001bf568`00001cd9
+ffffe25a`69d880c0  00001e75`00001ce0
+ffffe25a`69d880c8  00001e7c`001bf574
+ffffe25a`69d880d0  001bf5a0`000020b6
+ffffe25a`69d880d8  00002166`000020bc
+ffffe25a`69d880e0  0000216c`001bf5cc
+ffffe25a`69d880e8  001bf5e8`0000230c
+ffffe25a`69d880f0  000023f2`00002314
+ffffe25a`69d880f8  000023f8`001bf610
+ffffe25a`69d88100  001bf638`00002444
+ffffe25a`69d88108  00002510`0000244c
+ffffe25a`69d88110  00002520`001bf648
+ffffe25a`69d88118  001bf4c0`00002536
+ffffe25a`69d88120  00002612`00002540
+ffffe25a`69d88128  00002618`001bf670
+ffffe25a`69d88130  001bf6a0`000026af
+ffffe25a`69d88138  00002835`000026b8
+ffffe25a`69d88140  0000285c`001bf6b8
+ffffe25a`69d88148  001bf6e4`00002901
+ffffe25a`69d88150  00002946`00002930
+ffffe25a`69d88158  00002950`001bf4c0
+ffffe25a`69d88160  001bf6f8`00002a4c
+ffffe25a`69d88168  00002a76`00002a60
+ffffe25a`69d88170  00002a7c`001bf728
+ffffe25a`69d88178  001bf744`00002af1
+ffffe25a`69d88180  00002c56`00002b00
+ffffe25a`69d88188  00002c60`001bf754
+ffffe25a`69d88190  001bf794`00002d73
+ffffe25a`69d88198  00003080`00002dd0
+ffffe25a`69d881a0  00003090`001bf7c8
+ffffe25a`69d881a8  001bf810`0000316b
+ffffe25a`69d881b0  0000327b`00003180
+ffffe25a`69d881b8  00003284`001bf840
+ffffe25a`69d881c0  001bf868`00003348
+ffffe25a`69d881c8  0000336c`00003350
+ffffe25a`69d881d0  00003374`001bf894
+ffffe25a`69d881d8  001bf8a0`0000339e
+ffffe25a`69d881e0  000034ce`000033b0
+ffffe25a`69d881e8  000034e0`001bf8c0
+ffffe25a`69d881f0  001bf8e8`00003759
+ffffe25a`69d881f8  00003806`00003760
+ffffe25a`69d88200  0000380c`001bf93c
+ffffe25a`69d88208  001bf968`00003890
+ffffe25a`69d88210  000038d1`000038a0
+ffffe25a`69d88218  000038d8`001bf974
+ffffe25a`69d88220  001bf980`00003988
+ffffe25a`69d88228  000039b6`00003990
+ffffe25a`69d88230  000039c0`001bf894
+ffffe25a`69d88238  001bf974`000039f5
+ffffe25a`69d88240  00003a55`000039fc
+ffffe25a`69d88248  00003a60`001bf9a8
+ffffe25a`69d88250  001bf9c4`00003b22
+ffffe25a`69d88258  00003c06`00003b28
+ffffe25a`69d88260  00003c10`001bf9d8
+ffffe25a`69d88268  001bf4c0`00003c29
+ffffe25a`69d88270  00003ca3`00003c30
+ffffe25a`69d88278  00003cac`001bfa18
+ffffe25a`69d88280  001bfa2c`00003d24
+ffffe25a`69d88288  00003de2`00003dc0
+ffffe25a`69d88290  00003df0`001bfa48
+ffffe25a`69d88298  001bfa54`00003ed1
+ffffe25a`69d882a0  000040aa`00003f58
+ffffe25a`69d882a8  000040d0`001bfa90
+ffffe25a`69d882b0  001bf4c0`000040e5
+ffffe25a`69d882b8  0000412f`000040f0
+ffffe25a`69d882c0  00004160`001bf474
+ffffe25a`69d882c8  001bfab8`000041a3
+ffffe25a`69d882d0  000041c6`000041b0
+ffffe25a`69d882d8  000041d0`001bf4c0
+ffffe25a`69d882e0  001bf474`0000422d
+ffffe25a`69d882e8  00004333`00004240
+ffffe25a`69d882f0  00004340`001bfacc
+ffffe25a`69d882f8  001bf894`000043bc
+ffffe25a`69d88300  00004431`00004400
+ffffe25a`69d88308  00004440`001bfb04
+ffffe25a`69d88310  001bf894`00004466
+ffffe25a`69d88318  000044ca`00004470
+ffffe25a`69d88320  000044d0`001bfab8
+ffffe25a`69d88328  001bfb10`00004555
+ffffe25a`69d88330  00004651`0000455c
+ffffe25a`69d88338  00004660`001bfb24
+ffffe25a`69d88340  001bfb40`000046a6
+ffffe25a`69d88348  000046e1`000046ac
+ffffe25a`69d88350  000046f0`001bfb54
+ffffe25a`69d88358  001bf474`0000471f
+ffffe25a`69d88360  000047e9`00004730
+ffffe25a`69d88368  00004800`001bfb60
+ffffe25a`69d88370  001bf894`0000482d
+ffffe25a`69d88378  00004911`0000489c
+ffffe25a`69d88380  00004920`001bf744
+ffffe25a`69d88388  001bfb90`00004950
+ffffe25a`69d88390  000049bc`00004958
+ffffe25a`69d88398  000049d0`001bf744
+ffffe25a`69d883a0  001bfb04`000049f5
+ffffe25a`69d883a8  00004a3e`00004a00
+ffffe25a`69d883b0  00004a50`001bf894
+ffffe25a`69d883b8  001bf4c0`00004a71
+ffffe25a`69d883c0  00004ab2`00004a78
+ffffe25a`69d883c8  00004ac0`001bfbd0
+ffffe25a`69d883d0  001bfbe4`00004ae2
+ffffe25a`69d883d8  00004b16`00004b00
+ffffe25a`69d883e0  00004b20`001bf4c0
+ffffe25a`69d883e8  001bfbf0`00004b49
+ffffe25a`69d883f0  00004b66`00004b50
+ffffe25a`69d883f8  00004b70`001bf4c0
+ffffe25a`69d88400  001bfc28`00004b85
+ffffe25a`69d88408  00004ba6`00004b90
+ffffe25a`69d88410  00004bb0`001bf4c0
+ffffe25a`69d88418  001bf4c0`00004bc6
+ffffe25a`69d88420  00004d76`00004bd0
+ffffe25a`69d88428  00004d7c`001bf4dc
+ffffe25a`69d88430  001bf744`00004df6
+ffffe25a`69d88438  00004e60`00004dfc
+ffffe25a`69d88440  00004e70`001bf744
+ffffe25a`69d88448  001bfc34`00004f86
+ffffe25a`69d88450  00004ff0`00004f8c
+ffffe25a`69d88458  00004ff8`001bf744
+ffffe25a`69d88460  001bf744`00005064
+ffffe25a`69d88468  000050de`0000506c
+ffffe25a`69d88470  000050e4`001bf744
+ffffe25a`69d88478  001bf744`00005159
+ffffe25a`69d88480  000051db`00005160
+ffffe25a`69d88488  000051e4`001bfc5c
+ffffe25a`69d88490  001bf744`0000524c
+ffffe25a`69d88498  00005336`00005260
+ffffe25a`69d884a0  0000533c`001bfc70
+ffffe25a`69d884a8  001bf744`000053a1
+ffffe25a`69d884b0  0000541a`000053a8
+ffffe25a`69d884b8  00005420`001bf744
+ffffe25a`69d884c0  001bfc94`00005493
+ffffe25a`69d884c8  000054e2`0000549c
+ffffe25a`69d884d0  000054e8`001bf4c0
+ffffe25a`69d884d8  001bfcb0`00005602
+ffffe25a`69d884e0  00005799`00005608
+ffffe25a`69d884e8  000057a0`001bfce0
+ffffe25a`69d884f0  001bfb40`00005816
+ffffe25a`69d884f8  0000590c`00005898
+ffffe25a`69d88500  00005914`001bf744
+ffffe25a`69d88508  001bf744`00005988
+ffffe25a`69d88510  00005a04`00005990
+ffffe25a`69d88518  00005a0c`001bf744
+ffffe25a`69d88520  001bf744`00005a86
+ffffe25a`69d88528  00005afa`00005a8c
+ffffe25a`69d88530  00005b00`001bf744
+ffffe25a`69d88538  001bf744`00005b7a
+ffffe25a`69d88540  00005c04`00005b80
+ffffe25a`69d88548  00005c0c`001bf744
+ffffe25a`69d88550  001bf744`00005c70
+ffffe25a`69d88558  00005cf2`00005c78
+ffffe25a`69d88560  00005cf8`001bf744
+ffffe25a`69d88568  001bf744`00005d75
+ffffe25a`69d88570  00005de0`00005d7c
+ffffe25a`69d88578  00005de8`001bf744
+ffffe25a`69d88580  001bf744`00005e4c
+ffffe25a`69d88588  00005eb8`00005e54
+ffffe25a`69d88590  00005ec0`001bf744
+ffffe25a`69d88598  001bf744`00005f24
+ffffe25a`69d885a0  00005f9e`00005f2c
+ffffe25a`69d885a8  00005fb0`001bf744
+ffffe25a`69d885b0  001bfd0c`000060cf
+ffffe25a`69d885b8  0000616f`000060e0
+ffffe25a`69d885c0  00006178`001bfd34
+ffffe25a`69d885c8  001bfd58`000062a2
+ffffe25a`69d885d0  0000631a`000062a8
+ffffe25a`69d885d8  00006320`001bf744
+ffffe25a`69d885e0  001bf744`00006384
+ffffe25a`69d885e8  000063fa`0000638c
+ffffe25a`69d885f0  00006400`001bf744
+ffffe25a`69d885f8  001bf744`0000646e
+ffffe25a`69d88600  000064e2`00006474
+ffffe25a`69d88608  000064e8`001bf744
+ffffe25a`69d88610  001bf744`0000654c
+ffffe25a`69d88618  000065c2`00006554
+ffffe25a`69d88620  000065d0`001bf744
+ffffe25a`69d88628  001bfd70`00006641
+ffffe25a`69d88630  000066ba`00006648
+ffffe25a`69d88638  000066c0`001bf744
+ffffe25a`69d88640  001bf744`00006724
+ffffe25a`69d88648  00006790`0000672c
+ffffe25a`69d88650  000067a0`001bf744
+ffffe25a`69d88658  001bfd84`000068d4
+ffffe25a`69d88660  0000698c`000068dc
+ffffe25a`69d88668  00006994`001bfdb0
+ffffe25a`69d88670  001bfdc0`00006a29
+ffffe25a`69d88678  00006b70`00006a30
+ffffe25a`69d88680  00006b78`001bfdd0
+ffffe25a`69d88688  001bfde4`00006bda
+ffffe25a`69d88690  00006c1a`00006be0
+ffffe25a`69d88698  00006c20`001bfe04
+ffffe25a`69d886a0  001bfe20`00006c85
+ffffe25a`69d886a8  00006d68`00006c90
+ffffe25a`69d886b0  00006d70`001bfe30
+ffffe25a`69d886b8  001bfe20`00006df9
+ffffe25a`69d886c0  00006f03`00006e00
+ffffe25a`69d886c8  00006f10`001bfe54
+ffffe25a`69d886d0  001bfe6c`00007056
+ffffe25a`69d886d8  000070dc`0000705c
+ffffe25a`69d886e0  000070e4`001bfb40
+ffffe25a`69d886e8  001bfb40`0000717e
+ffffe25a`69d886f0  00007366`00007190
+ffffe25a`69d886f8  0000736c`001bfe84
+ffffe25a`69d88700  001bfd58`00007484
+ffffe25a`69d88708  00007501`0000748c
+ffffe25a`69d88710  00007510`001bf744
+ffffe25a`69d88718  001bfab8`00007571
+ffffe25a`69d88720  00007675`00007578
+ffffe25a`69d88728  0000767c`001bfe9c
+ffffe25a`69d88730  001bfeb0`000077be
+ffffe25a`69d88738  000078ef`000077c4
+ffffe25a`69d88740  00007900`001bfec4
+ffffe25a`69d88748  001bfed8`0000798c
+ffffe25a`69d88750  00007a13`00007994
+ffffe25a`69d88758  00007a1c`001bff04
+ffffe25a`69d88760  001bfe20`00007a8b
+ffffe25a`69d88768  00007bbe`00007a94
+ffffe25a`69d88770  00007bd0`001bff14
+ffffe25a`69d88778  001bff3c`00007d0f
+ffffe25a`69d88780  00007d9e`00007d18
+ffffe25a`69d88788  00007db0`001bf744
+ffffe25a`69d88790  001bff64`0000801a
+ffffe25a`69d88798  00008087`00008020
+ffffe25a`69d887a0  00008090`001bf744
+ffffe25a`69d887a8  001bff7c`00008120
+ffffe25a`69d887b0  0000816b`00008128
+ffffe25a`69d887b8  00008180`001bfab8
+ffffe25a`69d887c0  001bff90`000081df
+ffffe25a`69d887c8  0000848b`000081f0
+ffffe25a`69d887d0  00008494`001bffb4
+ffffe25a`69d887d8  001bffe0`00008504
+ffffe25a`69d887e0  0000855e`0000850c
+ffffe25a`69d887e8  00008564`001bfff0
+ffffe25a`69d887f0  001c001c`000085b6
+ffffe25a`69d887f8  0000862b`000085bc
+ffffe25a`69d88800  00008634`001c0048
+ffffe25a`69d88808  001c0054`00008697
+ffffe25a`69d88810  00008713`000086a0
+ffffe25a`69d88818  0000871c`001c0060
+ffffe25a`69d88820  001c006c`000087c3
+ffffe25a`69d88828  000088c9`000087cc
+ffffe25a`69d88830  000088d0`001c0078
+ffffe25a`69d88838  001c0060`00008943
+ffffe25a`69d88840  000089bf`0000894c
+ffffe25a`69d88848  000089c8`001c0060
+ffffe25a`69d88850  001c0060`00008a3b
+ffffe25a`69d88858  00008ab7`00008a44
+ffffe25a`69d88860  00008ac0`001c0060
+ffffe25a`69d88868  001c0098`00008b41
+ffffe25a`69d88870  00008bba`00008b48
+ffffe25a`69d88878  00008bc0`001c00a4
+ffffe25a`69d88880  001c00b0`00008c3e
+ffffe25a`69d88888  00008cd9`00008c44
+ffffe25a`69d88890  00008ce0`001c00bc
+ffffe25a`69d88898  001c0054`00008d5c
+ffffe25a`69d888a0  00008df7`00008d64
+ffffe25a`69d888a8  00008e00`001c00bc
+ffffe25a`69d888b0  001c00cc`00008eb8
+ffffe25a`69d888b8  00008f1c`00008ec0
+ffffe25a`69d888c0  00008f24`001c00e4
+ffffe25a`69d888c8  001c00f0`0000902a
+ffffe25a`69d888d0  00009136`00009030
+ffffe25a`69d888d8  0000913c`001bfd58
+ffffe25a`69d888e0  001c0114`000091c5
+ffffe25a`69d888e8  0000924d`000091cc
+ffffe25a`69d888f0  00009260`001bf474
+ffffe25a`69d888f8  001c0138`00009335
+ffffe25a`69d88900  00009477`00009340
+ffffe25a`69d88908  00009480`001c0158
+ffffe25a`69d88910  001bfab8`00009558
+ffffe25a`69d88918  000096cb`00009560
+ffffe25a`69d88920  000096e0`001c0188
+ffffe25a`69d88928  001c01b4`00009927
+ffffe25a`69d88930  0000a34d`00009930
+ffffe25a`69d88938  0000a354`001c01f4
+ffffe25a`69d88940  001c0238`0000c1fe
+ffffe25a`69d88948  0000c25f`0000c204
+ffffe25a`69d88950  0000c268`001c0258
+ffffe25a`69d88958  001c0270`0000c552
+ffffe25a`69d88960  0000c73e`0000c558
+ffffe25a`69d88968  0000c744`001c0284
+ffffe25a`69d88970  001c02b4`0000c885
+ffffe25a`69d88978  0000c8d4`0000c88c
+ffffe25a`69d88980  0000c8dc`001bf474
+ffffe25a`69d88988  001c02e0`0000c991
+ffffe25a`69d88990  0000cb32`0000c998
+ffffe25a`69d88998  0000cb38`001c02f8
+ffffe25a`69d889a0  001bf474`0000cba9
+ffffe25a`69d889a8  0000cbca`0000cbb0
+ffffe25a`69d889b0  0000cbd0`001bfc28
+ffffe25a`69d889b8  001bf744`0000cc2d
+ffffe25a`69d889c0  0000cc85`0000cc40
+ffffe25a`69d889c8  0000cc8c`001bf744
+ffffe25a`69d889d0  001c0324`0000cd58
+ffffe25a`69d889d8  0000cdd0`0000cd60
+ffffe25a`69d889e0  0000cde0`001bfab8
+ffffe25a`69d889e8  001c033c`0000ce28
+ffffe25a`69d889f0  0000ce74`0000ce30
+ffffe25a`69d889f8  0000ce80`001c0360
+ffffe25a`69d88a00  001c0370`0000cfd5
+ffffe25a`69d88a08  0000d0bb`0000cfe0
+ffffe25a`69d88a10  0000d0d0`001c039c
+ffffe25a`69d88a18  001c03c8`0000d16d
+ffffe25a`69d88a20  0000d264`0000d180
+ffffe25a`69d88a28  0000d270`001c03ec
+ffffe25a`69d88a30  001c041c`0000d371
+ffffe25a`69d88a38  0000d40a`0000d380
+ffffe25a`69d88a40  0000d410`001c0448
+ffffe25a`69d88a48  001c0474`0000d55d
+ffffe25a`69d88a50  0000d72b`0000d5f0
+ffffe25a`69d88a58  0000d740`001c049c
+ffffe25a`69d88a60  001c04c8`0000d82a
+ffffe25a`69d88a68  0000d8ea`0000d830
+ffffe25a`69d88a70  0000d8f0`001c04f4
+ffffe25a`69d88a78  001bf4c0`0000d905
+ffffe25a`69d88a80  0000d9ff`0000d90c
+ffffe25a`69d88a88  0000da10`001c0510
+ffffe25a`69d88a90  001c053c`0000db42
+ffffe25a`69d88a98  0000df77`0000db50
+ffffe25a`69d88aa0  0000df80`001c056c
+ffffe25a`69d88aa8  001c05a4`0000e052
+ffffe25a`69d88ab0  0000e0dd`0000e0a0
+ffffe25a`69d88ab8  0000e0e4`001bf474
+ffffe25a`69d88ac0  001c05b4`0000e71c
+ffffe25a`69d88ac8  0000e757`0000e724
+ffffe25a`69d88ad0  0000e760`001c05ec
+ffffe25a`69d88ad8  001c05f8`0000e810
+ffffe25a`69d88ae0  0000ea71`0000e820
+ffffe25a`69d88ae8  0000ea80`001c0610
+ffffe25a`69d88af0  001c0640`0000eb62
+ffffe25a`69d88af8  0000ebbc`0000eb68
+ffffe25a`69d88b00  0000ebc4`001c0670
+ffffe25a`69d88b08  001c0680`0000ec18
+ffffe25a`69d88b10  0000eccf`0000ec20
+ffffe25a`69d88b18  0000ece0`001c068c
+ffffe25a`69d88b20  001c06b0`0000eda8
+ffffe25a`69d88b28  0000f197`0000edb0
+ffffe25a`69d88b30  0000f1a0`001c06d8
+ffffe25a`69d88b38  001c0744`0000f298
+ffffe25a`69d88b40  0000f3d4`0000f2a0
+ffffe25a`69d88b48  0000f3e0`001c0770
+ffffe25a`69d88b50  001c07a0`0000f564
+ffffe25a`69d88b58  0000f617`0000f570
+ffffe25a`69d88b60  0000f620`001c07cc
+ffffe25a`69d88b68  001c07e0`0000f6e6
+ffffe25a`69d88b70  0000f8cf`0000f6f0
+ffffe25a`69d88b78  0000f8e0`001c0804
+ffffe25a`69d88b80  001c0828`0000fbe6
+ffffe25a`69d88b88  0000fcf6`0000fc1c
+ffffe25a`69d88b90  0000fd30`001c084c
+ffffe25a`69d88b98  001bfab8`0000fdb4
+ffffe25a`69d88ba0  0000fe32`0000fdbc
+ffffe25a`69d88ba8  0000fe40`001bfc94
+ffffe25a`69d88bb0  001c0870`000100fe
+ffffe25a`69d88bb8  00010276`00010104
+ffffe25a`69d88bc0  0001027c`001c08a0
+ffffe25a`69d88bc8  001c08d0`000102e1
+ffffe25a`69d88bd0  000104a8`000102f0
+ffffe25a`69d88bd8  000104b0`001c08e4
+ffffe25a`69d88be0  001c0914`00010820
+ffffe25a`69d88be8  000108e5`00010828
+ffffe25a`69d88bf0  000108f0`001c0948
+ffffe25a`69d88bf8  001c0954`00010995
+ffffe25a`69d88c00  00010adf`000109a0
+ffffe25a`69d88c08  00010ae8`001c0964
+ffffe25a`69d88c10  001bfb40`00010b78
+ffffe25a`69d88c18  00010eab`00010b80
+ffffe25a`69d88c20  00010ec0`001c0988
+ffffe25a`69d88c28  001c09b4`00010f2b
+ffffe25a`69d88c30  00010f63`00010f40
+ffffe25a`69d88c38  00010f6c`001bf4c0
+ffffe25a`69d88c40  001c09d0`00011132
+ffffe25a`69d88c48  000113a5`00011138
+ffffe25a`69d88c50  000113d0`001c09fc
+ffffe25a`69d88c58  001c0a4c`000114c5
+ffffe25a`69d88c60  000115f3`000114f0
+ffffe25a`69d88c68  000115fc`001c0a70
+ffffe25a`69d88c70  001bfab8`0001166c
+ffffe25a`69d88c78  00011bb1`00011674
+ffffe25a`69d88c80  00011bc0`001c0a9c
+ffffe25a`69d88c88  001c0ac4`00011ca4
+ffffe25a`69d88c90  00011d65`00011cac
+ffffe25a`69d88c98  00011d6c`001c0af0
+ffffe25a`69d88ca0  001c0b20`00011e70
+ffffe25a`69d88ca8  00011eab`00011e78
+ffffe25a`69d88cb0  00011eb4`001c0b48
+ffffe25a`69d88cb8  001c0b54`00011f25
+ffffe25a`69d88cc0  00011f50`00011f2c
+ffffe25a`69d88cc8  00011f60`001bf894
+ffffe25a`69d88cd0  001c0b78`00011f94
+ffffe25a`69d88cd8  00012021`00011f9c
+ffffe25a`69d88ce0  00012028`001c0b94
+ffffe25a`69d88ce8  001bf474`0001207f
+ffffe25a`69d88cf0  000120ef`00012090
+ffffe25a`69d88cf8  00012100`001bf474
+ffffe25a`69d88d00  001bf894`00012131
+ffffe25a`69d88d08  00012301`00012138
+ffffe25a`69d88d10  00012308`001c0bac
+ffffe25a`69d88d18  001c0be0`00012364
+ffffe25a`69d88d20  000125b6`000123bc
+ffffe25a`69d88d28  000125c0`001c0c00
+ffffe25a`69d88d30  001c0c30`0001262a
+ffffe25a`69d88d38  0001269c`00012630
+ffffe25a`69d88d40  000126a4`001c0c50
+ffffe25a`69d88d48  001c0c74`00012807
+ffffe25a`69d88d50  00012836`00012810
+ffffe25a`69d88d58  0001283c`001c0ca8
+ffffe25a`69d88d60  001c0cb4`000128ba
+ffffe25a`69d88d68  000128f2`000128c0
+ffffe25a`69d88d70  000128f8`001c0cdc
+ffffe25a`69d88d78  001c0d00`00012980
+ffffe25a`69d88d80  000129dc`00012988
+ffffe25a`69d88d88  000129e4`001c0d20
+ffffe25a`69d88d90  001c0d40`00012a36
+ffffe25a`69d88d98  00012ac6`00012a58
+ffffe25a`69d88da0  00012ad0`001c0d5c
+ffffe25a`69d88da8  001bf4c0`00012ae7
+ffffe25a`69d88db0  00012b4b`00012af0
+ffffe25a`69d88db8  00012b54`001bf474
+ffffe25a`69d88dc0  001c0d70`00012bb2
+ffffe25a`69d88dc8  00012d9b`00012bb8
+ffffe25a`69d88dd0  00012e14`001c0d84
+ffffe25a`69d88dd8  001bf894`00012e4b
+ffffe25a`69d88de0  00012e7f`00012e54
+ffffe25a`69d88de8  00012e88`001bf4c0
+ffffe25a`69d88df0  001c0db8`00012ed3
+ffffe25a`69d88df8  00012f1a`00012edc
+ffffe25a`69d88e00  00012f20`001c0de0
+ffffe25a`69d88e08  001c0dec`00012f4f
+ffffe25a`69d88e10  000134ac`00012f60
+ffffe25a`69d88e18  000134e8`001c0e0c
+ffffe25a`69d88e20  001c0e64`000135be
+ffffe25a`69d88e28  000135fa`000135d0
+ffffe25a`69d88e30  00013600`001bf4c0
+ffffe25a`69d88e38  001c0e70`00013616
+ffffe25a`69d88e40  000136a3`00013620
+ffffe25a`69d88e48  000136b0`001c0e8c
+ffffe25a`69d88e50  001c0e98`000136c6
+ffffe25a`69d88e58  00013758`000136cc
+ffffe25a`69d88e60  00013760`001c0eb4
+ffffe25a`69d88e68  001c0edc`000137cc
+ffffe25a`69d88e70  00013854`000137d4
+ffffe25a`69d88e78  0001385c`001c0f00
+ffffe25a`69d88e80  001c0f14`00013985
+ffffe25a`69d88e88  00013a14`0001398c
+ffffe25a`69d88e90  00013a20`001c0f34
+ffffe25a`69d88e98  001c0f6c`00013bd5
+ffffe25a`69d88ea0  00013c96`00013bdc
+ffffe25a`69d88ea8  00013c9c`001c0fa4
+ffffe25a`69d88eb0  001c0fd0`00013d16
+ffffe25a`69d88eb8  00013d8a`00013d1c
+ffffe25a`69d88ec0  00013d90`001c1004
+ffffe25a`69d88ec8  001c1034`00013de1
+ffffe25a`69d88ed0  00013e51`00013de8
+ffffe25a`69d88ed8  00013e58`001c1044
+ffffe25a`69d88ee0  001c1068`00013f52
+ffffe25a`69d88ee8  00014296`00013f58
+ffffe25a`69d88ef0  0001429c`001c1094
+ffffe25a`69d88ef8  001c10cc`000143d0
+ffffe25a`69d88f00  00014407`000143d8
+ffffe25a`69d88f08  00014410`001c10f0
+ffffe25a`69d88f10  001c1110`0001480a
+ffffe25a`69d88f18  000148ad`00014810
+ffffe25a`69d88f20  000148b4`001c1148
+ffffe25a`69d88f28  001bf894`000148e0
+ffffe25a`69d88f30  00014954`000148e8
+ffffe25a`69d88f38  0001495c`001c1174
+ffffe25a`69d88f40  001c1190`00014a05
+ffffe25a`69d88f48  00014a49`00014a10
+ffffe25a`69d88f50  00014a50`001bf894
+ffffe25a`69d88f58  001c11b0`00014cf7
+ffffe25a`69d88f60  00014d1b`00014d00
+ffffe25a`69d88f68  00014d24`001c11e8
+ffffe25a`69d88f70  001c1204`00014df3
+ffffe25a`69d88f78  00015625`00014e00
+ffffe25a`69d88f80  0001562c`001c1214
+ffffe25a`69d88f88  001c126c`0001569f
+ffffe25a`69d88f90  000156cf`000156a8
+ffffe25a`69d88f98  00015738`001c129c
+ffffe25a`69d88fa0  001c12a8`0001578f
+ffffe25a`69d88fa8  00015886`00015798
+ffffe25a`69d88fb0  0001588c`001c12d4
+ffffe25a`69d88fb8  001bf474`000158d2
+ffffe25a`69d88fc0  000159cb`000158d8
+ffffe25a`69d88fc8  000159d4`001c12f0
+ffffe25a`69d88fd0  001c1308`00015a7d
+ffffe25a`69d88fd8  00015db1`00015a84
+ffffe25a`69d88fe0  00015dc0`001c1328
+ffffe25a`69d88fe8  001c135c`00015e62
+ffffe25a`69d88ff0  00016bb2`00015e68
+ffffe25a`69d88ff8  00016bc0`001c1388
+ffffe25a`69d89000  001bf474`00016c2a
+ffffe25a`69d89008  00016c89`00016c30
+ffffe25a`69d89010  00016c90`001bf474
+ffffe25a`69d89018  001c141c`00016cc0
+ffffe25a`69d89020  00016fa2`00016cd0
+ffffe25a`69d89028  00016fb0`001c1428
+ffffe25a`69d89030  001c1458`00016fe2
+ffffe25a`69d89038  0001704c`00016ff0
+ffffe25a`69d89040  00017054`001c1464
+ffffe25a`69d89048  001c1484`000170b5
+ffffe25a`69d89050  000170ee`000170c0
+ffffe25a`69d89058  000170f4`001c14a8
+ffffe25a`69d89060  001c14c4`000171b8
+ffffe25a`69d89068  0001728b`000171c0
+ffffe25a`69d89070  000172a0`001c14ec
+ffffe25a`69d89078  001bf4c0`000172b0
+ffffe25a`69d89080  0001733c`000172c0
+ffffe25a`69d89088  00017350`001bf974
+ffffe25a`69d89090  001bf4c0`0001737e
+ffffe25a`69d89098  0001744a`00017390
+ffffe25a`69d890a0  00017450`001c14f8
+ffffe25a`69d890a8  001c1520`00017507
+ffffe25a`69d890b0  00017532`00017510
+ffffe25a`69d890b8  00017540`001bfa48
+ffffe25a`69d890c0  001c154c`00017589
+ffffe25a`69d890c8  000176c6`00017590
+ffffe25a`69d890d0  000176d0`001c156c
+ffffe25a`69d890d8  001c159c`00017769
+ffffe25a`69d890e0  00017830`00017770
+ffffe25a`69d890e8  00017838`001c15bc
+ffffe25a`69d890f0  001c15d4`00017906
+ffffe25a`69d890f8  00017b88`00017910
+ffffe25a`69d89100  00017b90`001c15f8
+ffffe25a`69d89108  001c1624`00018046
+ffffe25a`69d89110  000180da`00018050
+ffffe25a`69d89118  000180da`001c1650
+ffffe25a`69d89120  001c1664`00018110
+ffffe25a`69d89128  00018123`00018110
+ffffe25a`69d89130  00018123`001c1678
+ffffe25a`69d89138  001c168c`0001818d
+ffffe25a`69d89140  000181d7`000181a0
+ffffe25a`69d89148  000181d7`001c16c4
+ffffe25a`69d89150  001c16d8`00018211
+ffffe25a`69d89158  00018226`00018211
+ffffe25a`69d89160  00018226`001c16ec
+ffffe25a`69d89168  001c1700`00018245
+ffffe25a`69d89170  00018376`00018250
+ffffe25a`69d89178  00018380`001c1714
+ffffe25a`69d89180  001c1738`000183d5
+ffffe25a`69d89188  00018416`000183dc
+ffffe25a`69d89190  0001841c`001c174c
+ffffe25a`69d89198  001c1758`00019289
+ffffe25a`69d891a0  000192cd`00019290
+ffffe25a`69d891a8  000192e0`001c17e0
+ffffe25a`69d891b0  001bf4c0`00019305
+ffffe25a`69d891b8  0001935a`0001930c
+ffffe25a`69d891c0  00019360`001c17fc
+ffffe25a`69d891c8  001bf4c0`00019384
+ffffe25a`69d891d0  000193b5`0001938c
+ffffe25a`69d891d8  000193bc`001c181c
+ffffe25a`69d891e0  001c1828`0001940b
+ffffe25a`69d891e8  0001945a`00019414
+ffffe25a`69d891f0  00019460`001c1834
+ffffe25a`69d891f8  001c1840`0001949a
+ffffe25a`69d89200  00019568`000194a0
+ffffe25a`69d89208  00019570`001c185c
+ffffe25a`69d89210  001c187c`000195ef
+ffffe25a`69d89218  000197af`000195f8
+ffffe25a`69d89220  00019818`001c188c
+ffffe25a`69d89228  001bf894`00019846
+ffffe25a`69d89230  00019a35`00019850
+ffffe25a`69d89238  00019a40`001c18c8
+ffffe25a`69d89240  001c0054`00019a72
+ffffe25a`69d89248  00019bfd`00019a78
+ffffe25a`69d89250  00019c04`001c18f0
+ffffe25a`69d89258  001c191c`00019c95
+ffffe25a`69d89260  00019ce5`00019ca0
+ffffe25a`69d89268  00019cec`001bf744
+ffffe25a`69d89270  001c1930`00019d76
+ffffe25a`69d89278  00019e07`00019d80
+ffffe25a`69d89280  00019e10`001c1958
+ffffe25a`69d89288  001c1974`00019ff8
+ffffe25a`69d89290  0001a161`0001a000
+ffffe25a`69d89298  0001a170`001c19ac
+ffffe25a`69d892a0  001c19e8`0001a1d6
+ffffe25a`69d892a8  0001a504`0001a1e0
+ffffe25a`69d892b0  0001a50c`001c19f8
+ffffe25a`69d892b8  001bf894`0001a549
+ffffe25a`69d892c0  0001a60f`0001a550
+ffffe25a`69d892c8  0001a618`001bf474
+ffffe25a`69d892d0  001bf744`0001a659
+ffffe25a`69d892d8  0001a6ea`0001a660
+ffffe25a`69d892e0  0001a6f0`001bf4c0
+ffffe25a`69d892e8  001c1a40`0001a81c
+ffffe25a`69d892f0  0001a8e0`0001a830
+ffffe25a`69d892f8  0001a8f0`001bfab8
+ffffe25a`69d89300  001bf4c0`0001a936
+ffffe25a`69d89308  0001a9c0`0001a940
+ffffe25a`69d89310  0001aa54`001c1a60
+ffffe25a`69d89318  001c1a70`0001ae9e
+ffffe25a`69d89320  0001aeee`0001aeb0
+ffffe25a`69d89328  0001aef4`001c1a9c
+ffffe25a`69d89330  001c1aa8`0001af49
+ffffe25a`69d89338  0001afb3`0001af50
+ffffe25a`69d89340  0001afbc`001c1ab4
+ffffe25a`69d89348  001c1ac8`0001b16f
+ffffe25a`69d89350  0001b3b3`0001b178
+ffffe25a`69d89358  0001b3c0`001c1af0
+ffffe25a`69d89360  001bf4c0`0001b3ee
+ffffe25a`69d89368  0001b440`0001b400
+ffffe25a`69d89370  0001b450`001bf4c0
+ffffe25a`69d89378  001bf4c0`0001b47e
+ffffe25a`69d89380  0001b4d0`0001b490
+ffffe25a`69d89388  0001b4e0`001bf4c0
+ffffe25a`69d89390  001c1b1c`0001b522
+ffffe25a`69d89398  0001b55e`0001b530
+ffffe25a`69d893a0  0001b570`001c1b38
+ffffe25a`69d893a8  001c1b44`0001b78f
+ffffe25a`69d893b0  0001bbc2`0001b7a0
+ffffe25a`69d893b8  0001bbc8`001c1b74
+ffffe25a`69d893c0  001bf894`0001bc08
+ffffe25a`69d893c8  0001bd3e`0001bc10
+ffffe25a`69d893d0  0001bd44`001c1bac
+ffffe25a`69d893d8  001c1bd4`0001bdd5
+ffffe25a`69d893e0  0001be45`0001bde0
+ffffe25a`69d893e8  0001be50`001c1bfc
+ffffe25a`69d893f0  001bf4c0`0001be5e
+ffffe25a`69d893f8  0001bfe2`0001be64
+ffffe25a`69d89400  0001bff0`001c1c08
+ffffe25a`69d89408  001c1c30`0001c034
+ffffe25a`69d89410  0001c068`0001c040
+ffffe25a`69d89418  0001c070`001c1c3c
+ffffe25a`69d89420  001bf4c0`0001c085
+ffffe25a`69d89428  0001c314`0001c090
+ffffe25a`69d89430  0001c320`001c1c48
+ffffe25a`69d89438  001c1c78`0001c5d2
+ffffe25a`69d89440  0001c6b2`0001c5d8
+ffffe25a`69d89448  0001c6b8`001c1ca8
+ffffe25a`69d89450  001c1cd0`0001c87f
+ffffe25a`69d89458  0001c94c`0001c890
+ffffe25a`69d89460  0001c954`001c1cfc
+ffffe25a`69d89468  001c1d18`0001ca4a
+ffffe25a`69d89470  0001ca9b`0001ca50
+ffffe25a`69d89478  0001ca9b`001c1d38
+ffffe25a`69d89480  001c1d4c`0001cada
+ffffe25a`69d89488  0001cfd4`0001cada
+ffffe25a`69d89490  0001cfd4`001c1d60
+ffffe25a`69d89498  001c1d74`0001d017
+ffffe25a`69d894a0  0001d030`0001d017
+ffffe25a`69d894a8  0001d030`001c1d84
+ffffe25a`69d894b0  001c1d98`0001d08c
+ffffe25a`69d894b8  0001d0b4`0001d08c
+ffffe25a`69d894c0  0001d0b4`001c1dac
+ffffe25a`69d894c8  001c1dc4`0001d0cc
+ffffe25a`69d894d0  0001d0ff`0001d0cc
+ffffe25a`69d894d8  0001d0ff`001c1dd8
+ffffe25a`69d894e0  001c1df0`0001d11e
+ffffe25a`69d894e8  0001d137`0001d11e
+ffffe25a`69d894f0  0001d137`001c1e04
+ffffe25a`69d894f8  001c1e1c`0001d149
+ffffe25a`69d89500  0001d1e0`0001d150
+ffffe25a`69d89508  0001d1e8`001bf474
+ffffe25a`69d89510  001c1e6c`0001d36c
+ffffe25a`69d89518  0001d4c6`0001d380
+ffffe25a`69d89520  0001d520`001c1e9c
+ffffe25a`69d89528  001c1ec8`0001d5bc
+ffffe25a`69d89530  0001d669`0001d5d0
+ffffe25a`69d89538  0001d670`001c1ee4
+ffffe25a`69d89540  001bf4c0`0001d67e
+ffffe25a`69d89548  0001d6ab`0001d690
+ffffe25a`69d89550  0001d6b4`001bf894
+ffffe25a`69d89558  001c1f00`0001d797
+ffffe25a`69d89560  0001d832`0001d7a0
+ffffe25a`69d89568  0001d840`001c1f2c
+ffffe25a`69d89570  001c1f50`0001d927
+ffffe25a`69d89578  0001d9c3`0001d930
+ffffe25a`69d89580  0001d9d0`001c1f7c
+ffffe25a`69d89588  001bf474`0001da20
+ffffe25a`69d89590  0001daf4`0001da70
+ffffe25a`69d89598  0001db00`001c1f90
+ffffe25a`69d895a0  001c1fb4`0001db88
+ffffe25a`69d895a8  0001dd5b`0001db90
+ffffe25a`69d895b0  0001dd90`001c1fc8
+ffffe25a`69d895b8  001c1ff4`0001de62
+ffffe25a`69d895c0  0001def1`0001deb0
+ffffe25a`69d895c8  0001df00`001bf744
+ffffe25a`69d895d0  001c2004`0001e149
+ffffe25a`69d895d8  0001e341`0001e150
+ffffe25a`69d895e0  0001e350`001c2034
+ffffe25a`69d895e8  001c2060`0001e38f
+ffffe25a`69d895f0  0001e39d`0001e38f
+ffffe25a`69d895f8  0001e39d`001c2068
+ffffe25a`69d89600  001c207c`0001e412
+ffffe25a`69d89608  0001e417`0001e412
+ffffe25a`69d89610  0001e417`001c2090
+ffffe25a`69d89618  001c20a0`0001e41d
+ffffe25a`69d89620  0001e426`0001e41d
+ffffe25a`69d89628  0001e42c`001c20b4
+ffffe25a`69d89630  001c20e4`0001e594
+ffffe25a`69d89638  0001e670`0001e5a0
+ffffe25a`69d89640  0001e680`001c2110
+ffffe25a`69d89648  001c213c`0001e6d2
+ffffe25a`69d89650  0001e92b`0001e6d8
+ffffe25a`69d89658  0001e940`001c2148
+ffffe25a`69d89660  001c217c`0001eb32
+ffffe25a`69d89668  0001ec14`0001ebac
+ffffe25a`69d89670  0001ec20`001c219c
+ffffe25a`69d89678  001c21b0`0001ed6d
+ffffe25a`69d89680  0001ee04`0001ed80
+ffffe25a`69d89688  0001ee0c`001c21bc
+ffffe25a`69d89690  001c21d8`0001ef4a
+ffffe25a`69d89698  0001f2c6`0001ef50
+ffffe25a`69d896a0  0001f2d0`001c2200
+ffffe25a`69d896a8  001c2234`0001f38f
+ffffe25a`69d896b0  0001f55a`0001f398
+ffffe25a`69d896b8  0001f560`001c2244
+ffffe25a`69d896c0  001c2274`0001fd08
+ffffe25a`69d896c8  0001fd8c`0001fd10
+ffffe25a`69d896d0  0001fda0`001c22a0
+ffffe25a`69d896d8  001c22bc`0001fef7
+ffffe25a`69d896e0  000200ed`0001ff00
+ffffe25a`69d896e8  00020120`001c22d8
+ffffe25a`69d896f0  001bf4c0`0002012e
+ffffe25a`69d896f8  0002019b`00020140
+ffffe25a`69d89700  0002019b`001c22fc
+ffffe25a`69d89708  001c2318`000203e4
+ffffe25a`69d89710  00020560`000203e4
+ffffe25a`69d89718  00020560`001c2330
+ffffe25a`69d89720  001c2344`0002057f
+ffffe25a`69d89728  000205b7`0002057f
+ffffe25a`69d89730  000205c0`001c2358
+ffffe25a`69d89738  001c23ac`0002078d
+ffffe25a`69d89740  000207ea`000207a0
+ffffe25a`69d89748  000207ea`001c23d4
+ffffe25a`69d89750  001c23e4`00020805
+ffffe25a`69d89758  00020b88`00020805
+ffffe25a`69d89760  00020b88`001c2400
+ffffe25a`69d89768  001c2414`00020ce9
+ffffe25a`69d89770  00020d3b`00020ce9
+ffffe25a`69d89778  00020da0`001c2424
+ffffe25a`69d89780  001c2478`000213dc
+ffffe25a`69d89788  00021b99`000213f0
+ffffe25a`69d89790  00021ba0`001c24bc
+ffffe25a`69d89798  001c24e8`00021bbd
+ffffe25a`69d897a0  00021d6e`00021bbd
+ffffe25a`69d897a8  00021d6e`001c24f4
+ffffe25a`69d897b0  001c2518`000220a7
+ffffe25a`69d897b8  000220e0`000220a7
+ffffe25a`69d897c0  000220e0`001c252c
+ffffe25a`69d897c8  001c253c`000220ea
+ffffe25a`69d897d0  00022119`000220ea
+ffffe25a`69d897d8  00022119`001c2550
+ffffe25a`69d897e0  001c2574`0002215d
+ffffe25a`69d897e8  0002219c`0002215d
+ffffe25a`69d897f0  0002219c`001c259c
+ffffe25a`69d897f8  001c25c0`000221a8
+ffffe25a`69d89800  00022274`000221b0
+ffffe25a`69d89808  0002227c`001c2668
+ffffe25a`69d89810  001c268c`000222c0
+ffffe25a`69d89818  000222de`000222d0
+ffffe25a`69d89820  000222f0`001bf4c0
+ffffe25a`69d89828  001c26bc`00022fec
+ffffe25a`69d89830  0002303a`00022ff4
+ffffe25a`69d89838  00023040`001bfab8
+ffffe25a`69d89840  001c26ec`000231ae
+ffffe25a`69d89848  0002328a`000231b4
+ffffe25a`69d89850  00023290`001c2714
+ffffe25a`69d89858  001bf894`000232b5
+ffffe25a`69d89860  000233af`000232c0
+ffffe25a`69d89868  000233b8`001c2738
+ffffe25a`69d89870  001bf638`00023409
+ffffe25a`69d89878  00023444`00023410
+ffffe25a`69d89880  00023450`001c2754
+ffffe25a`69d89888  001c2770`0002352b
+ffffe25a`69d89890  000235f3`0002352b
+ffffe25a`69d89898  000235f3`001c278c
+ffffe25a`69d898a0  001c27a0`000236d6
+ffffe25a`69d898a8  0002375b`000236d6
+ffffe25a`69d898b0  0002375b`001c27b8
+ffffe25a`69d898b8  001c27c8`0002384b
+ffffe25a`69d898c0  00023882`00023860
+ffffe25a`69d898c8  00023882`001c2818
+ffffe25a`69d898d0  001c2824`000238f4
+ffffe25a`69d898d8  0002394a`000238f4
+ffffe25a`69d898e0  0002394a`001c2840
+ffffe25a`69d898e8  001c2854`00023ade
+ffffe25a`69d898f0  00023b27`00023af0
+ffffe25a`69d898f8  00023b27`001c288c
+ffffe25a`69d89900  001c28a0`00024825
+ffffe25a`69d89908  00024833`00024825
+ffffe25a`69d89910  00024833`001c28bc
+ffffe25a`69d89918  001c28d0`00024cba
+ffffe25a`69d89920  00024dcf`00024cc0
+ffffe25a`69d89928  00024de0`001c2918
+ffffe25a`69d89930  001c2944`00024f89
+ffffe25a`69d89938  000253fe`00025100
+ffffe25a`69d89940  00025410`001c298c
+ffffe25a`69d89948  001c29d4`00025426
+ffffe25a`69d89950  00025451`00025426
+ffffe25a`69d89958  00025451`001c29e0
+ffffe25a`69d89960  001c29f4`00025464
+ffffe25a`69d89968  00025532`00025464
+ffffe25a`69d89970  00025532`001c2a0c
+ffffe25a`69d89978  001c2a28`0002558d
+ffffe25a`69d89980  000255ce`0002558d
+ffffe25a`69d89988  000255ce`001c2a3c
+ffffe25a`69d89990  001c2a4c`000255d5
+ffffe25a`69d89998  000255df`000255d5
+ffffe25a`69d899a0  000255df`001c2a60
+ffffe25a`69d899a8  001c2a74`000255e4
+ffffe25a`69d899b0  000255fe`000255ec
+ffffe25a`69d899b8  00025610`001c2aec
+ffffe25a`69d899c0  001c2b08`00026cf8
+ffffe25a`69d899c8  00026d18`00026d00
+ffffe25a`69d899d0  00026d18`001c2b34
+ffffe25a`69d899d8  001c2b40`00026e81
+ffffe25a`69d899e0  00026e88`00026e81
+ffffe25a`69d899e8  00026e90`001c2b60
+ffffe25a`69d899f0  001c2b94`00026eaa
+ffffe25a`69d899f8  00026f77`00026eaa
+ffffe25a`69d89a00  00026f77`001c2ba8
+ffffe25a`69d89a08  001c2bbc`00026fd8
+ffffe25a`69d89a10  00026ff8`00026fe0
+ffffe25a`69d89a18  00026ff8`001c2bf4
+ffffe25a`69d89a20  001c2bfc`00027012
+ffffe25a`69d89a28  00027027`00027012
+ffffe25a`69d89a30  00027027`001c2c10
+ffffe25a`69d89a38  001c2c24`00027048
+ffffe25a`69d89a40  000270b3`00027048
+ffffe25a`69d89a48  000270bc`001c2c34
+ffffe25a`69d89a50  001c2c70`000270fc
+ffffe25a`69d89a58  000271cb`00027104
+ffffe25a`69d89a60  000271d4`001c2c7c
+ffffe25a`69d89a68  001c2c70`00027214
+ffffe25a`69d89a70  00027317`00027270
+ffffe25a`69d89a78  00027320`001c2cac
+ffffe25a`69d89a80  001c2cc8`00027332
+ffffe25a`69d89a88  00027361`00027340
+ffffe25a`69d89a90  00027361`001c2ce4
+ffffe25a`69d89a98  001c2cf0`00027533
+ffffe25a`69d89aa0  0002754e`00027533
+ffffe25a`69d89aa8  0002754e`001c2d14
+ffffe25a`69d89ab0  001c2d28`0002755b
+ffffe25a`69d89ab8  0002757f`0002755b
+ffffe25a`69d89ac0  0002757f`001c2d48
+ffffe25a`69d89ac8  001c2d6c`00027583
+ffffe25a`69d89ad0  0002759b`00027583
+ffffe25a`69d89ad8  0002759b`001c2d7c
+ffffe25a`69d89ae0  001c2da0`000275a8
+ffffe25a`69d89ae8  000275b6`000275b0
+ffffe25a`69d89af0  000275b6`001c2dd4
+ffffe25a`69d89af8  001c2ddc`000275d8
+ffffe25a`69d89b00  000276b3`000275d8
+ffffe25a`69d89b08  000276b3`001c2dfc
+ffffe25a`69d89b10  001c2e18`0002770d
+ffffe25a`69d89b18  0002771e`0002770d
+ffffe25a`69d89b20  00027724`001c2e30
+ffffe25a`69d89b28  001c2ed8`0002773d
+ffffe25a`69d89b30  000277ae`00027750
+ffffe25a`69d89b38  000277ae`001c2ef4
+ffffe25a`69d89b40  001c2f08`000278ac
+ffffe25a`69d89b48  0002793b`000278ac
+ffffe25a`69d89b50  0002793b`001c2f1c
+ffffe25a`69d89b58  001c2f30`0002794d
+ffffe25a`69d89b60  0002797d`00027960
+ffffe25a`69d89b68  0002797d`001c2f68
+ffffe25a`69d89b70  001c2f74`000279d5
+ffffe25a`69d89b78  00027a55`000279d5
+ffffe25a`69d89b80  00027a55`001c2f8c
+ffffe25a`69d89b88  001c2fa0`00027b4b
+ffffe25a`69d89b90  00027b56`00027b4b
+ffffe25a`69d89b98  00027b5c`001c2fb0
+ffffe25a`69d89ba0  001c3008`00027b99
+ffffe25a`69d89ba8  00027c2a`00027ba0
+ffffe25a`69d89bb0  00027c30`001c3024
+ffffe25a`69d89bb8  001c3040`00027c78
+ffffe25a`69d89bc0  00027d09`00027c78
+ffffe25a`69d89bc8  00027d09`001c304c
+ffffe25a`69d89bd0  001c3060`00027dad
+ffffe25a`69d89bd8  00027dc6`00027dad
+ffffe25a`69d89be0  00027dc6`001c3074
+ffffe25a`69d89be8  001c3088`00027dcb
+ffffe25a`69d89bf0  00027e3e`00027de0
+ffffe25a`69d89bf8  00027e3e`001c30a8
+ffffe25a`69d89c00  001c30bc`00027fee
+ffffe25a`69d89c08  00028073`00027fee
+ffffe25a`69d89c10  00028073`001c30d0
+ffffe25a`69d89c18  001c30e4`00028094
+ffffe25a`69d89c20  000281c2`000280a0
+ffffe25a`69d89c28  000281c2`001c311c
+ffffe25a`69d89c30  001c3130`00028280
+ffffe25a`69d89c38  000288e0`00028280
+ffffe25a`69d89c40  000288e0`001c3144
+ffffe25a`69d89c48  001c3158`000289ed
+ffffe25a`69d89c50  00028a33`000289ed
+ffffe25a`69d89c58  00028a33`001c316c
+ffffe25a`69d89c60  001c3180`00028a5f
+ffffe25a`69d89c68  00028a90`00028a5f
+ffffe25a`69d89c70  00028a90`001c3194
+ffffe25a`69d89c78  001c31a8`00028a99
+ffffe25a`69d89c80  00028abe`00028a99
+ffffe25a`69d89c88  00028abe`001c31bc
+ffffe25a`69d89c90  001c31d0`00028af1
+ffffe25a`69d89c98  00028b10`00028b00
+ffffe25a`69d89ca0  00028b10`001c3234
+ffffe25a`69d89ca8  001c323c`00028b18
+ffffe25a`69d89cb0  00028c63`00028b18
+ffffe25a`69d89cb8  00028c63`001c3250
+ffffe25a`69d89cc0  001c327c`00028d8f
+ffffe25a`69d89cc8  00028d94`00028d8f
+ffffe25a`69d89cd0  00028da0`001c3298
+ffffe25a`69d89cd8  001c32fc`00028db1
+ffffe25a`69d89ce0  00028e08`00028db1
+ffffe25a`69d89ce8  00028e08`001c3304
+ffffe25a`69d89cf0  001c3324`00028ee8
+ffffe25a`69d89cf8  00028eff`00028ee8
+ffffe25a`69d89d00  00028eff`001c3338
+ffffe25a`69d89d08  001c334c`00028f22
+ffffe25a`69d89d10  00028fa2`00028f22
+ffffe25a`69d89d18  00028fa2`001c335c
+ffffe25a`69d89d20  001c336c`00028fb5
+ffffe25a`69d89d28  00029076`00028fb5
+ffffe25a`69d89d30  0002907c`001c3388
+ffffe25a`69d89d38  001c3424`000290fe
+ffffe25a`69d89d40  0002924f`00029110
+ffffe25a`69d89d48  00029260`001c3440
+ffffe25a`69d89d50  001c347c`00029944
+ffffe25a`69d89d58  00029a98`00029950
+ffffe25a`69d89d60  00029aa0`001c34a8
+ffffe25a`69d89d68  001c34d0`00029e9b
+ffffe25a`69d89d70  00029f02`00029eb0
+ffffe25a`69d89d78  00029f02`001c3500
+ffffe25a`69d89d80  001c3510`00029ff0
+ffffe25a`69d89d88  0002a004`00029ff0
+ffffe25a`69d89d90  0002a010`001c3528
+ffffe25a`69d89d98  001c3554`0002a06e
+ffffe25a`69d89da0  0002afbf`0002a080
+ffffe25a`69d89da8  0002afd0`001c3570
+ffffe25a`69d89db0  001c35a0`0002b07e
+ffffe25a`69d89db8  0002b0ee`0002b07e
+ffffe25a`69d89dc0  0002b0ee`001c35b8
+ffffe25a`69d89dc8  001c35cc`0002b2e8
+ffffe25a`69d89dd0  0002b33f`0002b2f0
+ffffe25a`69d89dd8  0002b33f`001c3614
+ffffe25a`69d89de0  001c3624`0002b43f
+ffffe25a`69d89de8  0002b4d1`0002b43f
+ffffe25a`69d89df0  0002b4d1`001c363c
+ffffe25a`69d89df8  001c3650`0002b4fe
+ffffe25a`69d89e00  0002b511`0002b4fe
+ffffe25a`69d89e08  0002b511`001c3664
+ffffe25a`69d89e10  001c367c`0002b519
+ffffe25a`69d89e18  0002b526`0002b520
+ffffe25a`69d89e20  0002b526`001c36bc
+ffffe25a`69d89e28  001c36c4`0002b611
+ffffe25a`69d89e30  0002b668`0002b611
+ffffe25a`69d89e38  0002b668`001c36e8
+ffffe25a`69d89e40  001c3708`0002b67b
+ffffe25a`69d89e48  0002b6c4`0002b690
+ffffe25a`69d89e50  0002b740`001c3760
+ffffe25a`69d89e58  001c3780`0002b7b1
+ffffe25a`69d89e60  0002bb97`0002b7b1
+ffffe25a`69d89e68  0002bb97`001c3794
+ffffe25a`69d89e70  001c37ac`0002bba7
+ffffe25a`69d89e78  0002bd0b`0002bbe0
+ffffe25a`69d89e80  0002bd0b`001c37d0
+ffffe25a`69d89e88  001c37e0`0002bd20
+ffffe25a`69d89e90  0002bdbb`0002bd20
+ffffe25a`69d89e98  0002bdd0`001c37f4
+ffffe25a`69d89ea0  001c383c`0002be20
+ffffe25a`69d89ea8  0002c053`0002be20
+ffffe25a`69d89eb0  0002c053`001c3850
+ffffe25a`69d89eb8  001c3868`0002c05d
+ffffe25a`69d89ec0  0002c099`0002c05d
+ffffe25a`69d89ec8  0002c0a0`001c3878
+ffffe25a`69d89ed0  001bf4c0`0002c0ec
+ffffe25a`69d89ed8  0002c14a`0002c100
+ffffe25a`69d89ee0  0002c14a`001c38a0
+ffffe25a`69d89ee8  001c38ac`0002c14f
+ffffe25a`69d89ef0  0002c248`0002c14f
+ffffe25a`69d89ef8  0002c248`001c38c0
+ffffe25a`69d89f00  001c38d4`0002c263
+ffffe25a`69d89f08  0002c286`0002c263
+ffffe25a`69d89f10  0002c286`001c38e8
+ffffe25a`69d89f18  001c38f8`0002c2f7
+ffffe25a`69d89f20  0002c2ff`0002c2f7
+ffffe25a`69d89f28  0002c2ff`001c3908
+ffffe25a`69d89f30  001c391c`0002c30c
+ffffe25a`69d89f38  0002cf96`0002c320
+ffffe25a`69d89f40  0002cfa0`001c397c
+ffffe25a`69d89f48  001c39a8`0002f63c
+ffffe25a`69d89f50  0002f961`0002f650
+ffffe25a`69d89f58  0002f970`001c39d4
+ffffe25a`69d89f60  001c3a24`0002f9c2
+ffffe25a`69d89f68  0002fb7e`0002f9c2
+ffffe25a`69d89f70  0002fb7e`001c3a34
+ffffe25a`69d89f78  001c3a4c`0002fbf2
+ffffe25a`69d89f80  0002fc06`0002fbf2
+ffffe25a`69d89f88  0002fc06`001c3a60
+ffffe25a`69d89f90  001c3a74`0002fc1c
+ffffe25a`69d89f98  0002fc5e`0002fc30
+ffffe25a`69d89fa0  0002fc5e`001c3ab8
+ffffe25a`69d89fa8  001c3acc`0002fc78
+ffffe25a`69d89fb0  0002fd68`0002fc78
+ffffe25a`69d89fb8  0002fd68`001c3ae0
+ffffe25a`69d89fc0  001c3af4`0002fd70
+ffffe25a`69d89fc8  0002fd87`0002fd70
+ffffe25a`69d89fd0  0002fd87`001c3b04
+ffffe25a`69d89fd8  001c3b18`0002fd99
+ffffe25a`69d89fe0  00030084`0002fda0
+ffffe25a`69d89fe8  00030090`001c3b48
+ffffe25a`69d89ff0  001c3b64`0003032e
+ffffe25a`69d89ff8  000311ce`00030340
+ffffe25a`69d8a000  000311e0`001c3b9c
+ffffe25a`69d8a008  001c3c0c`0003131e
+ffffe25a`69d8a010  0003144a`00031330
+ffffe25a`69d8a018  00031450`001c3c3c
+ffffe25a`69d8a020  001c3c70`0003146a
+ffffe25a`69d8a028  000314cf`0003146a
+ffffe25a`69d8a030  000314cf`001c3c78
+ffffe25a`69d8a038  001c3c90`000314d5
+ffffe25a`69d8a040  000314ed`000314d5
+ffffe25a`69d8a048  00031500`001c3ca4
+ffffe25a`69d8a050  001c3cd4`0003175e
+ffffe25a`69d8a058  00031810`00031770
+ffffe25a`69d8a060  00031820`001c3d0c
+ffffe25a`69d8a068  001c3d34`00031864
+ffffe25a`69d8a070  000318d4`0003186c
+ffffe25a`69d8a078  000318dc`001c3d94
+ffffe25a`69d8a080  001c3dc4`00031913
+ffffe25a`69d8a088  000319b8`0003191c
+ffffe25a`69d8a090  000319c0`001c3de0
+ffffe25a`69d8a098  001c3e04`00031a3b
+ffffe25a`69d8a0a0  00031eba`00031a50
+ffffe25a`69d8a0a8  00031ec0`001c3e24
+ffffe25a`69d8a0b0  001c3e64`000325ea
+ffffe25a`69d8a0b8  00032eba`000325f0
+ffffe25a`69d8a0c0  00032ec0`001c3e94
+ffffe25a`69d8a0c8  001c3ed0`00032f01
+ffffe25a`69d8a0d0  00032fbb`00032f01
+ffffe25a`69d8a0d8  00032fbb`001c3ee4
+ffffe25a`69d8a0e0  001c3f08`00032fd7
+ffffe25a`69d8a0e8  0003309c`00032fd7
+ffffe25a`69d8a0f0  000330b0`001c3f1c
+ffffe25a`69d8a0f8  001c3f40`00033150
+ffffe25a`69d8a100  0003334d`00033150
+ffffe25a`69d8a108  0003334d`001c3f54
+ffffe25a`69d8a110  001c3f74`00033599
+ffffe25a`69d8a118  00033637`000335a0
+ffffe25a`69d8a120  00033640`001bf474
+ffffe25a`69d8a128  001c3fac`00033751
+ffffe25a`69d8a130  00033799`00033760
+ffffe25a`69d8a138  00033799`001c3fd4
+ffffe25a`69d8a140  001c3fe4`000340b0
+ffffe25a`69d8a148  000340bf`000340b0
+ffffe25a`69d8a150  000340bf`001c4004
+ffffe25a`69d8a158  001c4018`000340d3
+ffffe25a`69d8a160  000340d8`000340d3
+ffffe25a`69d8a168  000340e0`001c4038
+ffffe25a`69d8a170  001c4068`0003432f
+ffffe25a`69d8a178  000343f6`00034340
+ffffe25a`69d8a180  000343f6`001c4098
+ffffe25a`69d8a188  001c40ac`0003482f
+ffffe25a`69d8a190  00034837`0003482f
+ffffe25a`69d8a198  00034840`001c40c4
+ffffe25a`69d8a1a0  001c40f8`00034874
+ffffe25a`69d8a1a8  0003487f`00034874
+ffffe25a`69d8a1b0  0003487f`001c4108
+ffffe25a`69d8a1b8  001c411c`000350ec
+ffffe25a`69d8a1c0  0003511f`000350ec
+ffffe25a`69d8a1c8  0003511f`001c4138
+ffffe25a`69d8a1d0  001c4148`0003512c
+ffffe25a`69d8a1d8  000351e5`0003512c
+ffffe25a`69d8a1e0  000351f0`001c415c
+ffffe25a`69d8a1e8  001c41c0`00035266
+ffffe25a`69d8a1f0  000353f5`00035266
+ffffe25a`69d8a1f8  000353f5`001c41cc
+ffffe25a`69d8a200  001c41f0`00035596
+ffffe25a`69d8a208  000355f1`00035596
+ffffe25a`69d8a210  000355f1`001c4208
+ffffe25a`69d8a218  001c421c`00035654
+ffffe25a`69d8a220  00035829`00035660
+ffffe25a`69d8a228  00035830`001c42ec
+ffffe25a`69d8a230  001c431c`00035e8b
+ffffe25a`69d8a238  00035ec6`00035ea0
+ffffe25a`69d8a240  00035ec6`001c4348
+ffffe25a`69d8a248  001c4354`00035f68
+ffffe25a`69d8a250  00035f8d`00035f68
+ffffe25a`69d8a258  00035f8d`001c4368
+ffffe25a`69d8a260  001c437c`00035ff1
+ffffe25a`69d8a268  000360af`00035ff8
+ffffe25a`69d8a270  000360c0`001c43a4
+ffffe25a`69d8a278  001c43c0`0003673f
+ffffe25a`69d8a280  00036942`00036750
+ffffe25a`69d8a288  00036948`001c43f0
+ffffe25a`69d8a290  001c4440`00036a0c
+ffffe25a`69d8a298  000371bf`00036a20
+ffffe25a`69d8a2a0  000371d0`001c4460
+ffffe25a`69d8a2a8  001c448c`00037256
+ffffe25a`69d8a2b0  000372b8`00037260
+ffffe25a`69d8a2b8  000372b8`001c44ac
+ffffe25a`69d8a2c0  001c44bc`0003774d
+ffffe25a`69d8a2c8  0003777e`0003774d
+ffffe25a`69d8a2d0  0003777e`001c44dc
+ffffe25a`69d8a2d8  001c44f0`00037793
+ffffe25a`69d8a2e0  000377af`000377a0
+ffffe25a`69d8a2e8  000377af`001c4540
+ffffe25a`69d8a2f0  001c4548`000377b5
+ffffe25a`69d8a2f8  0003785b`000377b5
+ffffe25a`69d8a300  0003785b`001c455c
+ffffe25a`69d8a308  001c457c`00037b8b
+ffffe25a`69d8a310  00037bac`00037b8b
+ffffe25a`69d8a318  00037bac`001c4594
+ffffe25a`69d8a320  001c45a4`00037bc0
+ffffe25a`69d8a328  00037be1`00037bc0
+ffffe25a`69d8a330  00037be1`001c45b4
+ffffe25a`69d8a338  001c45c8`00037bf3
+ffffe25a`69d8a340  00037cb2`00037bf3
+ffffe25a`69d8a348  00037cb2`001c45ec
+ffffe25a`69d8a350  001c4618`00037cbb
+ffffe25a`69d8a358  00037d0f`00037cbb
+ffffe25a`69d8a360  00037d20`001c463c
+ffffe25a`69d8a368  001c46cc`00038276
+ffffe25a`69d8a370  00039091`00038310
+ffffe25a`69d8a378  00039098`001c470c
+ffffe25a`69d8a380  001c473c`000391e9
+ffffe25a`69d8a388  000395b7`000391f0
+ffffe25a`69d8a390  000395c0`001c4748
+ffffe25a`69d8a398  001c4778`000395ea
+ffffe25a`69d8a3a0  000397dd`000395ea
+ffffe25a`69d8a3a8  000397dd`001c478c
+ffffe25a`69d8a3b0  001c47a4`00039d31
+ffffe25a`69d8a3b8  00039d46`00039d31
+ffffe25a`69d8a3c0  00039d46`001c47c8
+ffffe25a`69d8a3c8  001c47e4`00039d66
+ffffe25a`69d8a3d0  00039e14`00039d6c
+ffffe25a`69d8a3d8  00039e1c`001c4860
+ffffe25a`69d8a3e0  001c4880`0003a0df
+ffffe25a`69d8a3e8  0003a2a1`0003a0f0
+ffffe25a`69d8a3f0  0003a2b0`001c48b0
+ffffe25a`69d8a3f8  001c0d5c`0003a310
+ffffe25a`69d8a400  0003a38f`0003a320
+ffffe25a`69d8a408  0003a3a0`001c48d8
+ffffe25a`69d8a410  001c48e8`0003a42f
+ffffe25a`69d8a418  0003a46e`0003a440
+ffffe25a`69d8a420  0003a480`001bf4c0
+ffffe25a`69d8a428  001c4904`0003a64c
+ffffe25a`69d8a430  0003a677`0003a654
+ffffe25a`69d8a438  0003a680`001c4934
+ffffe25a`69d8a440  001c4950`0003a984
+ffffe25a`69d8a448  0003aa1b`0003a9f8
+ffffe25a`69d8a450  0003aa24`001c496c
+ffffe25a`69d8a458  001c1204`0003ab30
+ffffe25a`69d8a460  0003acba`0003ab38
+ffffe25a`69d8a468  0003acc0`001c4988
+ffffe25a`69d8a470  001c49b8`0003b01f
+ffffe25a`69d8a478  0003b065`0003b030
+ffffe25a`69d8a480  0003b070`001bf474
+ffffe25a`69d8a488  001c49e8`0003b902
+ffffe25a`69d8a490  0003b971`0003b910
+ffffe25a`69d8a498  0003b980`001bf474
+ffffe25a`69d8a4a0  001c4a20`0003bc7a
+ffffe25a`69d8a4a8  0003bcb2`0003bc80
+ffffe25a`69d8a4b0  0003bcc0`001c1b38
+ffffe25a`69d8a4b8  001c4a4c`0003bdf6
+ffffe25a`69d8a4c0  0003be4b`0003bdfc
+ffffe25a`69d8a4c8  0003be60`001c4a7c
+ffffe25a`69d8a4d0  001bf744`0003bea5
+ffffe25a`69d8a4d8  0003c74c`0003beb0
+ffffe25a`69d8a4e0  0003c760`001c4a90
+ffffe25a`69d8a4e8  001c4ae8`0003c95d
+ffffe25a`69d8a4f0  0003c9d6`0003c964
+ffffe25a`69d8a4f8  0003c9e0`001c4b18
+ffffe25a`69d8a500  001c4b30`0003cac2
+ffffe25a`69d8a508  0003dd39`0003caf0
+ffffe25a`69d8a510  0003dd40`001c4b58
+ffffe25a`69d8a518  001bf4c0`0003dd6e
+ffffe25a`69d8a520  0003de04`0003ddf0
+ffffe25a`69d8a528  0003de10`001bf4c0
+ffffe25a`69d8a530  001c4b84`0003de4f
+ffffe25a`69d8a538  0003de7a`0003de58
+ffffe25a`69d8a540  0003dea0`001bf894
+ffffe25a`69d8a548  001bfc28`0003dec3
+ffffe25a`69d8a550  0003df6f`0003ded0
+ffffe25a`69d8a558  0003df80`001c4ba0
+ffffe25a`69d8a560  001bf474`0003dfaf
+ffffe25a`69d8a568  0003e1a7`0003dfe0
+ffffe25a`69d8a570  0003e21c`001c4bb0
+ffffe25a`69d8a578  001c4bcc`0003e2e7
+ffffe25a`69d8a580  0003e325`0003e2f0
+ffffe25a`69d8a588  0003e32c`001bf474
+ffffe25a`69d8a590  001c4be8`0003e3fa
+ffffe25a`69d8a598  0003e4cd`0003e400
+ffffe25a`69d8a5a0  0003e4e0`001c4c00
+ffffe25a`69d8a5a8  001bf474`0003e519
+ffffe25a`69d8a5b0  0003e55e`0003e520
+ffffe25a`69d8a5b8  0003e570`001c4c18
+ffffe25a`69d8a5c0  001bf4c0`0003e585
+ffffe25a`69d8a5c8  0003e66c`0003e590
+ffffe25a`69d8a5d0  0003e674`001c4c28
+ffffe25a`69d8a5d8  001c4c5c`0003e6b4
+ffffe25a`69d8a5e0  0003f2d2`0003e6c0
+ffffe25a`69d8a5e8  0003f2f8`001c4c7c
+ffffe25a`69d8a5f0  001c1c30`0003f322
+ffffe25a`69d8a5f8  0003f5b0`0003f328
+ffffe25a`69d8a600  0003f638`001c4cb8
+ffffe25a`69d8a608  001c4cec`0003f6da
+ffffe25a`69d8a610  0003f753`0003f6e0
+ffffe25a`69d8a618  0003f75c`001c4d08
+ffffe25a`69d8a620  001c4d1c`0003f7cb
+ffffe25a`69d8a628  0003f881`0003f7d4
+ffffe25a`69d8a630  0003f888`001c4d30
+ffffe25a`69d8a638  001c4d08`0003f8fb
+ffffe25a`69d8a640  0003f949`0003f910
+ffffe25a`69d8a648  0003f950`001bf474
+ffffe25a`69d8a650  001c4bcc`0003fa1e
+ffffe25a`69d8a658  0003fb46`0003fb20
+ffffe25a`69d8a660  0003fb50`001bf894
+ffffe25a`69d8a668  001c4d5c`0003fc03
+ffffe25a`69d8a670  0003fc6a`0003fc0c
+ffffe25a`69d8a678  0003fc70`001c1c3c
+ffffe25a`69d8a680  001bf894`0003fcae
+ffffe25a`69d8a688  0003fcec`0003fcb4
+ffffe25a`69d8a690  0003fd00`001bf894
+ffffe25a`69d8a698  001c1204`0003fd81
+ffffe25a`69d8a6a0  00040044`0003fd90
+ffffe25a`69d8a6a8  00040050`001c4dc0
+ffffe25a`69d8a6b0  001c4e30`00040157
+ffffe25a`69d8a6b8  0004016e`00040160
+ffffe25a`69d8a6c0  00040174`001bf4c0
+ffffe25a`69d8a6c8  001c4e4c`00040261
+ffffe25a`69d8a6d0  000402e4`00040268
+ffffe25a`69d8a6d8  000402f0`001c1204
+ffffe25a`69d8a6e0  001c4e9c`000403ad
+ffffe25a`69d8a6e8  0004050d`000403c0
+ffffe25a`69d8a6f0  00040520`001c4ecc
+ffffe25a`69d8a6f8  001c4f10`0004058b
+ffffe25a`69d8a700  0004069d`00040594
+ffffe25a`69d8a708  00040708`001c4f34
+ffffe25a`69d8a710  001bf4c0`00040727
+ffffe25a`69d8a718  000407db`00040730
+ffffe25a`69d8a720  000407f0`001c4f60
+ffffe25a`69d8a728  001c4f78`00040d51
+ffffe25a`69d8a730  00041260`00040d58
+ffffe25a`69d8a738  00041270`001c4ff8
+ffffe25a`69d8a740  001c5020`0004135d
+ffffe25a`69d8a748  000413de`00041370
+ffffe25a`69d8a750  000413f0`001c5048
+ffffe25a`69d8a758  001c5058`000414f7
+ffffe25a`69d8a760  00041693`00041500
+ffffe25a`69d8a768  0004169c`001c5098
+ffffe25a`69d8a770  001c50ec`000416d7
+ffffe25a`69d8a778  000417f8`000416e0
+ffffe25a`69d8a780  00041800`001c50fc
+ffffe25a`69d8a788  001c5128`00041917
+ffffe25a`69d8a790  000419ad`00041920
+ffffe25a`69d8a798  000419c0`001c5154
+ffffe25a`69d8a7a0  001c5164`00041b09
+ffffe25a`69d8a7a8  00041be9`00041b10
+ffffe25a`69d8a7b0  00041bf0`001c5194
+ffffe25a`69d8a7b8  001c51b8`00041cfb
+ffffe25a`69d8a7c0  00041da2`00041d10
+ffffe25a`69d8a7c8  00041da8`001c51dc
+ffffe25a`69d8a7d0  001c51f8`00041e15
+ffffe25a`69d8a7d8  00041e85`00041e1c
+ffffe25a`69d8a7e0  00041e90`001bf744
+ffffe25a`69d8a7e8  001bf4c0`00041e9e
+ffffe25a`69d8a7f0  00041f61`00041ea4
+ffffe25a`69d8a7f8  00041f68`001c5208
+ffffe25a`69d8a800  001c5220`00041fe4
+ffffe25a`69d8a808  0004201d`00041ff0
+ffffe25a`69d8a810  00042024`001bf4c0
+ffffe25a`69d8a818  001c523c`00042067
+ffffe25a`69d8a820  000421ba`000420d0
+ffffe25a`69d8a828  000421ec`001c5258
+ffffe25a`69d8a830  001bf474`00042230
+ffffe25a`69d8a838  00042562`00042238
+ffffe25a`69d8a840  00042570`001c5278
+ffffe25a`69d8a848  001c52a0`00042627
+ffffe25a`69d8a850  00042724`00042630
+ffffe25a`69d8a858  0004272c`001c52b8
+ffffe25a`69d8a860  001c52e0`000427b8
+ffffe25a`69d8a868  0004282b`000427c0
+ffffe25a`69d8a870  00042840`001c530c
+ffffe25a`69d8a878  001c5320`00042906
+ffffe25a`69d8a880  000429c6`0004290c
+ffffe25a`69d8a888  000429cc`001c534c
+ffffe25a`69d8a890  001bf894`000429f6
+ffffe25a`69d8a898  00042c7a`00042a00
+ffffe25a`69d8a8a0  00042c80`001c536c
+ffffe25a`69d8a8a8  001c53bc`00042ffd
+ffffe25a`69d8a8b0  000430c3`00043004
+ffffe25a`69d8a8b8  000430cc`001c53e8
+ffffe25a`69d8a8c0  001c5400`00043164
+ffffe25a`69d8a8c8  00043245`0004316c
+ffffe25a`69d8a8d0  00043250`001c5424
+ffffe25a`69d8a8d8  001c5438`00043266
+ffffe25a`69d8a8e0  0004358d`00043270
+ffffe25a`69d8a8e8  00043594`001c5454
+ffffe25a`69d8a8f0  001c5484`000439fd
+ffffe25a`69d8a8f8  00043a22`00043a04
+ffffe25a`69d8a900  00043a28`001bf4c0
+ffffe25a`69d8a908  001bf894`00043a5e
+ffffe25a`69d8a910  00043b41`00043a64
+ffffe25a`69d8a918  00043b48`001c54b0
+ffffe25a`69d8a920  001c54c4`00043bb3
+ffffe25a`69d8a928  00043c26`00043bbc
+ffffe25a`69d8a930  00043c2c`001c54e8
+ffffe25a`69d8a938  001c0d5c`00043ce8
+ffffe25a`69d8a940  00043d57`00043cf0
+ffffe25a`69d8a948  00043d60`001c54f8
+ffffe25a`69d8a950  001c5508`00043ed3
+ffffe25a`69d8a958  00043f58`00043edc
+ffffe25a`69d8a960  00043f60`001c5530
+ffffe25a`69d8a968  001bf474`00043fc1
+ffffe25a`69d8a970  00044076`00043fc8
+ffffe25a`69d8a978  0004407c`001c5550
+ffffe25a`69d8a980  001c5578`000441d8
+ffffe25a`69d8a988  0004423a`000441e0
+ffffe25a`69d8a990  00044240`001c55a8
+ffffe25a`69d8a998  001c55cc`00044335
+ffffe25a`69d8a9a0  00044365`0004433c
+ffffe25a`69d8a9a8  0004436c`001bf894
+ffffe25a`69d8a9b0  001c50ec`00044409
+ffffe25a`69d8a9b8  00044578`00044470
+ffffe25a`69d8a9c0  00044580`001c55f8
+ffffe25a`69d8a9c8  001c5628`0004459e
+ffffe25a`69d8a9d0  00044666`000445a4
+ffffe25a`69d8a9d8  00044670`001c5644
+ffffe25a`69d8a9e0  001c565c`00044879
+ffffe25a`69d8a9e8  00044ab3`00044880
+ffffe25a`69d8a9f0  00044abc`001c56a8
+ffffe25a`69d8a9f8  001c56f4`00044b9a
+ffffe25a`69d8aa00  00044c21`00044ba0
+ffffe25a`69d8aa08  00044c28`001c5704
+ffffe25a`69d8aa10  001bf894`00044c5f
+ffffe25a`69d8aa18  00044c9c`00044c68
+ffffe25a`69d8aa20  00044cd0`001c5714
+ffffe25a`69d8aa28  001c5720`00044d58
+ffffe25a`69d8aa30  00044de6`00044d8c
+ffffe25a`69d8aa38  00044df0`001c5748
+ffffe25a`69d8aa40  001bf894`00044e33
+ffffe25a`69d8aa48  00044f33`00044e40
+ffffe25a`69d8aa50  00044f3c`001c576c
+ffffe25a`69d8aa58  001c57a8`00044fcd
+ffffe25a`69d8aa60  00045046`00044fd4
+ffffe25a`69d8aa68  0004504c`001c57c0
+ffffe25a`69d8aa70  001c57e4`00045147
+ffffe25a`69d8aa78  00045242`00045150
+ffffe25a`69d8aa80  00045248`001c580c
+ffffe25a`69d8aa88  001c1aa8`00045298
+ffffe25a`69d8aa90  00045326`000452a0
+ffffe25a`69d8aa98  0004532c`001c5830
+ffffe25a`69d8aaa0  001c5854`00045388
+ffffe25a`69d8aaa8  0004541c`00045390
+ffffe25a`69d8aab0  00045424`001c5864
+ffffe25a`69d8aab8  001c5884`00045535
+ffffe25a`69d8aac0  00045572`0004553c
+ffffe25a`69d8aac8  00045578`001bfbe4
+ffffe25a`69d8aad0  001c58b0`000456bd
+ffffe25a`69d8aad8  000457e8`000456d0
+ffffe25a`69d8aae0  000457f0`001c58c8
+ffffe25a`69d8aae8  001c5924`00045924
+ffffe25a`69d8aaf0  0004595b`0004592c
+ffffe25a`69d8aaf8  00045964`001bf474
+ffffe25a`69d8ab00  001c5968`000459f8
+ffffe25a`69d8ab08  00045a22`00045a00
+ffffe25a`69d8ab10  00045a28`001bf974
+ffffe25a`69d8ab18  001c5978`00045ab5
+ffffe25a`69d8ab20  00045b6c`00045abc
+ffffe25a`69d8ab28  00045b80`001c5984
+ffffe25a`69d8ab30  001c5998`00045c70
+ffffe25a`69d8ab38  00045ca6`00045c80
+ffffe25a`69d8ab40  00045cb0`001bf894
+ffffe25a`69d8ab48  001c59d4`00045d3c
+ffffe25a`69d8ab50  00045e41`00045d50
+ffffe25a`69d8ab58  00045e50`001c59e8
+ffffe25a`69d8ab60  001c5a20`00045f41
+ffffe25a`69d8ab68  00045fca`00045f48
+ffffe25a`69d8ab70  00045fd0`001bf638
+ffffe25a`69d8ab78  001bf894`00046016
+ffffe25a`69d8ab80  000460d0`0004601c
+ffffe25a`69d8ab88  000460d8`001c5a58
+ffffe25a`69d8ab90  001c5a70`000462c3
+ffffe25a`69d8ab98  000462fb`000462cc
+ffffe25a`69d8aba0  00046310`001bf894
+ffffe25a`69d8aba8  001c5a94`000464bf
+ffffe25a`69d8abb0  00046564`000464c8
+ffffe25a`69d8abb8  0004656c`001c5ab8
+ffffe25a`69d8abc0  001c5ae0`0004663b
+ffffe25a`69d8abc8  000467ff`00046650
+ffffe25a`69d8abd0  00046808`001c5b0c
+ffffe25a`69d8abd8  001c5b38`00046844
+ffffe25a`69d8abe0  0004687f`00046850
+ffffe25a`69d8abe8  00046890`001bf474
+ffffe25a`69d8abf0  001c5b60`00046945
+ffffe25a`69d8abf8  000469e8`0004694c
+ffffe25a`69d8ac00  000469f0`001c5b94
+ffffe25a`69d8ac08  001c5bac`00046b3c
+ffffe25a`69d8ac10  00046c1b`00046b44
+ffffe25a`69d8ac18  00046c24`001c5bd4
+ffffe25a`69d8ac20  001bf894`00046c4c
+ffffe25a`69d8ac28  00046c6e`00046c60
+ffffe25a`69d8ac30  00046c80`001bf4c0
+ffffe25a`69d8ac38  001c5bfc`00046d1d
+ffffe25a`69d8ac40  00046d97`00046d24
+ffffe25a`69d8ac48  00046da0`001c5c44
+ffffe25a`69d8ac50  001c5c6c`00046e66
+ffffe25a`69d8ac58  00046ec3`00046e70
+ffffe25a`69d8ac60  00046ed0`001bf638
+ffffe25a`69d8ac68  001bfe20`00046f5b
+ffffe25a`69d8ac70  0004702e`00046f70
+ffffe25a`69d8ac78  00047040`001c5c90
+ffffe25a`69d8ac80  001c0258`000470b9
+ffffe25a`69d8ac88  000471bb`000470c0
+ffffe25a`69d8ac90  000471c4`001c5cb4
+ffffe25a`69d8ac98  001bf474`00047265
+ffffe25a`69d8aca0  0004747a`00047270
+ffffe25a`69d8aca8  00047480`001c5ce4
+ffffe25a`69d8acb0  001c5d3c`00047953
+ffffe25a`69d8acb8  00047976`00047960
+ffffe25a`69d8acc0  00047980`001c5d68
+ffffe25a`69d8acc8  001bfab8`000479c3
+ffffe25a`69d8acd0  00047ad2`000479cc
+ffffe25a`69d8acd8  00047ae0`001c5d84
+ffffe25a`69d8ace0  001c5da8`00047ba8
+ffffe25a`69d8ace8  00047c78`00047bb0
+ffffe25a`69d8acf0  00047c80`001c5dd0
+ffffe25a`69d8acf8  001c5df4`00047d02
+ffffe25a`69d8ad00  00047d4e`00047d08
+ffffe25a`69d8ad08  00047d54`001c5e0c
+ffffe25a`69d8ad10  001c5e28`00047e18
+ffffe25a`69d8ad18  00047e59`00047e20
+ffffe25a`69d8ad20  00047e60`001c5e4c
+ffffe25a`69d8ad28  001c5e6c`00047e8e
+ffffe25a`69d8ad30  00048038`00047ea0
+ffffe25a`69d8ad38  00048040`001c5e8c
+ffffe25a`69d8ad40  001c5ec8`00048051
+ffffe25a`69d8ad48  000480b5`00048051
+ffffe25a`69d8ad50  000480b5`001c5ed8
+ffffe25a`69d8ad58  001c5eec`000481b4
+ffffe25a`69d8ad60  000482a3`000481b4
+ffffe25a`69d8ad68  000482a3`001c5f00
+ffffe25a`69d8ad70  001c5f20`00048367
+ffffe25a`69d8ad78  0004838c`00048367
+ffffe25a`69d8ad80  00048394`001c5f40
+ffffe25a`69d8ad88  001bfab8`00048400
+ffffe25a`69d8ad90  00048481`00048408
+ffffe25a`69d8ad98  00048488`001c5f80
+ffffe25a`69d8ada0  001c5f94`000485cd
+ffffe25a`69d8ada8  00048804`000485d4
+ffffe25a`69d8adb0  0004880c`001c5fc4
+ffffe25a`69d8adb8  001c5fec`00048842
+ffffe25a`69d8adc0  00048896`00048848
+ffffe25a`69d8adc8  0004889c`001c6008
+ffffe25a`69d8add0  001bf4c0`000488be
+ffffe25a`69d8add8  000489d8`000488c4
+ffffe25a`69d8ade0  000489e0`001c6024
+ffffe25a`69d8ade8  001c6050`00048a73
+ffffe25a`69d8adf0  00048b51`00048a7c
+ffffe25a`69d8adf8  00048b58`001c6098
+ffffe25a`69d8ae00  001bf894`00048b77
+ffffe25a`69d8ae08  00048c33`00048b80
+ffffe25a`69d8ae10  00048c3c`001c60b4
+ffffe25a`69d8ae18  001bf894`00048cbc
+ffffe25a`69d8ae20  00048d11`00048cd0
+ffffe25a`69d8ae28  00048d18`001bf474
+ffffe25a`69d8ae30  001c60dc`00048da2
+ffffe25a`69d8ae38  00048e92`00048da8
+ffffe25a`69d8ae40  00048e98`001c6100
+ffffe25a`69d8ae48  001c612c`00048f22
+ffffe25a`69d8ae50  00048f8b`00048f28
+ffffe25a`69d8ae58  00048f94`001c6150
+ffffe25a`69d8ae60  001c6170`00049034
+ffffe25a`69d8ae68  00049060`00049040
+ffffe25a`69d8ae70  00049068`001c6184
+ffffe25a`69d8ae78  001c6190`0004927b
+ffffe25a`69d8ae80  0004935a`00049284
+ffffe25a`69d8ae88  00049360`001c61bc
+ffffe25a`69d8ae90  001c61e4`00049402
+ffffe25a`69d8ae98  000494a2`00049410
+ffffe25a`69d8aea0  000494b0`001c61f8
+ffffe25a`69d8aea8  001c6240`00049a30
+ffffe25a`69d8aeb0  00049a91`00049a38
+ffffe25a`69d8aeb8  00049a98`001c6268
+ffffe25a`69d8aec0  001bf894`00049ac7
+ffffe25a`69d8aec8  00049ba1`00049ad0
+ffffe25a`69d8aed0  00049ba8`001c6278
+ffffe25a`69d8aed8  001bfc28`00049c05
+ffffe25a`69d8aee0  00049d14`00049c0c
+ffffe25a`69d8aee8  00049d1c`001c6294
+ffffe25a`69d8aef0  001c62b0`00049d47
+ffffe25a`69d8aef8  00049dc6`00049d50
+ffffe25a`69d8af00  00049dd0`001c62bc
+ffffe25a`69d8af08  001c62dc`00049ea2
+ffffe25a`69d8af10  00049ed8`00049ea8
+ffffe25a`69d8af18  00049ee0`001c62f8
+ffffe25a`69d8af20  001c6340`00049f2d
+ffffe25a`69d8af28  0004a027`00049f34
+ffffe25a`69d8af30  0004a030`001c636c
+ffffe25a`69d8af38  001bf4c0`0004a074
+ffffe25a`69d8af40  0004a0a9`0004a07c
+ffffe25a`69d8af48  0004a0b0`001bfa48
+ffffe25a`69d8af50  001c6418`0004a204
+ffffe25a`69d8af58  0004a248`0004a210
+ffffe25a`69d8af60  0004a250`001c6440
+ffffe25a`69d8af68  001c645c`0004a8e7
+ffffe25a`69d8af70  0004ae18`0004a8f0
+ffffe25a`69d8af78  0004ae20`001c6480
+ffffe25a`69d8af80  001bf894`0004ae4e
+ffffe25a`69d8af88  0004aec2`0004ae54
+ffffe25a`69d8af90  0004aed0`001c64a8
+ffffe25a`69d8af98  001c64cc`0004b02f
+ffffe25a`69d8afa0  0004b08f`0004b038
+ffffe25a`69d8afa8  0004b098`001c64f4
+ffffe25a`69d8afb0  001bf974`0004b0cc
+ffffe25a`69d8afb8  0004b186`0004b0d4
+ffffe25a`69d8afc0  0004b18c`001c6500
+ffffe25a`69d8afc8  001c0d5c`0004b22f
+ffffe25a`69d8afd0  0004b2c8`0004b238
+ffffe25a`69d8afd8  0004b2d0`001c0d5c
+ffffe25a`69d8afe0  001c6520`0004b393
+ffffe25a`69d8afe8  0004b48b`0004b39c
+ffffe25a`69d8aff0  0004b494`001c0d5c
+ffffe25a`69d8aff8  001c0d5c`0004b524
+ffffe25a`69d8b000  0004b5bc`0004b52c
+ffffe25a`69d8b008  0004b5c4`001c0d5c
+ffffe25a`69d8b010  001c0d5c`0004b6b3
+ffffe25a`69d8b018  0004b720`0004b6bc
+ffffe25a`69d8b020  0004b730`001c1204
+ffffe25a`69d8b028  001c6544`0004b8af
+ffffe25a`69d8b030  0004b915`0004b8b8
+ffffe25a`69d8b038  0004b91c`001c6570
+ffffe25a`69d8b040  001bf474`0004b9d8
+ffffe25a`69d8b048  0004bbf1`0004b9e0
+ffffe25a`69d8b050  0004bbf8`001c658c
+ffffe25a`69d8b058  001c65b0`0004bcf6
+ffffe25a`69d8b060  0004be83`0004bd58
+ffffe25a`69d8b068  0004be90`001c65d0
+ffffe25a`69d8b070  001bf474`0004befc
+ffffe25a`69d8b078  0004bf8d`0004bf04
+ffffe25a`69d8b080  0004bf94`001c65e0
+ffffe25a`69d8b088  001c4c18`0004bfe0
+ffffe25a`69d8b090  0004c09a`0004bff0
+ffffe25a`69d8b098  0004c0a0`001c65fc
+ffffe25a`69d8b0a0  001c6618`0004c189
+ffffe25a`69d8b0a8  0004c1f2`0004c1ac
+ffffe25a`69d8b0b0  0004c1f8`001c6648
+ffffe25a`69d8b0b8  001bf894`0004c384
+ffffe25a`69d8b0c0  0004c417`0004c38c
+ffffe25a`69d8b0c8  0004c420`001c6664
+ffffe25a`69d8b0d0  001c6680`0004c4c4
+ffffe25a`69d8b0d8  0004c5a3`0004c4cc
+ffffe25a`69d8b0e0  0004c5b0`001c669c
+ffffe25a`69d8b0e8  001c66c0`0004c6a2
+ffffe25a`69d8b0f0  0004c6d8`0004c6b0
+ffffe25a`69d8b0f8  0004c6e0`001bf894
+ffffe25a`69d8b100  001c66e8`0004c720
+ffffe25a`69d8b108  0004c77b`0004c730
+ffffe25a`69d8b110  0004c77b`001c670c
+ffffe25a`69d8b118  001c6718`0004c7e8
+ffffe25a`69d8b120  0004c880`0004c840
+ffffe25a`69d8b128  0004c880`001c6764
+ffffe25a`69d8b130  001c6774`0004caa7
+ffffe25a`69d8b138  0004cb88`0004caa7
+ffffe25a`69d8b140  0004cb88`001c6794
+ffffe25a`69d8b148  001c67b0`0004cb93
+ffffe25a`69d8b150  0004cb9f`0004cb93
+ffffe25a`69d8b158  0004cb9f`001c67c4
+ffffe25a`69d8b160  001c67e0`0004cbb8
+ffffe25a`69d8b168  0004cbc3`0004cbb8
+ffffe25a`69d8b170  0004cbc3`001c6800
+ffffe25a`69d8b178  001c6810`0004cbf3
+ffffe25a`69d8b180  0004cc10`0004cbf3
+ffffe25a`69d8b188  0004cc20`001c6830
+ffffe25a`69d8b190  001c6898`0004cc7e
+ffffe25a`69d8b198  0004ce42`0004cc7e
+ffffe25a`69d8b1a0  0004ce42`001c68ac
+ffffe25a`69d8b1a8  001c68c0`0004cec7
+ffffe25a`69d8b1b0  0004cfd2`0004ced0
+ffffe25a`69d8b1b8  0004cfe0`001c68f8
+ffffe25a`69d8b1c0  001c693c`0004d0aa
+ffffe25a`69d8b1c8  0004d161`0004d0f0
+ffffe25a`69d8b1d0  0004d170`001c0e8c
+ffffe25a`69d8b1d8  001c6964`0004d377
+ffffe25a`69d8b1e0  0004d484`0004d380
+ffffe25a`69d8b1e8  0004d490`001c6998
+ffffe25a`69d8b1f0  001c69c8`0004d518
+ffffe25a`69d8b1f8  0004d61b`0004d520
+ffffe25a`69d8b200  0004d630`001c69d4
+ffffe25a`69d8b208  001c69f8`0004d6db
+ffffe25a`69d8b210  0004d708`0004d6f0
+ffffe25a`69d8b218  0004d710`001c6a24
+ffffe25a`69d8b220  001c6a40`0004d80f
+ffffe25a`69d8b228  0004d8ea`0004d820
+ffffe25a`69d8b230  0004d8f0`001c6a68
+ffffe25a`69d8b238  001c6a94`0004dc11
+ffffe25a`69d8b240  0004dd46`0004dc20
+ffffe25a`69d8b248  0004dd50`001c6ad4
+ffffe25a`69d8b250  001c6afc`0004dd8b
+ffffe25a`69d8b258  0004e07a`0004dda0
+ffffe25a`69d8b260  0004e080`001c6b08
+ffffe25a`69d8b268  001c6b30`0004e0c8
+ffffe25a`69d8b270  0004e137`0004e0d0
+ffffe25a`69d8b278  0004e140`001c6b4c
+ffffe25a`69d8b280  001c1aa8`0004e189
+ffffe25a`69d8b288  0004e1e0`0004e190
+ffffe25a`69d8b290  0004e1f0`001c6b58
+ffffe25a`69d8b298  001bf974`0004e23f
+ffffe25a`69d8b2a0  0004e298`0004e250
+ffffe25a`69d8b2a8  0004e2a0`001c6b74
+ffffe25a`69d8b2b0  001c6b80`0004e440
+ffffe25a`69d8b2b8  0004e487`0004e450
+ffffe25a`69d8b2c0  0004e487`001c6bb8
+ffffe25a`69d8b2c8  001c6bc8`0004e4c3
+ffffe25a`69d8b2d0  0004e4dd`0004e4c3
+ffffe25a`69d8b2d8  0004e4f0`001c6bdc
+ffffe25a`69d8b2e0  001c6bf0`0004e7e1
+ffffe25a`69d8b2e8  0004ece9`0004e7e8
+ffffe25a`69d8b2f0  0004ecf0`001c6c50
+ffffe25a`69d8b2f8  001c6c80`0004ed06
+ffffe25a`69d8b300  0004ed69`0004ed0c
+ffffe25a`69d8b308  0004ed70`001bfab8
+ffffe25a`69d8b310  001c6c9c`0004ee18
+ffffe25a`69d8b318  0004ee26`0004ee20
+ffffe25a`69d8b320  0004ee26`001c6cb0
+ffffe25a`69d8b328  001c6cb8`0004ee2e
+ffffe25a`69d8b330  0004ee73`0004ee2e
+ffffe25a`69d8b338  0004ee73`001c6ccc
+ffffe25a`69d8b340  001c6ce8`0004eebe
+ffffe25a`69d8b348  0004eec4`0004eebe
+ffffe25a`69d8b350  0004eec4`001c6d00
+ffffe25a`69d8b358  001c6d14`0004ef70
+ffffe25a`69d8b360  0004efba`0004ef80
+ffffe25a`69d8b368  0004efba`001c6d80
+ffffe25a`69d8b370  001c6d88`0004f046
+ffffe25a`69d8b378  0004f051`0004f046
+ffffe25a`69d8b380  0004f060`001c6d9c
+ffffe25a`69d8b388  001c6dc4`0004f22d
+ffffe25a`69d8b390  0004f256`0004f240
+ffffe25a`69d8b398  0004f260`001c6e14
+ffffe25a`69d8b3a0  001c6e30`0004f2b5
+ffffe25a`69d8b3a8  0004f315`0004f2c0
+ffffe25a`69d8b3b0  0004f320`001c6e50
+ffffe25a`69d8b3b8  001bf974`0004f393
+ffffe25a`69d8b3c0  0004f3f7`0004f3a0
+ffffe25a`69d8b3c8  0004f400`001c6afc
+ffffe25a`69d8b3d0  001c6e70`0004f4a7
+ffffe25a`69d8b3d8  0004f4d6`0004f4b0
+ffffe25a`69d8b3e0  0004f4e0`001bf4c0
+ffffe25a`69d8b3e8  001c6ea8`0004f578
+ffffe25a`69d8b3f0  0004f5d9`0004f580
+ffffe25a`69d8b3f8  0004f5e0`001bf974
+ffffe25a`69d8b400  001c6ebc`0004f83f
+ffffe25a`69d8b408  0004f893`0004f850
+ffffe25a`69d8b410  0004f8a0`001c6ee8
+ffffe25a`69d8b418  001c6ef4`0004f8f0
+ffffe25a`69d8b420  0004fabe`0004f920
+ffffe25a`69d8b428  0004fac4`001c6f00
+ffffe25a`69d8b430  001c6f34`0004fc2a
+ffffe25a`69d8b438  0004fc7e`0004fc70
+ffffe25a`69d8b440  0004fc84`001bf4c0
+ffffe25a`69d8b448  001c6f64`0004fd11
+ffffe25a`69d8b450  0004fefb`0004fd20
+ffffe25a`69d8b458  0004ff10`001c6f8c
+ffffe25a`69d8b460  001bf894`0004ff40
+ffffe25a`69d8b468  0005016a`0004ff50
+ffffe25a`69d8b470  000501c0`001c6fb4
+ffffe25a`69d8b478  001c6fec`00050383
+ffffe25a`69d8b480  000504c9`00050390
+ffffe25a`69d8b488  000504d0`001c7028
+ffffe25a`69d8b490  001c7060`00050590
+ffffe25a`69d8b498  000505d1`000505a0
+ffffe25a`69d8b4a0  000505e0`001bf894
+ffffe25a`69d8b4a8  001bf894`00050611
+ffffe25a`69d8b4b0  00050674`00050620
+ffffe25a`69d8b4b8  00050680`001c708c
+ffffe25a`69d8b4c0  001c708c`000506c4
+ffffe25a`69d8b4c8  0005078b`000506cc
+ffffe25a`69d8b4d0  00050794`001c709c
+ffffe25a`69d8b4d8  001c70e8`00050b14
+ffffe25a`69d8b4e0  00050c34`00050b1c
+ffffe25a`69d8b4e8  00050c40`001c716c
+ffffe25a`69d8b4f0  001c7188`00050cc2
+ffffe25a`69d8b4f8  00051186`00050cd0
+ffffe25a`69d8b500  00051190`001c7194
+ffffe25a`69d8b508  001c71c4`000511fd
+ffffe25a`69d8b510  00051232`00051210
+ffffe25a`69d8b518  00051240`001bf4c0
+ffffe25a`69d8b520  001bf4c0`00051281
+ffffe25a`69d8b528  0005138e`00051288
+ffffe25a`69d8b530  00051394`001c71d0
+ffffe25a`69d8b538  001c71e0`000514e7
+ffffe25a`69d8b540  0005155a`000514f0
+ffffe25a`69d8b548  00051560`001c1bfc
+ffffe25a`69d8b550  001c7208`00051790
+ffffe25a`69d8b558  00051891`000517a0

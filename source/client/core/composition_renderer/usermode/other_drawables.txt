@@ -1,0 +1,60 @@
+void Renderer::DrawCircle(
+	const float			x,
+	const float			y,
+	const float			r,
+	const D2D1_COLOR_F& color,
+	const float			t
+) const
+{
+	d2dSolidBrush->SetColor( color );
+	d2dDeviceContext->DrawEllipse( D2D1::Ellipse( D2D1::Point2F( x, y ), r, r ), d2dSolidBrush.Get( ), t );
+}
+
+void Renderer::DrawRectangle(
+	const float			x,
+	const float			y,
+	const float			w,
+	const float			h,
+	const D2D1_COLOR_F& color,
+	const float			t
+) const
+{
+	d2dSolidBrush->SetColor( color );
+	d2dDeviceContext->DrawRectangle( D2D1::RectF( x, y, x + w, y + h ), d2dSolidBrush.Get( ), t );
+}
+
+void Renderer::DrawLine(
+	const float			x1,
+	const float			y1,
+	const float			x2,
+	const float			y2,
+	const D2D1_COLOR_F& color,
+	const float			t
+) const
+{
+	d2dSolidBrush->SetColor( color );
+	d2dDeviceContext->DrawLine( D2D1::Point2F( x1, y1 ), D2D1::Point2F( x2, y2 ), d2dSolidBrush.Get( ), t );
+}
+
+void Renderer::FillCircle(
+	const float			x,
+	const float			y,
+	const float			r,
+	const D2D1_COLOR_F& color
+) const
+{
+	d2dSolidBrush->SetColor( color );
+	d2dDeviceContext->FillEllipse( D2D1::Ellipse( D2D1::Point2F( x, y ), r, r ), d2dSolidBrush.Get( ) );
+}
+
+void Renderer::FillRectangle(
+	const float			x,
+	const float			y,
+	const float			w,
+	const float			h,
+	const D2D1_COLOR_F& color
+) const
+{
+	d2dSolidBrush->SetColor( color );
+	d2dDeviceContext->FillRectangle( D2D1::RectF( x, y, x + w, y + h ), d2dSolidBrush.Get( ) );
+}
